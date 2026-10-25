@@ -1,0 +1,388 @@
+# Ready-made guides: fruit. Written for temperate and subtropical coastal Australia.
+
+@ Lemon
+botanical: Citrus × limon
+group: Fruit
+aka: lemon tree, meyer lemon, eureka lemon, lisbon lemon
+summary: Evergreen citrus tree, 3–4 m (dwarf types 1.5–2 m), that fruits most of the year. Meyer is sweeter and compact.
+pets: Leaves, peel and oils can upset dogs' and cats' stomachs.
+people: Thorny branches on some varieties. Peel oil can cause skin sensitivity in strong sun.
+glance: Full sun | Deep, regular | 4 m (dwarf 2 m) | 50 cm+ (dwarf types) | Poor
+Position: Full sun, sheltered from strong wind.
+Soil: Well-drained soil with compost; citrus hate wet feet. Mound up in heavy soil.
+Water: Deep, regular watering, especially while fruit is forming. Mulch, keeping it off the trunk.
+Feeding: Citrus fertiliser in late winter and late summer; water in well.
+Pruning: Light prune after harvest to open the centre; remove suckers below the graft.
+Pests: Gall wasp (cut out swollen twigs before September), citrus leaf miner, scale, aphids, bronze orange bug.
+Problems: Yellow leaves in winter usually mean cold soil or hunger; feed in spring.
+Winter: Hardy to light frost once established.
+Propagation: Buy grafted trees.
+harvest: Pick when fully coloured and slightly soft; fruit holds on the tree for weeks.
+Kitchen: Juice, zest, preserved lemons, dressings, baking.
+Home: Cleaning, deodorising.
+reminders: Feed late winter and late summer · prune galls before spring · water deeply.
+task: 08-15 | Lemon: citrus feed | Citrus fertiliser around the drip line; water in. | |
+task: 02-15 | Lemon: citrus feed | | |
+task: 07-15 | Lemon: cut out gall wasp galls | Remove swollen twigs before September. | |
+
+@ Lime
+botanical: Citrus × latifolia
+group: Fruit
+aka: tahitian lime, lime tree
+summary: Compact citrus, 2–3 m, with juicy seedless fruit. Slightly more frost tender than lemon.
+pets: Leaves, peel and oils can upset dogs' and cats' stomachs.
+people: Lime juice on skin in sunlight can cause blistering burns (phytophotodermatitis); wash hands.
+glance: Full sun | Deep, regular | 3 m | 50 cm+ | Poor
+Position: Full sun, warm and sheltered.
+Soil: Well-drained soil with compost.
+Water: Deep, regular watering; mulch.
+Feeding: Citrus fertiliser late winter and late summer.
+Pruning: Light prune after harvest.
+Pests: Leaf miner, scale, gall wasp, bronze orange bug.
+Winter: Protect young trees from frost.
+Propagation: Grafted trees.
+harvest: Pick green and glossy, or leave to turn yellow and juicier, mainly late summer to winter.
+Kitchen: Drinks, Thai and Mexican dishes, desserts.
+reminders: Feed late winter and late summer.
+task: 08-15 | Lime: citrus feed | | |
+task: 02-15 | Lime: citrus feed | | |
+
+@ Orange
+botanical: Citrus × sinensis
+group: Fruit
+aka: navel orange, valencia orange, orange tree
+summary: Citrus tree, 4–6 m (dwarf 2 m). Navels ripen in winter; Valencias in spring and summer.
+pets: Leaves, peel and oils can upset dogs' and cats' stomachs.
+people: None known.
+glance: Full sun | Deep, regular | 5 m (dwarf 2 m) | 60 cm (dwarf) | No
+Position: Full sun.
+Soil: Well-drained soil with compost.
+Water: Deep, regular watering.
+Feeding: Citrus fertiliser late winter and late summer.
+Pruning: Light prune after harvest; remove water shoots.
+Pests: Gall wasp, leaf miner, scale, bronze orange bug, fruit fly.
+Propagation: Grafted trees.
+harvest: Taste-test; oranges don't ripen further once picked.
+Kitchen: Juice, eating fresh, marmalade.
+reminders: Feed late winter and late summer · prune galls in winter.
+task: 08-15 | Orange: citrus feed | | |
+task: 02-15 | Orange: citrus feed | | |
+
+@ Mandarin
+botanical: Citrus reticulata
+group: Fruit
+aka: mandarins, imperial mandarin
+summary: Small citrus tree, 2–4 m, with easy-peel fruit in autumn and winter. Tends to crop heavily every second year.
+pets: Leaves, peel and oils can upset dogs' and cats' stomachs.
+people: None known.
+glance: Full sun | Deep, regular | 3 m | 50 cm | No
+Position: Full sun.
+Soil: Well-drained soil with compost.
+Water: Deep, regular watering.
+Feeding: Citrus fertiliser late winter and late summer.
+Pruning: Thin heavy crops when fruit is marble-sized to reduce biennial bearing.
+Pests: Fruit fly, gall wasp, leaf miner, scale.
+Propagation: Grafted trees.
+harvest: Pick when coloured and sweet; don't leave too long or fruit dries out.
+Kitchen: Eating fresh, lunchboxes, marmalade.
+reminders: Feed late winter and late summer · thin heavy crops.
+task: 08-15 | Mandarin: citrus feed | | |
+task: 02-15 | Mandarin: citrus feed | | |
+
+@ Strawberry
+botanical: Fragaria × ananassa
+group: Fruit
+aka: strawberries
+summary: Low perennial that fruits from spring to autumn. Plants are most productive for 2–3 years.
+pets: None widely known; fruit is safe for dogs in small amounts.
+people: None known.
+glance: Full sun | Regular | 30 cm | 20 cm or hanging basket | Possible on a sunny balcony
+Position: Full sun with morning shade in hot areas.
+Soil: Rich, slightly acidic, well-drained soil; raised beds or pots stop fruit rotting.
+Water: Regular; water at the base.
+Feeding: Potash-rich liquid feed every 2 weeks while fruiting.
+Mulch: Straw or pine needles under plants keep fruit clean.
+Care: Remove runners for bigger fruit, or pot them up for new plants.
+Pests: Birds, slugs, snails, grey mould in wet weather. Net once fruit forms.
+Propagation: Plant runners or crowns in autumn and winter.
+harvest: Pick when fully red, every couple of days.
+Kitchen: Fresh, jam, desserts, smoothies.
+reminders: Plant in autumn · feed fortnightly while fruiting · net against birds.
+task: 04-15 | Strawberry: plant crowns | | |
+task: 10-01 | Strawberry: net and feed | Net against birds; liquid feed. | FREQ=WEEKLY;INTERVAL=2 | 5
+
+@ Blueberry
+botanical: Vaccinium corymbosum hybrids
+group: Fruit
+aka: blueberries
+summary: Deciduous or evergreen shrub, 1–2 m, needing acidic soil. Southern highbush and rabbiteye types suit the coast.
+pets: None widely known.
+people: None known.
+glance: Full sun | Keep moist | 1–1.5 m | 50 cm+ | No
+Position: Full sun; afternoon shade in hot areas.
+Soil: Acidic (pH 4.5–5.5) and well-drained. Use azalea and camellia mix in pots.
+Water: Keep moist; shallow roots dry out fast. Use rainwater if your tap water is hard.
+Feeding: Azalea and camellia fertiliser in spring and summer.
+Mulch: Pine bark or pine needles.
+Pruning: In winter, remove old, unproductive canes.
+Pests: Birds; net when fruit colours.
+Care: Plant two varieties for better crops.
+Propagation: Buy plants; cuttings are slow.
+harvest: Pick when fully blue, usually November to February.
+Kitchen: Fresh, muffins, pancakes, smoothies.
+Garden: Autumn leaf colour on deciduous types.
+reminders: Feed in spring · net fruit · prune old canes in winter.
+task: 09-01 | Blueberry: acid-plant feed | | |
+task: 11-01 | Blueberry: net fruit | | |
+task: 07-15 | Blueberry: prune old canes | | |
+
+@ Raspberry
+botanical: Rubus idaeus
+group: Fruit
+aka: raspberries
+summary: Cane fruit grown on a trellis. Low-chill and autumn-fruiting types suit the coast best.
+pets: None widely known.
+people: Prickly canes; wear gloves.
+glance: Full sun | Regular | 50 cm in rows | 50 cm+ | No
+Position: Full sun with shelter from hot wind.
+Soil: Rich, slightly acidic, well-drained soil.
+Water: Regular, especially while fruiting.
+Feeding: Balanced fertiliser in spring.
+Support: Two-wire trellis to keep canes upright.
+Spreading: Suckers freely; keep to a bed.
+Pruning: Cut fruited canes to the ground after harvest; autumn types can be cut to the ground in winter.
+Pests: Birds, raspberry beetle, rust.
+Propagation: Suckers or canes in winter.
+harvest: Pick when berries slip easily off the core.
+Kitchen: Fresh, jam, desserts.
+reminders: Feed in spring · prune after fruiting · net fruit.
+task: 09-01 | Raspberry: feed | | |
+task: 07-01 | Raspberry: cut back fruited canes | | |
+
+@ Passionfruit
+botanical: Passiflora edulis
+group: Fruit
+aka: passion fruit, panama red
+summary: Vigorous evergreen vine that covers a fence in a season and fruits for 5–7 years.
+pets: Unripe fruit and leaves can upset pets' stomachs.
+people: Eat ripe fruit only; unripe fruit and leaves contain small amounts of cyanogenic compounds.
+glance: Full sun | Deep, regular | 3–5 m of fence | 60 cm+ | No
+Position: Full sun on a strong fence, pergola or trellis; north-facing is ideal.
+Soil: Well-drained soil with compost.
+Water: Deep and regular, especially while flowering and fruiting.
+Feeding: Citrus or general fertiliser in spring and summer; too much nitrogen gives leaves, not fruit.
+Support: Strong wires; vines get heavy.
+Pruning: Trim lightly in spring to keep it tidy and productive.
+Spreading: Grafted vines throw suckers from the rootstock; remove them promptly.
+Pests: Passionvine hopper, fruit fly, fungal diseases in humidity.
+Propagation: Buy grafted vines.
+harvest: Collect fruit when it drops or is fully coloured; it ripens best off the vine for a few days.
+Kitchen: Pavlova, cheesecake, drinks, sauces.
+Garden: Fast screen.
+reminders: Feed in spring and summer · remove rootstock suckers.
+task: 09-15 | Passionfruit: feed and trim | | |
+task: 12-15 | Passionfruit: feed | | |
+
+@ Fig
+botanical: Ficus carica
+group: Fruit
+aka: figs, fig tree, brown turkey
+summary: Deciduous tree, 3–5 m, with sweet summer fruit. Tolerates poor soil and drought.
+pets: Sap and leaves can upset dogs' and cats' stomachs and irritate skin.
+people: Milky sap irritates skin and can cause burns in sunlight; wear gloves when pruning.
+glance: Full sun | Moderate | 4 m | 60 cm+ | No
+Position: Full sun, warm spot.
+Soil: Well-drained; not too rich.
+Water: Regular while fruiting; drought-hardy otherwise.
+Feeding: Light general feed in spring.
+Pruning: Prune in winter to keep the tree low and picking-height.
+Pests: Birds, fruit fly, fig rust in humid autumns.
+Winter: Deciduous; leaves drop.
+Propagation: Hardwood cuttings in winter root easily.
+harvest: Pick when soft and drooping, from late summer. Figs don't ripen after picking.
+Kitchen: Fresh, roasted, jam, with cheese.
+reminders: Prune in winter · net fruit in summer.
+task: 07-15 | Fig: winter prune | Wear gloves; sap irritates skin. | |
+task: 01-15 | Fig: net fruit | | |
+
+@ Avocado
+botanical: Persea americana
+group: Fruit
+aka: avocados, hass
+summary: Large evergreen tree, 6–10 m (dwarf types 3–4 m). Needs excellent drainage and takes 3–4 years to fruit.
+pets: Leaves, bark and fruit can harm pets, and are highly toxic to birds such as budgies and parrots.
+people: None known.
+glance: Full sun | Deep, regular | 8 m (dwarf 4 m) | Large tub (dwarf types) | No
+Position: Full sun, sheltered from wind.
+Soil: Very well-drained; root rot kills avocados in wet soil. Plant on a mound.
+Water: Deep, regular watering; never waterlogged.
+Feeding: Citrus or avocado fertiliser in spring and summer.
+Mulch: Thick coarse mulch, kept off the trunk.
+Pruning: Light pruning to control height.
+Pests: Root rot, fruit spotting bug, possums.
+Care: Plant A and B type varieties together for better crops.
+Propagation: Grafted trees; seedlings take many years and fruit poorly.
+harvest: Fruit matures on the tree but ripens off it. Pick one and see if it softens in a week.
+Kitchen: Guacamole, toast, salads.
+Caution: Keep pet birds well away.
+reminders: Feed spring and summer · mulch thickly · never let it waterlog.
+task: 09-15 | Avocado: feed and mulch | | |
+task: 12-15 | Avocado: feed | | |
+
+@ Apple
+botanical: Malus domestica
+group: Fruit
+aka: apples, apple tree
+summary: Deciduous fruit tree. On the coast choose low-chill varieties (e.g. Anna, Tropic Sweet) and a pollination partner.
+pets: Seeds, stems and leaves contain cyanogenic compounds; the fruit flesh is fine.
+people: Don't eat large quantities of seeds.
+glance: Full sun | Regular | 4 m (dwarf 2 m) | 50 cm (dwarf) | No
+Position: Full sun, open airflow.
+Soil: Well-drained soil with compost.
+Water: Regular in spring and summer.
+Feeding: General fruit fertiliser in late winter.
+Pruning: Winter prune to an open vase or espalier.
+Pests: Fruit fly, codling moth, black spot, birds.
+Winter: Deciduous; needs some winter chill to fruit.
+Propagation: Grafted trees.
+harvest: Pick when fruit twists off easily and seeds are brown.
+Kitchen: Fresh, pies, sauce, juice.
+reminders: Winter prune · feed late winter · fruit fly protection in summer.
+task: 07-15 | Apple: winter prune | | |
+task: 08-15 | Apple: feed | | |
+task: 12-01 | Apple: fruit fly check | | FREQ=MONTHLY | 3
+
+@ Peach
+botanical: Prunus persica
+group: Fruit
+aka: peaches, nectarine, nectarines
+summary: Deciduous stone fruit tree, 3–4 m. Low-chill varieties fruit on the coast in early summer. Nectarines grow the same way.
+pets: Pits, leaves and stems contain cyanogenic compounds; pits are also a choking risk.
+people: Don't eat the kernels.
+glance: Full sun | Regular | 4 m | 50 cm (dwarf) | No
+Position: Full sun.
+Soil: Well-drained soil with compost.
+Water: Regular while fruiting.
+Feeding: Fruit tree fertiliser in late winter.
+Pruning: Prune after fruiting or in winter; peaches fruit on last year's wood.
+Pests: Fruit fly (net or bag fruit), leaf curl (copper spray at bud swell), brown rot, birds.
+Winter: Deciduous; needs some chill.
+Propagation: Grafted trees.
+harvest: Pick when fruit colours fully and gives slightly near the stem.
+Kitchen: Fresh, poached, jam, crumbles.
+reminders: Copper spray at bud swell · net fruit · prune after harvest.
+task: 08-01 | Peach: copper spray for leaf curl | Spray as buds swell. | |
+task: 10-15 | Peach: net or bag fruit | | |
+
+@ Feijoa
+botanical: Acca sellowiana
+group: Fruit
+aka: pineapple guava
+summary: Hardy evergreen shrub, 3–4 m, with edible flower petals and aromatic autumn fruit. Makes a good hedge.
+pets: None widely known.
+people: None known.
+glance: Full sun | Moderate | 2 m (hedge) | 50 cm | No
+Position: Full sun; tolerates wind and salt.
+Soil: Most well-drained soils.
+Water: Moderate; regular while fruiting.
+Feeding: General fertiliser in spring.
+Pruning: Shape after harvest; hedges can be clipped.
+Pests: Fruit fly in some years.
+Care: Plant two for better crops.
+Propagation: Grafted plants fruit soonest.
+harvest: Collect fruit as it drops in autumn; eat within a few days.
+Kitchen: Scoop and eat, smoothies, chutney, crumbles.
+Garden: Windbreak or hedge with red and white flowers.
+reminders: Feed in spring · collect fallen fruit in autumn.
+task: 09-15 | Feijoa: feed | | |
+task: 04-01 | Feijoa: collect fallen fruit | | FREQ=WEEKLY | 2
+
+@ Olive
+botanical: Olea europaea
+group: Fruit
+aka: olives, olive tree
+summary: Long-lived silver-leaved evergreen, 5–8 m, that loves heat, wind and dry conditions. Fruit must be cured before eating.
+pets: None widely known; raw fruit is bitter.
+people: Raw olives are inedibly bitter until cured.
+glance: Full sun | Low once established | 5 m | 50 cm+ | Poor
+Position: Full sun; handles coastal wind.
+Soil: Well-drained, even poor or sandy soil.
+Water: Low once established; regular for good fruit.
+Feeding: Light feed in spring.
+Pruning: Prune after harvest to keep the canopy open.
+Pests: Olive lace bug, scale.
+Problems: Can self-seed into bushland in some regions; pick up fallen fruit.
+Propagation: Grafted or cutting-grown trees.
+harvest: Pick green or black olives in autumn, then brine or cure.
+Kitchen: Cured olives, oil.
+Garden: Hardy screen or feature tree.
+reminders: Prune after harvest · cure fruit in autumn.
+task: 04-15 | Olive: harvest and cure | | |
+
+@ Grape
+botanical: Vitis vinifera
+group: Fruit
+aka: grapes, grapevine, table grapes
+summary: Deciduous climbing vine for pergolas and fences. Choose disease-resistant table varieties for humid coasts.
+pets: Grapes and raisins are toxic to dogs and can cause kidney failure.
+people: None known.
+glance: Full sun | Moderate | 2 m along a wire | 50 cm+ | No
+Position: Full sun with good airflow.
+Soil: Well-drained soil; not too rich.
+Water: Moderate; regular while berries swell.
+Feeding: Light feed in spring.
+Support: Pergola or wires.
+Pruning: Hard winter prune back to 2-bud spurs.
+Pests: Downy and powdery mildew, birds, fruit fly.
+Winter: Deciduous.
+Propagation: Hardwood cuttings in winter.
+harvest: Taste-test; pick bunches when sweet, usually late summer.
+Kitchen: Fresh, juice, dried.
+Garden: Summer shade, winter sun on a pergola.
+Caution: Keep dogs away from fallen grapes.
+reminders: Hard prune in winter · net bunches · watch for mildew.
+task: 07-15 | Grape: winter prune | | |
+task: 12-15 | Grape: net bunches | | |
+
+@ Mulberry
+botanical: Morus spp.
+group: Fruit
+aka: mulberries, dwarf mulberry
+summary: Fast, tough deciduous tree, 5–10 m (dwarf types 2 m), with heavy spring crops of berries.
+pets: Unripe berries can upset pets' stomachs.
+people: Unripe berries and sap can upset stomachs; ripe berries stain.
+glance: Full sun | Moderate | 5 m (dwarf 2 m) | 50 cm (dwarf) | No
+Position: Full sun, away from paths and washing lines (purple stains).
+Soil: Most soils.
+Water: Regular while fruiting.
+Feeding: Light feed in spring.
+Pruning: Prune after fruiting to control size; dwarf types fruit more after a trim.
+Pests: Birds; few others.
+Propagation: Cuttings root easily.
+harvest: Pick when deep black and soft, September to December.
+Kitchen: Fresh, jam, muffins.
+reminders: Net in spring · prune after fruiting.
+task: 09-01 | Mulberry: net fruit | | |
+task: 12-15 | Mulberry: prune after fruiting | | |
+
+@ Banana
+botanical: Musa spp.
+group: Fruit
+aka: bananas, dwarf cavendish, lady finger
+summary: Fast tropical plant, 2–5 m. Dwarf types suit warm, frost-free gardens. Each stem fruits once.
+pets: None widely known.
+people: Sap stains clothing permanently.
+glance: Full sun | Heavy in summer | 3 m | Large tub (dwarf) | No
+Position: Hot, sunny, sheltered and frost-free.
+Soil: Rich, well-drained soil with lots of compost.
+Water: Heavy in summer; reduce in winter.
+Feeding: High-potash fertiliser monthly in summer.
+Care: Keep one main stem, one follower and one sucker; remove others.
+Pruning: Cut fruited stems to the ground after harvest.
+Pests: Banana weevil borer, birds.
+Winter: Grows slowly; leaves can burn in cold.
+Propagation: Suckers. In Queensland and parts of NSW, check local rules before planting.
+harvest: Cut the bunch when fruit is full and the first fingers start to yellow; ripen in the shade.
+Kitchen: Fresh, smoothies, bread.
+reminders: Feed monthly in summer · thin suckers.
+task: 11-01 | Banana: feed | | FREQ=MONTHLY | 5

@@ -44,8 +44,10 @@
       <h2>Add a plant</h2>
       <p class="muted" id="addIntro"></p>
       <label>Plant name
-        <input name="plant" required maxlength="80" autocomplete="off" placeholder="e.g. Thai basil">
+        <input name="plant" required maxlength="80" autocomplete="off" list="readyList" placeholder="e.g. Thai basil">
       </label>
+      <datalist id="readyList"></datalist>
+      <p class="hint ready-hint" id="addMatch" hidden></p>
       <label>Group
         <input name="group" list="groupList" maxlength="40" autocomplete="off" placeholder="Pick a group or type a new one">
       </label>

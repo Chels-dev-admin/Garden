@@ -4,6 +4,7 @@ A website for growing guides tailored to where you live. Anyone can create an ac
 
 - **Setup walkthrough.** After creating an account, a 4-step guide asks for your location (or uses your phone's), lets you tick plants from a starter list or type your own, builds every guide, and connects your calendar.
 - **Plant guides.** Growing steps, harvest, uses, pet and people safety notes, all with the same fields (N/A where something doesn't apply).
+- **Ready-made guides.** 118 free guides for common vegetables, herbs, fruit, flowers, natives and indoor plants, plus the Woy Woy starter set. Pick them in setup or type a name in Add plant; seasonal reminders are dated from the day you add them. They're written for temperate and subtropical coastal Australia.
 - **Add, remove, group and edit plants** at any time. With a Claude key, Claude writes each new guide in about half a minute. Without one, new plants start as blank guides you fill in or paste into with **Edit guide**, including their calendar reminders.
 - **Change location** and every guide, tip and reminder date can be rewritten for the new climate.
 - **Calendar feed.** Each account gets its own feed of care reminders at 6pm local time. Subscribe once; it updates as plants change.
@@ -56,6 +57,7 @@ Then open the site and **Create account**. It redeploys by itself whenever backe
 | `api.js` | Talks to Supabase: accounts, your garden, the backend |
 | `calendar.js` | Builds calendar files (shared with the backend) |
 | `starter/` | The ready-made starter plants and Woy Woy peninsula tips |
+| `library/` | Ready-made guides: edit the `.txt` files, then run `node library/build.mjs` to rebuild `library/plants.json` |
 | `supabase/schema.sql` | Database tables and per-account security rules |
 | `supabase/functions/garden/` | Backend: writes guides with Claude, imports starters, serves calendar feeds, deletes accounts |
 | `.github/workflows/deploy-backend.yml` | Sets up and deploys everything on Supabase |

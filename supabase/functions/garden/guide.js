@@ -158,6 +158,7 @@ export function cleanImported(p, today) {
     cautions: cleanCautions(p.cautions),
     tasks: cleanTasks(p.tasks, today),
     calendar: p.calendar !== false,
+    library: Boolean(p.library),
     added: today,
   };
 }

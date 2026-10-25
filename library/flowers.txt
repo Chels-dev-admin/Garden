@@ -1,0 +1,294 @@
+# Ready-made guides: flowers and ornamentals. Written for temperate and subtropical coastal Australia.
+
+@ Rose
+botanical: Rosa hybrids
+group: Flowers
+aka: roses
+summary: Deciduous flowering shrub that blooms from spring to late autumn. Hybrid teas, floribundas, climbers and shrub roses.
+pets: Non-toxic, but thorns can injure.
+people: Thorns; wear gloves.
+glance: Full sun | Deep, weekly | 1 m | 40 cm+ | No
+Position: At least 6 hours of sun with good airflow.
+Soil: Rich, well-drained soil with compost and manure.
+Water: Deep weekly soak at the base; avoid wetting leaves.
+Feeding: Rose food in late winter, after each flush and in late summer.
+Deadheading: Cut off spent blooms down to the first five-leaflet leaf for repeat flowering.
+Pruning: Main prune in late July–August: remove dead and crossing stems and cut back by about a third to outward buds.
+Pests: Black spot, powdery mildew, aphids, two-spotted mite.
+Winter: Deciduous or semi-deciduous.
+Propagation: Buy budded plants; cuttings in autumn.
+harvest: Cut blooms for vases early in the morning.
+Garden: Hedges, climbers on arches, cut flowers.
+Home: Petals for potpourri; hips for tea.
+reminders: Prune late Jul–Aug · feed after each flush · deadhead weekly.
+task: 08-01 | Rose: winter prune | Cut back by a third to outward buds. | |
+task: 09-01 | Rose: feed | Rose food around the drip line. | |
+task: 10-15 | Rose: deadhead | | FREQ=WEEKLY | 6
+
+@ Hydrangea
+botanical: Hydrangea macrophylla
+group: Flowers
+aka: hydrangeas, mophead hydrangea
+summary: Deciduous shrub, 1–2 m, with big summer flower heads. Blue in acidic soil, pink in alkaline.
+pets: Toxic to dogs and cats if leaves or flowers are eaten.
+people: Not edible; can cause stomach upset.
+glance: Morning sun, afternoon shade | Generous | 1.5 m | 40 cm+ | No
+Position: Morning sun with afternoon shade; wilts in hot afternoon sun.
+Soil: Rich, moist soil with compost.
+Water: Generous in summer; it wilts quickly when dry.
+Feeding: General feed in spring. Add sulphur for blue flowers, lime for pink.
+Pruning: Late winter: cut stems that flowered back to a pair of fat buds. Leave stems that didn't flower.
+Pests: Powdery mildew, snails.
+Winter: Deciduous.
+Propagation: Cuttings in summer root easily.
+harvest: Cut flowers for vases; old heads dry well.
+Garden: Shady corners, hedges.
+reminders: Prune late winter · water well in summer.
+task: 08-15 | Hydrangea: prune | Cut flowered stems to a pair of fat buds. | |
+
+@ Gardenia
+botanical: Gardenia jasminoides
+group: Flowers
+aka: gardenias
+summary: Evergreen shrub with glossy leaves and very fragrant white flowers in late spring and summer.
+pets: Can upset dogs' and cats' stomachs if eaten.
+people: None known.
+glance: Sun to part shade | Regular | 1 m | 40 cm | Poor
+Position: Morning sun, sheltered.
+Soil: Acidic, rich, well-drained soil.
+Water: Regular; dislikes drying out.
+Feeding: Azalea and camellia fertiliser in spring and late summer.
+Pruning: Light trim after flowering.
+Problems: Yellow leaves often mean cold soil or lack of magnesium; feed with Epsom salts in spring.
+Pests: Scale, mealybug, sooty mould.
+Propagation: Cuttings.
+harvest: Cut flowers to float in a bowl.
+Garden: Hedges and pots near paths for scent.
+reminders: Feed spring and late summer · trim after flowering.
+task: 09-15 | Gardenia: feed | | |
+task: 02-15 | Gardenia: feed | | |
+
+@ Camellia
+botanical: Camellia japonica / C. sasanqua
+group: Flowers
+aka: camellias, sasanqua
+summary: Long-lived evergreen shrubs that flower in autumn (sasanqua) and winter (japonica) in shade.
+pets: None widely known.
+people: None known.
+glance: Part shade | Regular | 1.5–2 m | 50 cm | No
+Position: Part shade; sasanquas take more sun.
+Soil: Acidic, rich, well-drained soil.
+Water: Regular, especially when buds are forming in late summer.
+Feeding: Azalea and camellia fertiliser after flowering.
+Pruning: Prune after flowering.
+Pests: Scale, tea scale, petal blight.
+Propagation: Cuttings or buy plants.
+harvest: Cut stems for vases.
+Garden: Hedges, espaliers, shade gardens.
+reminders: Feed and prune after flowering · water in late summer.
+task: 09-01 | Camellia: feed and prune | | |
+
+@ Azalea
+botanical: Rhododendron (Azalea group)
+group: Flowers
+aka: azaleas
+summary: Evergreen shrub smothered in flowers in late winter and spring. Shallow-rooted.
+pets: Toxic to dogs, cats and other animals; even small amounts can cause serious illness.
+people: All parts are toxic if eaten.
+glance: Part shade | Keep moist | 1 m | 40 cm | No
+Position: Dappled shade or morning sun.
+Soil: Acidic, rich, well-drained soil.
+Water: Keep moist; shallow roots dry quickly.
+Feeding: Azalea and camellia fertiliser after flowering.
+Mulch: Keep roots cool with mulch.
+Pruning: Trim after flowering.
+Pests: Azalea lace bug, petal blight.
+Propagation: Cuttings.
+harvest: Not harvested.
+Garden: Shade gardens and pots.
+Caution: Keep pets and children from eating any part.
+reminders: Feed and trim after flowering · keep moist.
+task: 10-15 | Azalea: feed and trim | | |
+
+@ Pelargonium
+botanical: Pelargonium spp.
+group: Flowers
+aka: geranium, geraniums, zonal geranium
+summary: Tough perennial flowering most of the year. Zonal, ivy-leaved and scented-leaf types.
+pets: Can upset dogs' and cats' stomachs and irritate skin.
+people: Some people get skin rashes from the leaves.
+glance: Full sun | Low | 30–40 cm | 20 cm | Possible on a sunny windowsill
+Position: Full sun; handles heat and coastal conditions.
+Soil: Well-drained, even sandy soil.
+Water: Allow to dry between waterings.
+Feeding: Liquid feed monthly in the growing season.
+Deadheading: Remove spent flower stems.
+Pruning: Cut back by a third in late summer to stop legginess.
+Pests: Geranium budworm, rust.
+Propagation: Cuttings root very easily.
+harvest: Scented-leaf types can be picked for tea and baking.
+Garden: Pots, window boxes, dry borders.
+reminders: Deadhead · cut back in late summer.
+task: 02-15 | Pelargonium: cut back | | |
+
+@ Marigold
+botanical: Tagetes spp.
+group: Flowers
+aka: french marigold, african marigold, tagetes
+summary: Bright annual, 20–60 cm, flowering through the warm months. Classic companion plant.
+pets: Can mildly upset pets' stomachs and skin.
+people: Sap can irritate sensitive skin.
+glance: Full sun | Moderate | 25 cm | 15 cm | Poor
+Position: Full sun.
+Soil: Most well-drained soils.
+Water: Moderate.
+Feeding: Not usually needed.
+Deadheading: Pinch off spent flowers.
+Pests: Snails on seedlings, spider mites in heat.
+Propagation: Seed or seedlings September to January.
+harvest: Not harvested; seed heads can be saved.
+Garden: Plant among vegetables to attract hoverflies and deter some nematodes.
+reminders: Plant spring · deadhead.
+task: 10-01 | Marigold: plant | | |
+
+@ Sunflower
+botanical: Helianthus annuus
+group: Flowers
+aka: sunflowers
+summary: Fast annual, 0.5–3 m, with big flowers in summer. Dwarf types suit pots.
+pets: Non-toxic.
+people: None known.
+glance: Full sun | Regular | 30–45 cm | 30 cm (dwarf) | No
+Position: Full sun, sheltered from wind.
+Soil: Well-drained soil.
+Water: Regular, deep watering.
+Feeding: Light feed once.
+Support: Stake tall types.
+Pests: Birds on seeds, snails on seedlings.
+Propagation: Sow seed direct September to January.
+harvest: Cut flowers for vases; dry heads for seeds when backs turn brown.
+Kitchen: Seeds roasted.
+Garden: Feeds birds and bees.
+reminders: Sow Sep–Jan · stake tall types.
+task: 10-01 | Sunflower: sow | | |
+
+@ Sweet Pea
+botanical: Lathyrus odoratus
+group: Flowers
+aka: sweet peas
+summary: Fragrant climbing annual for cut flowers in late winter and spring. Traditionally sown on St Patrick's Day.
+pets: Seeds and pods are toxic to pets.
+people: Seeds and pods are toxic; not edible like garden peas.
+glance: Full sun | Moderate | 10 cm on a trellis | 30 cm | No
+Position: Full sun.
+Soil: Well-drained soil with lime added.
+Water: Moderate; regular once flowering.
+Support: Trellis or netting 1.5–2 m.
+Deadheading: Pick flowers often to keep them coming.
+Pests: Powdery mildew, snails, aphids.
+Propagation: Sow seed direct March to May.
+harvest: Pick stems every few days.
+Garden: Cut flowers.
+Caution: Keep seeds away from children and pets.
+reminders: Sow mid-March · trellis · pick often.
+task: 03-17 | Sweet pea: sow seed | | |
+
+@ Nasturtium
+botanical: Tropaeolum majus
+group: Flowers
+aka: nasturtiums
+summary: Easy sprawling annual with edible peppery leaves and flowers. Self-seeds freely.
+pets: Non-toxic.
+people: None known.
+glance: Sun to part shade | Low | 30 cm | 20 cm or hanging basket | Poor
+Position: Sun to part shade.
+Soil: Poor soil gives more flowers; rich soil gives leaves.
+Water: Low to moderate.
+Feeding: Not needed.
+Spreading: Self-seeds; can smother small plants.
+Pests: Aphids and cabbage white caterpillars (useful as a trap crop).
+Propagation: Sow seed direct most of the year.
+harvest: Pick leaves and flowers any time.
+Kitchen: Salads, pesto; seeds can be pickled like capers.
+Garden: Trap crop that lures aphids away from vegetables.
+reminders: Sow any time · pull extras when they spread.
+task: 09-01 | Nasturtium: sow | | |
+
+@ Salvia
+botanical: Salvia spp. (ornamental)
+group: Flowers
+aka: salvias, ornamental sage
+summary: Long-flowering perennials, 0.5–2 m, in blue, purple, red and pink. Loved by bees and nectar birds.
+pets: Ornamental salvias are generally considered non-toxic.
+people: None known.
+glance: Full sun | Low | 60 cm | 30 cm | No
+Position: Full sun.
+Soil: Well-drained soil.
+Water: Low once established.
+Feeding: Light feed in spring.
+Pruning: Cut back hard in late winter; trim after each flush.
+Pests: Few.
+Propagation: Cuttings.
+harvest: Cut flowers for vases.
+Garden: Bees, butterflies and honeyeaters.
+reminders: Cut back hard in late winter · trim between flushes.
+task: 08-15 | Salvia: cut back hard | | |
+
+@ Agapanthus
+botanical: Agapanthus praecox
+group: Flowers
+aka: african lily, lily of the nile
+summary: Tough clumping perennial with blue or white flower heads in summer. Handles drought and neglect.
+pets: Can cause mouth irritation and stomach upset if chewed.
+people: Sap can irritate skin and mouth.
+glance: Full sun | Low | 50 cm | 30 cm | No
+Position: Full sun to part shade.
+Soil: Any well-drained soil.
+Water: Low once established.
+Feeding: Rarely.
+Deadheading: Cut off spent flower stems before they seed. Some areas list agapanthus as an environmental weed.
+Propagation: Division in autumn.
+harvest: Cut flowers for vases.
+Garden: Borders, banks and fire-retardant edging.
+reminders: Remove spent flowers before seeding.
+task: 02-01 | Agapanthus: remove spent flower heads | | |
+
+@ Frangipani
+botanical: Plumeria rubra
+group: Flowers
+aka: plumeria
+summary: Deciduous small tree, 3–5 m, with fragrant summer flowers. Loves heat; needs a warm, frost-free spot.
+pets: Milky sap can irritate mouths and stomachs.
+people: Sap irritates skin and eyes.
+glance: Full sun | Low | 3 m | 50 cm | No
+Position: Full sun, warm and sheltered.
+Soil: Very well-drained; rots in wet soil.
+Water: Low; keep dry in winter.
+Feeding: Light feed in spring.
+Pruning: Rarely needed; cut in late winter if required.
+Pests: Frangipani rust in humid autumns.
+Winter: Deciduous; bare branches all winter are normal.
+Propagation: Cuttings: let the cut end dry for 2 weeks before potting.
+harvest: Not harvested.
+Garden: Feature tree near patios.
+reminders: Feed in spring · keep dry in winter.
+task: 10-01 | Frangipani: feed | | |
+
+@ Bougainvillea
+botanical: Bougainvillea spp.
+group: Flowers
+summary: Vigorous thorny climber or shrub with vivid bracts through the warm months. Loves heat and dry soil.
+pets: Thorns can injure; sap can mildly irritate.
+people: Sharp thorns; wear gloves.
+glance: Full sun | Low | 2–3 m | 50 cm | No
+Position: Full sun, hot spot.
+Soil: Well-drained; poor soil gives more flowers.
+Water: Low; too much water gives leaves, not colour.
+Feeding: Low-nitrogen feed in spring.
+Pruning: Prune after each flush; hard prune in late winter.
+Support: Strong frame or fence for climbing types.
+Propagation: Cuttings.
+harvest: Not harvested.
+Garden: Colourful screens and banks.
+reminders: Hard prune late winter · trim after flowering.
+task: 08-15 | Bougainvillea: hard prune | | |

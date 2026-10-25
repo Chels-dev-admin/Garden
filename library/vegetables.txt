@@ -1,0 +1,692 @@
+# Ready-made guides: vegetables. Written for temperate and subtropical coastal Australia.
+# Format: "@ Name", then "key: value" lines. See library/build.mjs.
+
+@ Tomato
+botanical: Solanum lycopersicum
+group: Vegetables
+aka: tomatoes
+summary: Warm-season fruiting vegetable. Tall (indeterminate) types climb 1.5–2 m; bush types stay under 1 m. Crops summer to autumn.
+pets: Leaves, stems and green fruit can upset dogs' and cats' stomachs if eaten. Ripe fruit is fine.
+people: Leaves and stems are not edible. Sap can irritate sensitive skin; wear gloves when pruning.
+glance: Full sun | Deep, regular | 50–60 cm | 30 cm+ (bush types) | Poor
+Position: 6–8 hours of sun, sheltered from strong wind. Don't plant where tomatoes, potatoes or eggplant grew in the last 3 years.
+Soil: Rich, well-drained, pH 6–7. Dig in compost and aged manure; add a handful of dolomite lime to acidic soils.
+Water: Deeply 2–3 times a week at the base. Irregular watering causes blossom-end rot and split fruit. Mulch well.
+Feeding: Liquid tomato food every 2 weeks once flowers appear. Too much nitrogen gives leaves, not fruit.
+Support: Stake or cage tall types at planting; tie in loosely every 30 cm as they grow.
+Pruning: Pinch out side shoots (laterals) below the first flower truss on tall types. Leave bush types unpruned.
+Pests: Queensland fruit fly, tomato grub, whitefly and leaf spot. Net or bag fruit from December; remove spotted lower leaves.
+Winter: Grows as an annual. In frost-free spots a late crop can carry into early winter.
+Propagation: Sow seed indoors in late winter, or plant seedlings from late September once nights stay above 10°C.
+harvest: From 10–12 weeks. Pick when fully coloured and slightly soft, or pick at first blush and ripen indoors to beat fruit fly.
+Kitchen: Salads, sauces, roasting, passata and chutney.
+Garden: Plant basil and marigolds nearby to attract pollinators and predatory insects.
+reminders: Plant out Oct · feed fortnightly Nov–Feb · net against fruit fly from Dec · tie in weekly.
+task: 10-15 | Tomato: plant out seedlings | Plant deep, up to the first leaves; stake now. | |
+task: 11-01 | Tomato: liquid feed | Tomato food around the base once flowering. | FREQ=WEEKLY;INTERVAL=2 | 4
+task: 12-01 | Tomato: fruit fly protection | Bag or net fruit, set traps, pick up fallen fruit. | FREQ=MONTHLY | 4
+task: 11-07 | Tomato: tie in and remove laterals | Tie stems to stakes; pinch side shoots on tall types. | FREQ=WEEKLY | 3
+
+@ Cherry Tomato
+botanical: Solanum lycopersicum var. cerasiforme
+group: Vegetables
+aka: cherry tomatoes
+summary: Small-fruited tomato that crops heavily and handles heat and humidity better than large types. Vigorous vines to 2 m.
+pets: Leaves, stems and green fruit can upset dogs' and cats' stomachs if eaten. Ripe fruit is fine.
+people: Leaves and stems are not edible. Small round fruit is a choking risk for toddlers; cut in half.
+glance: Full sun | Deep, regular | 50 cm | 30 cm+ | Possible on a very sunny balcony
+Position: Full sun with shelter from wind. Great in large pots and hanging baskets (trailing types).
+Soil: Rich, well-drained potting mix or garden soil with compost.
+Water: Keep evenly moist; pots may need daily water in summer.
+Feeding: Liquid tomato food every 2 weeks from flowering.
+Support: Stake or trellis; vines sprawl without support.
+Pruning: Light pruning only; remove crowded or yellowing lower leaves for airflow.
+Pests: Less troubled by fruit fly than big tomatoes, but net in bad years. Watch for whitefly.
+Winter: Annual. Often self-seeds and pops up next spring.
+Propagation: Seedlings from September to December; seed indoors in late winter.
+harvest: From 8–10 weeks, every few days through summer. Pick whole trusses when most fruit is coloured.
+Kitchen: Snacking, salads, roasting whole, quick sauces.
+Garden: Productive in small spaces; children love picking them.
+reminders: Plant out Oct–Nov · feed fortnightly Nov–Mar · pick every few days.
+task: 10-15 | Cherry tomato: plant out | Stake at planting. | |
+task: 11-01 | Cherry tomato: liquid feed | Tomato food once flowering. | FREQ=WEEKLY;INTERVAL=2 | 5
+
+@ Capsicum
+botanical: Capsicum annuum
+group: Vegetables
+aka: bell pepper, sweet pepper, peppers
+summary: Sweet, mild-fruited relative of chilli. Bushy plants 60–90 cm that crop from midsummer into autumn.
+pets: None widely known for ripe fruit. Keep pets from eating plants in quantity.
+people: None known.
+glance: Full sun | Regular | 45 cm | 30 cm | Possible on a sunny windowsill (hand-pollinate)
+Position: Full sun, warm and sheltered. Needs warmth to set fruit.
+Soil: Rich, well-drained, pH 6–7 with compost.
+Water: Even moisture; drying out causes flower drop. Mulch.
+Feeding: Potassium-rich liquid feed every 2 weeks from flowering.
+Support: Stake once fruit forms; branches are brittle.
+Pests: Fruit fly, aphids, sunburn on fruit in heatwaves (keep leaf cover).
+Winter: Grown as an annual; may survive a mild winter if pruned back.
+Propagation: Seedlings in October–November once the soil is warm.
+harvest: Pick green from about 10 weeks, or leave to colour red, yellow or orange for sweeter fruit. Cut with secateurs.
+Kitchen: Raw in salads, roasted, stuffed, stir-fries.
+Garden: Pairs well with basil and marigolds.
+reminders: Plant Oct–Nov · feed fortnightly from flowering · net fruit from Dec.
+task: 10-20 | Capsicum: plant out | Plant into warm soil, mulch. | |
+task: 12-01 | Capsicum: feed and check fruit fly | Potash feed; bag fruit. | FREQ=WEEKLY;INTERVAL=2 | 4
+
+@ Eggplant
+botanical: Solanum melongena
+group: Vegetables
+aka: aubergine
+summary: Heat-loving fruiting vegetable, 60–100 cm tall, with glossy purple, white or striped fruit from midsummer.
+pets: Leaves and stems can upset dogs' and cats' stomachs if eaten.
+people: Leaves are not edible. Some varieties have small spines on the calyx.
+glance: Full sun | Regular | 50–60 cm | 30 cm+ | Poor
+Position: Hottest, sunniest spot available.
+Soil: Rich, well-drained, with plenty of compost.
+Water: Deep, regular watering; mulch to keep roots cool and moist.
+Feeding: Liquid feed every 2 weeks once flowering.
+Support: Stake when fruit begins to swell.
+Pests: Twenty-eight spotted ladybird, whitefly, spider mites in dry heat.
+Winter: Annual; finishes when nights cool in autumn.
+Propagation: Seedlings from late October into warm soil.
+harvest: When skin is glossy and springs back when pressed, from about 12 weeks. Dull skin means overripe and seedy.
+Kitchen: Grilled, baba ganoush, curries, moussaka, stir-fries.
+Garden: Ornamental purple flowers.
+reminders: Plant late Oct · feed fortnightly · pick while glossy.
+task: 10-25 | Eggplant: plant out | Warm soil only; mulch well. | |
+task: 12-01 | Eggplant: liquid feed | Feed and check for pests. | FREQ=WEEKLY;INTERVAL=2 | 4
+
+@ Zucchini
+botanical: Cucurbita pepo
+group: Vegetables
+aka: courgette, zucchinis
+summary: Fast, productive bushy squash about 1 m wide. Crops within 8 weeks of planting through summer.
+pets: None known.
+people: Very bitter fruit can contain cucurbitacins and cause stomach upset; don't eat bitter-tasting zucchini.
+glance: Full sun | Regular, deep | 1 m | 40 cm+ | No
+Position: Full sun with room to spread.
+Soil: Rich soil with compost; plant on a slight mound for drainage.
+Water: Deeply at the base, keeping leaves dry to reduce powdery mildew.
+Feeding: Liquid feed every 2 weeks once flowering.
+Care: If fruit shrivels, hand-pollinate: brush a male flower onto female flowers (those with a tiny fruit behind).
+Pests: Powdery mildew (late summer), pumpkin beetle, fruit rot in wet weather.
+Winter: Annual; pull out once mildew takes over in autumn.
+Propagation: Sow seed direct or plant seedlings from October to January.
+harvest: Pick at 15–20 cm, every 2–3 days in peak season. Missed fruit quickly becomes marrows.
+Kitchen: Grilled, fritters, bread, soups. Flowers can be stuffed and fried.
+Garden: Big leaves shade out weeds.
+reminders: Plant Oct–Jan · pick every 2–3 days · watch for mildew from Feb.
+task: 10-15 | Zucchini: sow or plant | A second sowing in January extends the harvest. | |
+task: 12-01 | Zucchini: pick and check | Pick small fruit; hand-pollinate if fruit shrivels. | FREQ=WEEKLY | 3
+
+@ Cucumber
+botanical: Cucumis sativus
+group: Vegetables
+aka: cucumbers, lebanese cucumber
+summary: Climbing or sprawling warm-season vine. Lebanese and apple types suit home gardens and crop through summer.
+pets: None known.
+people: Bitter fruit can cause stomach upset; discard it.
+glance: Full sun | Regular, deep | 40 cm (on a trellis) | 30 cm+ | Poor
+Position: Full sun, sheltered from wind.
+Soil: Rich, well-drained soil with compost.
+Water: Even moisture; dry spells make fruit bitter.
+Feeding: Liquid feed every 2 weeks once flowering.
+Support: Grow up a 1.5 m trellis to save space and keep fruit clean.
+Pests: Powdery mildew, pumpkin beetle, aphids.
+Winter: Annual; finishes in autumn.
+Propagation: Sow direct or plant from October to January.
+harvest: Pick young and firm, from about 8 weeks, every few days.
+Kitchen: Salads, tzatziki, pickles.
+Garden: Trellised vines make a summer screen.
+reminders: Plant Oct–Jan · train up trellis · pick every few days.
+task: 10-20 | Cucumber: plant and set up trellis | | |
+task: 12-01 | Cucumber: pick and feed | Pick young; liquid feed fortnightly. | FREQ=WEEKLY | 3
+
+@ Pumpkin
+botanical: Cucurbita maxima / C. moschata
+group: Vegetables
+aka: pumpkins, butternut
+summary: Rambling vine that spreads 3–5 m and ripens storable pumpkins by autumn. Butternut and Jap types are reliable.
+pets: None known.
+people: None known.
+glance: Full sun | Deep, weekly | 1.5–2 m | Not suited | No
+Position: Full sun with lots of room; can sprawl over a compost heap or fence.
+Soil: Rich soil; plant into a mound of compost.
+Water: Deeply once or twice a week, at the base.
+Feeding: Liquid feed every 2–3 weeks until fruit sets.
+Care: Hand-pollinate early in the morning if fruit doesn't set. Put a tile under ripening fruit to prevent rot.
+Pests: Powdery mildew, pumpkin beetle, fruit fly stings on young fruit.
+Winter: Annual.
+Propagation: Sow seed direct October–December.
+harvest: When vines die back and stalks dry and crack (about 16 weeks). Cut with 5 cm of stalk; cure in the sun for 2 weeks.
+Kitchen: Roasting, soup, scones, curries. Cured pumpkins store for months.
+Garden: Ground cover that smothers weeds.
+reminders: Sow Oct–Dec · feed until fruit sets · harvest when stalks dry.
+task: 10-20 | Pumpkin: sow seed | Sow 2–3 seeds per mound; thin to the strongest. | |
+task: 03-15 | Pumpkin: check for ripeness | Harvest when stalks are dry and corky; cure in sun. | FREQ=WEEKLY | 2
+
+@ Lettuce
+botanical: Lactuca sativa
+group: Vegetables
+aka: lettuces, cos, mesclun
+summary: Quick leafy salad crop. Loose-leaf types can be picked leaf by leaf for weeks. Grows year-round on the coast.
+pets: None known.
+people: None known.
+glance: Sun to part shade | Keep moist | 25–30 cm | 15 cm+ | Good under a grow light
+Position: Full sun in winter, afternoon shade in summer to stop bolting.
+Soil: Rich, moisture-holding soil with compost.
+Water: Little and often; never let it dry out.
+Feeding: Liquid feed every 2 weeks for tender growth.
+Care: Sow small batches every 3–4 weeks for a continuous supply. Summer heat makes it bolt and turn bitter.
+Pests: Snails, slugs, aphids.
+Propagation: Sow seed or plant seedlings year-round; choose heat-tolerant varieties for summer.
+harvest: Pick outer leaves of loose-leaf types from 4–6 weeks, or cut whole heads at 8–10 weeks.
+Kitchen: Salads, wraps, burgers.
+Garden: Fits between slower crops.
+reminders: Sow every 3–4 weeks · liquid feed fortnightly · snail checks.
+task: 11-01 | Lettuce: sow next batch | Sow a short row every 3–4 weeks. | FREQ=WEEKLY;INTERVAL=4 | 12
+
+@ English Spinach
+botanical: Spinacia oleracea
+group: Vegetables
+aka: spinach
+summary: Cool-season leafy green that bolts quickly in heat. Best sown autumn to early spring.
+pets: High oxalate leaves can upset pets in quantity.
+people: High in oxalates; people prone to kidney stones may want to limit large amounts.
+glance: Sun to part shade | Keep moist | 15–20 cm | 20 cm | Poor
+Position: Full sun in winter; part shade in warmer months.
+Soil: Rich, well-drained soil with compost; pH 6.5–7.
+Water: Keep evenly moist.
+Feeding: Liquid feed every 2 weeks.
+Care: Bolts in hot, long days; for summer greens grow silverbeet or Warrigal greens instead.
+Pests: Snails, slugs, leaf miner.
+Propagation: Sow seed direct March to August.
+harvest: Pick outer leaves from 6 weeks.
+Kitchen: Salads, quiche, pasta, smoothies.
+reminders: Sow Mar–Aug · feed fortnightly.
+task: 03-15 | English spinach: sow seed | Sow direct; keep moist. | |
+
+@ Silverbeet
+botanical: Beta vulgaris subsp. cicla
+group: Vegetables
+aka: chard, swiss chard, rainbow chard
+summary: Tough, productive leafy green that crops for a year or more. Coloured-stem types are ornamental.
+pets: Oxalates can upset pets in quantity.
+people: Contains oxalates; cooking reduces them.
+glance: Sun to part shade | Regular | 30 cm | 25 cm | Poor
+Position: Sun to part shade; tolerates heat better than spinach.
+Soil: Rich soil with compost.
+Water: Regular; mulch to keep soil moist.
+Feeding: Liquid feed every 2–3 weeks to keep leaves coming.
+Care: Pick outer stems regularly; remove flower stalks.
+Pests: Snails, leaf spot in humid weather (remove spotted leaves).
+Propagation: Sow or plant almost year-round.
+harvest: Twist off outer stems from 8 weeks; leave the centre to keep growing.
+Kitchen: Sautéed, pies, soups, stir-fries.
+Garden: Colourful stems brighten winter beds.
+reminders: Pick outer leaves weekly · feed every 3 weeks.
+task: 11-01 | Silverbeet: liquid feed | | FREQ=WEEKLY;INTERVAL=3 | 12
+
+@ Kale
+botanical: Brassica oleracea (Acephala group)
+group: Vegetables
+aka: tuscan kale, cavolo nero
+summary: Hardy leafy brassica, 60–90 cm, that crops through autumn, winter and spring.
+pets: Large amounts can upset pets' stomachs.
+people: None known.
+glance: Full sun | Regular | 45 cm | 30 cm | Poor
+Position: Full sun; part shade in summer.
+Soil: Rich, slightly alkaline soil with compost; add lime to acidic soil.
+Water: Regular, deep watering.
+Feeding: Nitrogen-rich liquid feed every 2–3 weeks.
+Pests: Cabbage white caterpillars and aphids. Net plants in warm months.
+Propagation: Plant seedlings February to May for the best crop.
+harvest: Pick lower leaves from 8 weeks, leaving the top to keep growing.
+Kitchen: Chips, salads, soups, smoothies.
+reminders: Plant Feb–May · net against caterpillars · pick lower leaves.
+task: 02-15 | Kale: plant seedlings | Net against cabbage white butterflies. | |
+
+@ Broccoli
+botanical: Brassica oleracea (Italica group)
+group: Vegetables
+summary: Cool-season brassica that forms a central head, then side shoots for weeks after.
+pets: Large amounts can upset pets' stomachs.
+people: None known.
+glance: Full sun | Regular | 45–50 cm | 30 cm | No
+Position: Full sun.
+Soil: Rich, slightly alkaline soil with compost; lime acidic soils.
+Water: Regular, deep watering.
+Feeding: Nitrogen-rich liquid feed every 2 weeks until heads form.
+Pests: Cabbage white caterpillars and aphids; net seedlings.
+Propagation: Plant seedlings February to May.
+harvest: Cut the central head while buds are tight (10–14 weeks), then pick side shoots.
+Kitchen: Steamed, roasted, stir-fries, soups.
+reminders: Plant Feb–May · net · cut heads while tight.
+task: 02-15 | Broccoli: plant seedlings | Net against caterpillars. | |
+task: 05-15 | Broccoli: check heads | Cut while buds are tight. | FREQ=WEEKLY | 2
+
+@ Cabbage
+botanical: Brassica oleracea (Capitata group)
+group: Vegetables
+summary: Cool-season brassica forming a dense head. Mini and savoy types suit small gardens.
+pets: Large amounts can upset pets' stomachs.
+people: None known.
+glance: Full sun | Regular | 40–60 cm | 30 cm (mini types) | No
+Position: Full sun.
+Soil: Rich, slightly alkaline soil with compost.
+Water: Regular; uneven water splits heads.
+Feeding: Liquid feed every 2 weeks.
+Pests: Cabbage white caterpillars, aphids, slugs; net plants.
+Propagation: Plant seedlings February to June.
+harvest: Cut when heads are firm, 10–16 weeks depending on type.
+Kitchen: Coleslaw, sauerkraut, stir-fries, soups.
+reminders: Plant Feb–Jun · net · cut when firm.
+task: 02-20 | Cabbage: plant seedlings | | |
+
+@ Cauliflower
+botanical: Brassica oleracea (Botrytis group)
+group: Vegetables
+summary: Cool-season brassica forming a white or coloured curd. Needs steady growth to head well.
+pets: Large amounts can upset pets' stomachs.
+people: None known.
+glance: Full sun | Regular | 60 cm | Not suited | No
+Position: Full sun.
+Soil: Rich, slightly alkaline soil with compost and a little lime.
+Water: Keep evenly moist; stress causes small, early heads.
+Feeding: Liquid feed every 2 weeks.
+Care: When the curd appears, fold leaves over it to keep it white.
+Pests: Cabbage white caterpillars, aphids.
+Propagation: Plant seedlings February to April.
+harvest: Cut when the curd is firm and tight, 14–20 weeks.
+Kitchen: Roasted, curries, gratin, rice substitute.
+reminders: Plant Feb–Apr · cover curds · cut when tight.
+task: 02-15 | Cauliflower: plant seedlings | | |
+
+@ Carrot
+botanical: Daucus carota subsp. sativus
+group: Vegetables
+aka: carrots
+summary: Root crop sown direct. Short varieties suit pots and heavy soil. Grows most of the year on the coast.
+pets: None known; carrots are a common pet treat.
+people: None known.
+glance: Full sun | Keep moist until up | 5 cm | 30 cm deep | No
+Position: Full sun.
+Soil: Loose, deep and stone-free; sandy peninsula soil is ideal. No fresh manure (causes forked roots).
+Water: Keep the surface moist until seedlings appear (2–3 weeks), then water deeply weekly.
+Feeding: Low-nitrogen; a little potash once up is enough.
+Care: Thin seedlings to 5 cm apart. Cover shoulders with soil to stop greening.
+Pests: Carrot fly is rare in Australia; aphids occasionally.
+Propagation: Sow seed direct, mixed with sand for even spacing.
+harvest: From 10–14 weeks, when shoulders are about 2 cm across.
+Kitchen: Raw, roasted, soups, cakes.
+reminders: Sow every 4–6 weeks · thin seedlings · keep moist until up.
+task: 11-01 | Carrot: sow seed | Keep surface moist until up. | FREQ=WEEKLY;INTERVAL=6 | 10
+
+@ Beetroot
+botanical: Beta vulgaris
+group: Vegetables
+aka: beets
+summary: Easy root crop with edible leaves. Sown direct most of the year.
+pets: Oxalate-rich leaves can upset pets in quantity.
+people: Can turn urine pink, which is harmless.
+glance: Full sun | Regular | 10 cm | 25 cm deep | No
+Position: Full sun.
+Soil: Well-drained soil with compost; add a little lime to acidic soils.
+Water: Even moisture for tender roots.
+Feeding: Light liquid feed every 3 weeks.
+Care: Each seed is a cluster; thin seedlings to 10 cm apart.
+Pests: Leaf miner, snails on seedlings.
+Propagation: Soak seed overnight, then sow direct August to April.
+harvest: From 8–10 weeks, when roots are golf-ball to tennis-ball size. Young leaves are good in salads.
+Kitchen: Roasted, salads, dips, pickled.
+reminders: Sow Aug–Apr · thin seedlings · pick young.
+task: 11-01 | Beetroot: sow seed | Soak seed overnight first. | FREQ=WEEKLY;INTERVAL=6 | 6
+
+@ Radish
+botanical: Raphanus sativus
+group: Vegetables
+aka: radishes, daikon
+summary: The fastest root crop, ready in 4–6 weeks. Daikon types grow large over winter.
+pets: None known.
+people: None known.
+glance: Full sun | Keep moist | 5 cm | 20 cm | Poor
+Position: Full sun; part shade in summer.
+Soil: Loose soil with compost.
+Water: Keep moist; dry soil makes radishes hot and woody.
+Feeding: Not needed in reasonable soil.
+Care: Sow small amounts every 2 weeks; good for marking rows of slow seeds.
+Pests: Flea beetle, cabbage white caterpillars.
+Propagation: Sow seed direct year-round.
+harvest: Pull when 2–3 cm across, 4–6 weeks after sowing.
+Kitchen: Salads, pickles, roasted. Young leaves are edible.
+reminders: Sow every 2 weeks · pull young.
+task: 11-01 | Radish: sow a row | | FREQ=WEEKLY;INTERVAL=2 | 12
+
+@ Potato
+botanical: Solanum tuberosum
+group: Vegetables
+aka: potatoes
+summary: Tuber crop planted from seed potatoes. Grows well in beds, bags or tyre stacks.
+pets: Leaves, stems, green and raw potatoes are toxic to dogs and cats.
+people: Green or sprouting potatoes contain solanine; don't eat green parts. Leaves and berries are toxic.
+glance: Full sun | Regular | 30 cm | 40 L grow bag | No
+Position: Full sun. Rotate; don't follow tomatoes or eggplant.
+Soil: Loose, slightly acidic soil with compost.
+Water: Regular once shoots appear, especially while flowering.
+Feeding: Balanced fertiliser at planting.
+Care: Hill soil or mulch around stems as they grow so tubers stay covered and don't turn green.
+Pests: Potato moth, leaf blights in humid weather.
+Propagation: Plant certified seed potatoes 10 cm deep, August–September and again in February.
+harvest: New potatoes when plants flower; main crop when foliage dies down, 14–18 weeks.
+Kitchen: Roasted, mashed, chips, salads.
+Caution: Store in the dark; discard green potatoes.
+reminders: Plant Aug–Sep and Feb · hill up every few weeks · harvest when foliage dies.
+task: 08-15 | Potato: plant seed potatoes | Use certified seed potatoes. | |
+task: 09-15 | Potato: hill up | Mound soil or straw around stems. | FREQ=WEEKLY;INTERVAL=3 | 2
+
+@ Sweet Potato
+botanical: Ipomoea batatas
+group: Vegetables
+aka: kumara
+summary: Sprawling tropical vine grown from slips. Loves heat and sandy soil; crops in autumn.
+pets: None known.
+people: None known.
+glance: Full sun | Moderate | 40 cm | 50 L tub | No
+Position: Full sun, the warmest spot available.
+Soil: Light, sandy, well-drained soil; too much nitrogen gives leaves, not tubers.
+Water: Regular while establishing, then moderate.
+Feeding: Light, low-nitrogen feed.
+Care: Lift vines occasionally so they don't root along the ground.
+Pests: Sweet potato weevil in the north; few pests on the coast.
+Propagation: Plant rooted slips October to December.
+harvest: After 4–5 months when leaves yellow, before cold weather. Dig carefully; skins bruise easily.
+Kitchen: Roasted, mashed, chips. Young leaves can be cooked like spinach.
+Garden: Lush ground cover.
+reminders: Plant slips Oct–Dec · dig in autumn.
+task: 10-25 | Sweet potato: plant slips | | |
+task: 04-01 | Sweet potato: check tubers | Dig when leaves yellow. | |
+
+@ Onion
+botanical: Allium cepa
+group: Vegetables
+aka: onions, brown onion, red onion
+summary: Bulb crop sown in autumn and harvested in late spring and summer. Choose varieties suited to your latitude.
+pets: Toxic to dogs and cats in all forms (raw, cooked, powder). Can cause anaemia.
+people: None known.
+glance: Full sun | Moderate | 10 cm | 20 cm | No
+Position: Full sun, open and airy.
+Soil: Well-drained soil with compost; add lime to acidic soil.
+Water: Regular while bulbing; stop once tops start to fall.
+Feeding: Light, balanced feed; excess nitrogen gives soft bulbs.
+Care: Keep weed-free; onions compete poorly.
+Pests: Thrips, downy mildew in wet springs.
+Propagation: Sow seed or plant seedlings April to June.
+harvest: When tops yellow and fall over (6–8 months). Dry in the sun for a week before storing.
+Kitchen: Everything savoury.
+Caution: Keep onion scraps away from pets.
+reminders: Plant Apr–Jun · weed regularly · lift when tops fall.
+task: 04-15 | Onion: plant seedlings | Choose short-day varieties. | |
+task: 11-15 | Onion: check for harvest | Lift when tops fall over; cure in sun. | |
+
+@ Garlic
+botanical: Allium sativum
+group: Vegetables
+summary: Planted from cloves in autumn and harvested in early summer. Easy and rewarding.
+pets: Toxic to dogs and cats in all forms.
+people: Can irritate skin of sensitive people when handled in quantity.
+glance: Full sun | Moderate | 10–15 cm | 20 cm | No
+Position: Full sun.
+Soil: Well-drained soil with compost.
+Water: Regular through winter and spring; stop a few weeks before harvest.
+Feeding: Light balanced feed in late winter.
+Care: Remove flower stalks (scapes) on hardneck types; they're edible.
+Pests: Rust in humid springs; few others.
+Propagation: Plant cloves pointy end up, 5 cm deep, March to May. Use Australian-grown seed garlic.
+harvest: When the lower third of leaves yellow, usually November–December. Dry bunches in the shade.
+Kitchen: Everything savoury. Scapes and green garlic are good in stir-fries.
+Traditional: Used for colds and general health.
+Caution: Keep away from pets.
+reminders: Plant Mar–May · harvest Nov–Dec.
+task: 04-01 | Garlic: plant cloves | Pointy end up, 5 cm deep. | |
+task: 11-15 | Garlic: check for harvest | Lift when lower leaves yellow. | |
+
+@ Spring Onion
+botanical: Allium fistulosum
+group: Vegetables
+aka: shallots, scallions, green onion, welsh onion
+summary: Perennial onion grown for its green stems. Grows year-round and regrows after cutting.
+pets: Toxic to dogs and cats.
+people: None known.
+glance: Sun to part shade | Regular | 5–10 cm | 15 cm | Good on a sunny windowsill
+Position: Sun to part shade.
+Soil: Rich soil with compost.
+Water: Regular.
+Feeding: Liquid feed monthly.
+Care: Cut stems 3 cm above the base and they regrow. Divide clumps every year.
+Propagation: Seed year-round, or replant the root ends from shop-bought bunches.
+harvest: From 8 weeks; cut as needed.
+Kitchen: Garnish, stir-fries, salads, pancakes.
+Caution: Keep away from pets.
+reminders: Cut as needed · feed monthly.
+task: 11-01 | Spring onion: liquid feed | | FREQ=MONTHLY | 6
+
+@ Leek
+botanical: Allium ampeloprasum (Porrum group)
+group: Vegetables
+aka: leeks
+summary: Mild onion relative with long white stems, grown through autumn and winter.
+pets: Toxic to dogs and cats.
+people: None known.
+glance: Full sun | Regular | 15 cm | 30 cm deep | No
+Position: Full sun.
+Soil: Rich, deep soil with compost.
+Water: Regular.
+Feeding: Nitrogen-rich liquid feed every 3 weeks.
+Care: Plant seedlings in deep holes and hill soil around stems to blanch them white.
+Pests: Rust, thrips.
+Propagation: Plant seedlings February to May.
+harvest: From 4–5 months when stems are 2–3 cm thick.
+Kitchen: Soups, pies, braises.
+Caution: Keep away from pets.
+reminders: Plant Feb–May · hill up · feed every 3 weeks.
+task: 02-20 | Leek: plant seedlings deep | | |
+
+@ Peas
+botanical: Pisum sativum
+group: Vegetables
+aka: pea, garden peas, sugar snap
+summary: Cool-season climbing legume. Sugar snaps are eaten pod and all.
+pets: None known.
+people: None known. (Sweet peas, the flower, are a different, toxic plant.)
+glance: Full sun | Moderate | 5 cm | 25 cm | No
+Position: Full sun.
+Soil: Well-drained soil; add lime to acidic soil. Don't over-fertilise.
+Water: Moderate; avoid wetting leaves.
+Feeding: Little needed; peas fix their own nitrogen.
+Support: A 1.5 m trellis or netting for climbing types.
+Pests: Powdery mildew late in the season; birds on seedlings.
+Propagation: Sow seed direct March to July. Don't soak; seed rots in cold, wet soil.
+harvest: Pick often from 10–12 weeks while pods are plump and sweet.
+Kitchen: Fresh, steamed, stir-fries.
+Garden: Leaves nitrogen in the soil for the next crop; dig spent plants in.
+reminders: Sow Mar–Jul · trellis · pick often.
+task: 04-01 | Peas: sow seed and set up trellis | | |
+
+@ Snow Peas
+botanical: Pisum sativum var. saccharatum
+group: Vegetables
+aka: snow pea, mangetout
+summary: Flat-podded pea eaten whole. Climbing types crop for weeks through winter and spring.
+pets: None known.
+people: None known.
+glance: Full sun | Moderate | 5 cm | 25 cm | No
+Position: Full sun.
+Soil: Well-drained soil with a little lime.
+Water: Moderate.
+Feeding: Little needed.
+Support: Trellis 1.5–2 m for climbing types.
+Pests: Powdery mildew, birds.
+Propagation: Sow seed direct March to July.
+harvest: Pick flat pods before seeds swell, every couple of days.
+Kitchen: Stir-fries, salads, steamed.
+reminders: Sow Mar–Jul · pick every 2 days.
+task: 04-01 | Snow peas: sow seed | | |
+
+@ Bush Beans
+botanical: Phaseolus vulgaris
+group: Vegetables
+aka: green beans, french beans, dwarf beans, beans
+summary: Compact warm-season bean, 40–60 cm, that crops quickly with no support.
+pets: Raw beans can upset pets' stomachs; cooked plain beans are fine.
+people: Don't eat dry beans raw; they must be boiled.
+glance: Full sun | Regular | 15 cm | 25 cm | No
+Position: Full sun, sheltered.
+Soil: Well-drained soil; no extra nitrogen needed.
+Water: Regular, especially while flowering.
+Feeding: Light potash feed at flowering.
+Care: Sow every 4 weeks for a steady supply.
+Pests: Bean fly, two-spotted mite, rust in humidity.
+Propagation: Sow seed direct September to February into warm soil.
+harvest: Pick young pods from 8–10 weeks, every few days.
+Kitchen: Steamed, stir-fries, salads.
+reminders: Sow every 4 weeks Sep–Feb · pick every few days.
+task: 11-01 | Bush beans: sow a row | | FREQ=WEEKLY;INTERVAL=4 | 4
+
+@ Climbing Beans
+botanical: Phaseolus vulgaris / P. coccineus
+group: Vegetables
+aka: runner beans, pole beans, scarlet runner
+summary: Vigorous climbers to 2–3 m that crop for months. Scarlet runners have showy red flowers.
+pets: Raw beans can upset pets' stomachs.
+people: Don't eat dry beans raw; they must be boiled.
+glance: Full sun | Regular | 15 cm | 40 cm | No
+Position: Full sun against a fence or teepee.
+Soil: Well-drained soil with compost.
+Water: Regular, especially while flowering.
+Feeding: Light potash feed at flowering.
+Support: Strong trellis, strings or teepee 2 m+.
+Pests: Bean fly, mites, rust.
+Propagation: Sow seed direct September to January.
+harvest: Pick young pods often from 10–12 weeks; picking keeps them producing.
+Kitchen: Steamed, stir-fries.
+Garden: Summer screen.
+reminders: Sow Sep–Jan · pick often.
+task: 10-15 | Climbing beans: sow seed | Set up supports first. | |
+
+@ Sweet Corn
+botanical: Zea mays var. saccharata
+group: Vegetables
+aka: corn, maize
+summary: Tall warm-season grass, 1.5–2 m, grown in blocks for wind pollination.
+pets: Cobs are a choking and bowel-blockage risk for dogs; keep cobs away.
+people: None known.
+glance: Full sun | Deep, regular | 25–30 cm in blocks | Not suited | No
+Position: Full sun. Plant in a block of at least 4 × 4, not a single row, for pollination.
+Soil: Rich soil with compost and manure.
+Water: Deep, regular watering, especially when tassels appear.
+Feeding: Nitrogen-rich feed every 3 weeks.
+Pests: Corn earworm, birds, possums.
+Propagation: Sow seed direct October to January.
+harvest: About 3 weeks after silks appear, when silks brown and kernels squirt milky juice.
+Kitchen: Boiled, grilled, salads, fritters.
+Caution: Keep cobs away from dogs.
+reminders: Sow in blocks Oct–Jan · feed every 3 weeks · check silks.
+task: 10-15 | Sweet corn: sow in a block | | |
+task: 01-10 | Sweet corn: check cobs | Ripe when silks brown and kernels are milky. | FREQ=WEEKLY | 2
+
+@ Asparagus
+botanical: Asparagus officinalis
+group: Vegetables
+summary: Long-lived perennial that sends up spears each spring for 15+ years once established.
+pets: Red berries on female plants can upset pets' stomachs.
+people: Berries are not edible.
+glance: Full sun | Moderate | 40 cm | Not suited | No
+Position: Full sun in a permanent bed.
+Soil: Deep, well-drained soil with lots of compost.
+Water: Moderate; regular in spring.
+Feeding: Compost and manure each winter.
+Care: Don't harvest the first year and only lightly the second. Let ferns grow after harvest season.
+Winter: Cut yellow ferns to the ground in late autumn and mulch.
+Propagation: Plant crowns in winter.
+harvest: Snap spears at 15–20 cm from September to November in year three onwards.
+Kitchen: Steamed, grilled, quiche.
+reminders: Plant crowns in winter · cut ferns in late autumn · harvest spring.
+task: 07-15 | Asparagus: feed bed | Top-dress with compost and manure. | |
+task: 05-15 | Asparagus: cut back ferns | | |
+
+@ Rhubarb
+botanical: Rheum × hybridum
+group: Vegetables
+summary: Perennial with tart red stalks used like fruit. Crops for years from one crown.
+pets: Leaves are toxic to dogs, cats and livestock (oxalates).
+people: Leaves are poisonous; eat only the stalks.
+glance: Full sun to part shade | Regular | 1 m | 50 cm | No
+Position: Sun, with afternoon shade in hot areas.
+Soil: Rich, well-drained soil with plenty of manure.
+Water: Regular; doesn't like to dry out.
+Feeding: Manure or compost in spring and autumn.
+Care: Remove flower stalks so energy goes to leaves.
+Propagation: Plant crowns in winter; divide every 4–5 years.
+harvest: Pull (don't cut) stalks from the base once established, leaving at least a third of the plant.
+Kitchen: Crumbles, pies, jam, stewed.
+Caution: Discard leaves; they're poisonous.
+reminders: Feed spring and autumn · remove flowers · pull stalks.
+task: 09-01 | Rhubarb: feed | Manure or compost around the crown. | |
+
+@ Celery
+botanical: Apium graveolens var. dulce
+group: Vegetables
+summary: Slow, thirsty crop that needs constant moisture. Self-blanching types are easiest.
+pets: None known.
+people: Handling in sunlight can cause skin sensitivity in rare cases.
+glance: Sun to part shade | Constantly moist | 25–30 cm | 30 cm | No
+Position: Sun to part shade.
+Soil: Very rich, moisture-holding soil.
+Water: Never let it dry out; stringy, bitter stalks mean thirst.
+Feeding: Liquid feed every 2 weeks.
+Pests: Leaf spot, slugs.
+Propagation: Plant seedlings August to March.
+harvest: From 14–16 weeks; pick outer stalks or cut the whole plant.
+Kitchen: Soups, stocks, salads, snacking.
+reminders: Water often · feed fortnightly.
+task: 11-01 | Celery: liquid feed | | FREQ=WEEKLY;INTERVAL=2 | 4
+
+@ Bok Choy
+botanical: Brassica rapa subsp. chinensis
+group: Vegetables
+aka: pak choy, pak choi
+summary: Fast Asian green ready in 6–8 weeks. Best in the cooler months.
+pets: None known.
+people: None known.
+glance: Sun to part shade | Keep moist | 20 cm | 20 cm | No
+Position: Sun in winter, part shade in summer.
+Soil: Rich soil with compost.
+Water: Keep moist; dryness causes bolting.
+Feeding: Liquid feed every 2 weeks.
+Pests: Cabbage white caterpillars, aphids, slugs.
+Propagation: Sow seed or plant seedlings February to October.
+harvest: Cut whole heads at 6–8 weeks or pick outer leaves.
+Kitchen: Stir-fries, soups, steamed with oyster sauce.
+reminders: Sow every few weeks Feb–Oct.
+task: 03-01 | Bok choy: sow | | FREQ=WEEKLY;INTERVAL=4 | 6
+
+@ Rocket
+botanical: Eruca vesicaria subsp. sativa
+group: Vegetables
+aka: arugula
+summary: Peppery salad green that grows fast and self-seeds. Wild rocket is a longer-lived perennial.
+pets: None known.
+people: None known.
+glance: Sun to part shade | Keep moist | 15 cm | 15 cm | Good under a grow light
+Position: Sun in winter, part shade in summer.
+Soil: Any reasonable soil.
+Water: Keep moist for mild leaves.
+Feeding: Light liquid feed monthly.
+Care: Pick often; flowers are edible but leaves get hotter once it bolts.
+Pests: Flea beetle, aphids.
+Propagation: Sow seed year-round.
+harvest: Pick leaves from 4 weeks.
+Kitchen: Salads, pizza, pesto.
+reminders: Sow every 4 weeks · pick often.
+task: 11-01 | Rocket: sow | | FREQ=WEEKLY;INTERVAL=4 | 10

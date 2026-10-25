@@ -1,0 +1,448 @@
+# Ready-made guides: Australian natives and indoor plants.
+
+@ Grevillea
+botanical: Grevillea spp.
+group: Natives
+aka: grevilleas, spider flower
+summary: Hardy native shrubs and groundcovers with nectar-rich flowers for much of the year. Sizes from 30 cm to 5 m.
+pets: Generally low risk; some hybrids' foliage can irritate.
+people: Some hybrids (such as 'Robyn Gordon') can cause skin rashes; wear gloves and long sleeves when pruning.
+glance: Full sun | Low once established | 1–2 m (varies) | 40 cm (compact types) | No
+Position: Full sun with good drainage.
+Soil: Well-drained, even poor or sandy soil.
+Water: Regular for the first year, then only in long dry spells.
+Feeding: Low-phosphorus native fertiliser only, if at all; regular fertilisers can kill them.
+Pruning: Tip prune after flowering to keep it bushy.
+Pests: Few; root rot in wet soil.
+Propagation: Cuttings or grafted plants.
+harvest: Not harvested.
+Garden: Feeds honeyeaters and bees; good screens and groundcovers.
+Caution: Wear gloves when pruning.
+reminders: Tip prune after flowering · native fertiliser only.
+task: 11-01 | Grevillea: tip prune | | |
+
+@ Bottlebrush
+botanical: Callistemon spp. (now Melaleuca)
+group: Natives
+aka: callistemon, bottlebrushes
+summary: Tough native shrubs, 1–4 m, with red, pink or white brush flowers in spring and autumn.
+pets: Non-toxic.
+people: None known.
+glance: Full sun | Low to moderate | 1.5 m | 40 cm (dwarf types) | No
+Position: Full sun; handles wind and wet spots.
+Soil: Most soils, including heavy and damp ones.
+Water: Low once established.
+Feeding: Native fertiliser in spring.
+Pruning: Cut off spent flowers just behind the brush for more blooms and a denser shape.
+Pests: Sawfly larvae, webbing caterpillars.
+Propagation: Cuttings.
+harvest: Not harvested.
+Garden: Nectar for birds and bees; hedges and screens.
+reminders: Prune after flowering · native feed in spring.
+task: 11-15 | Bottlebrush: prune spent flowers | | |
+
+@ Kangaroo Paw
+botanical: Anigozanthos spp.
+group: Natives
+aka: kangaroo paws
+summary: Strappy native perennial with velvety paw-shaped flowers in spring and summer. Dwarf types suit pots.
+pets: Non-toxic.
+people: Fine hairs can irritate sensitive skin.
+glance: Full sun | Low | 50 cm | 30 cm | No
+Position: Full sun with good airflow.
+Soil: Very well-drained, sandy soil; ideal for the peninsula.
+Water: Low; water at the base.
+Feeding: Native fertiliser in spring.
+Pruning: Cut flower stems to the base after flowering; cut old leaves back in late winter.
+Pests: Ink disease (black leaves) in humid conditions; remove affected leaves.
+Propagation: Division.
+harvest: Cut flowers last well in vases.
+Garden: Nectar for honeyeaters.
+reminders: Cut back after flowering and in late winter.
+task: 08-15 | Kangaroo paw: cut back old leaves | | |
+task: 01-15 | Kangaroo paw: remove spent flower stems | | |
+
+@ Lilly Pilly
+botanical: Syzygium spp.
+group: Natives
+aka: lillypilly, lilly pillies
+summary: Dense native rainforest shrubs and trees with colourful new growth and edible berries. Popular hedges.
+pets: None widely known; berries are edible.
+people: None known.
+glance: Sun to part shade | Regular | 1 m (hedge) | 50 cm+ | No
+Position: Sun to part shade.
+Soil: Well-drained soil with compost.
+Water: Regular while establishing.
+Feeding: Native fertiliser in spring.
+Pruning: Clip in spring and summer for a dense hedge.
+Pests: Psyllids cause pimply leaves; choose resistant varieties such as 'Resilience'.
+Propagation: Cuttings.
+harvest: Pick ripe berries in autumn and winter.
+Kitchen: Jam, jelly, cordial.
+Garden: Hedges, screens, birds.
+reminders: Clip spring and summer · feed in spring.
+task: 10-15 | Lilly pilly: clip hedge | | FREQ=MONTHLY | 4
+
+@ Westringia
+botanical: Westringia fruticosa
+group: Natives
+aka: coastal rosemary, native rosemary
+summary: Grey-green native shrub, 1–2 m, with small white or mauve flowers. One of the toughest coastal plants.
+pets: Non-toxic.
+people: None known.
+glance: Full sun | Low | 1 m | 40 cm | No
+Position: Full sun; handles salt spray and wind.
+Soil: Well-drained, sandy soil.
+Water: Low once established.
+Feeding: Rarely.
+Pruning: Clip a few times a year for a hedge or ball shape.
+Pests: Few.
+Propagation: Cuttings.
+harvest: Not harvested.
+Garden: Front-line coastal hedge.
+reminders: Clip a few times a year.
+task: 11-01 | Westringia: clip | | |
+
+@ Lomandra
+botanical: Lomandra longifolia
+group: Natives
+aka: mat rush, spiny-headed mat-rush
+summary: Tough native grass-like clump, 60 cm–1 m. Handles sun, shade, drought and wet.
+pets: Non-toxic.
+people: Leaves have sharp edges.
+glance: Sun to shade | Low | 60 cm | 30 cm | No
+Position: Almost anywhere.
+Soil: Any soil.
+Water: Low once established.
+Feeding: Not needed.
+Pruning: Cut back hard every few years in late winter to refresh.
+Pests: Few.
+Propagation: Division.
+harvest: Not harvested.
+Garden: Mass planting, banks, erosion control.
+reminders: Cut back every few years in late winter.
+task: 08-15 | Lomandra: tidy dead leaves | | |
+
+@ Banksia
+botanical: Banksia spp.
+group: Natives
+aka: banksias, coast banksia
+summary: Iconic native shrubs and trees with candle flower spikes. Coast banksia handles sand and salt.
+pets: Non-toxic.
+people: None known.
+glance: Full sun | Low | 2–3 m (varies) | 50 cm (dwarf types) | No
+Position: Full sun.
+Soil: Very well-drained, sandy, low-phosphorus soil.
+Water: Low once established.
+Feeding: Low-phosphorus native fertiliser only, sparingly.
+Pruning: Light tip prune; avoid cutting into old wood.
+Pests: Root rot in wet soil.
+Propagation: Seed or buy plants.
+harvest: Old cones are decorative.
+Garden: Nectar for birds and possums; coastal gardens.
+reminders: Native feed sparingly in spring.
+task: 09-15 | Banksia: light native feed | | |
+
+@ Correa
+botanical: Correa spp.
+group: Natives
+aka: native fuchsia, correas
+summary: Compact native shrub, 0.5–1.5 m, with bell flowers through autumn and winter when little else flowers.
+pets: Non-toxic.
+people: None known.
+glance: Part shade | Low | 1 m | 30 cm | No
+Position: Dappled shade or morning sun.
+Soil: Well-drained soil.
+Water: Low once established.
+Feeding: Light native feed in spring.
+Pruning: Light trim after flowering.
+Pests: Few.
+Propagation: Cuttings.
+harvest: Not harvested.
+Garden: Winter nectar for honeyeaters; shade gardens.
+reminders: Trim after flowering in spring.
+task: 10-01 | Correa: trim | | |
+
+@ Finger Lime
+botanical: Citrus australasica
+group: Natives
+aka: finger limes, citrus caviar
+summary: Thorny native citrus shrub, 2–4 m, with finger-shaped fruit full of juicy pearls.
+pets: Leaves and peel can upset pets' stomachs.
+people: Very sharp thorns; wear gloves.
+glance: Sun to part shade | Regular | 2 m | 40 cm | No
+Position: Sun to part shade, sheltered.
+Soil: Well-drained soil with compost.
+Water: Regular.
+Feeding: Citrus fertiliser in spring and late summer.
+Pruning: Shape lightly; wear gloves.
+Pests: Citrus pests such as scale and leaf miner.
+Propagation: Grafted plants fruit sooner.
+harvest: Pick when fruit comes away easily, usually summer to autumn.
+Kitchen: Seafood, drinks, desserts.
+reminders: Citrus feed spring and late summer.
+task: 09-01 | Finger lime: citrus feed | | |
+task: 02-15 | Finger lime: citrus feed | | |
+
+@ Warrigal Greens
+botanical: Tetragonia tetragonioides
+group: Natives
+aka: warrigal spinach, new zealand spinach
+summary: Sprawling native leafy green that thrives in heat, sand and salt where English spinach bolts.
+pets: High oxalate leaves can upset pets in quantity.
+people: Blanch leaves in boiling water for a minute and discard the water before eating, to remove oxalates.
+glance: Full sun | Low to moderate | 60 cm | 30 cm | No
+Position: Full sun; loves coastal conditions.
+Soil: Any soil, including sand.
+Water: Moderate for tender leaves.
+Feeding: Light feed occasionally.
+Spreading: Sprawls and self-seeds.
+Propagation: Seed or cuttings.
+harvest: Pick tips and young leaves any time.
+Kitchen: Blanched, then used like spinach in pies, pasta and stir-fries.
+reminders: Pick tips often · blanch before eating.
+task: 11-01 | Warrigal greens: pick tips | | |
+
+@ Monstera
+botanical: Monstera deliciosa
+group: Indoor plants
+aka: swiss cheese plant, fruit salad plant
+summary: Big-leaved climbing aroid. Grows indoors in bright light or outdoors in shade on the coast.
+pets: Toxic to dogs and cats; causes mouth pain and drooling if chewed.
+people: Sap irritates skin and mouth. Unripe fruit is irritant.
+glance: Bright indirect light | Moderate | 1 m | 30 cm+ | Good
+Indoors: Bright, indirect light; no harsh afternoon sun through glass.
+Soil: Chunky, free-draining indoor potting mix.
+Water: When the top 5 cm is dry; less in winter.
+Feeding: Liquid indoor plant food monthly in spring and summer.
+Support: Moss pole for climbing and bigger leaves.
+Care: Wipe dust off leaves. Repot every 2 years.
+Pests: Mealybug, scale, spider mites.
+Propagation: Stem cuttings with a node and aerial root.
+harvest: Fruit on mature outdoor plants is edible only when fully ripe.
+Home: Statement indoor plant.
+Caution: Keep away from pets and children.
+reminders: Water when top 5 cm dry · feed monthly in warm months.
+task: 10-01 | Monstera: feed | | FREQ=MONTHLY | 6
+
+@ Peace Lily
+botanical: Spathiphyllum spp.
+group: Indoor plants
+aka: spathiphyllum
+summary: Easy indoor plant with white flowers that tolerates low light. Droops dramatically when thirsty.
+pets: Toxic to dogs and cats; causes mouth irritation and drooling. (Not a true lily.)
+people: Sap irritates skin and mouth.
+glance: Low to bright indirect light | Keep moist | 40 cm | 20 cm | Good
+Indoors: Low to bright indirect light; flowers better in brighter spots.
+Soil: Indoor potting mix.
+Water: Keep slightly moist; water as soon as it starts to droop.
+Feeding: Half-strength liquid feed monthly in warm months.
+Care: Wipe leaves; brown tips mean dry air or tap-water salts.
+Pests: Mealybug, fungus gnats.
+Propagation: Division.
+harvest: Not harvested.
+Home: Easy-care indoor plant.
+Caution: Keep away from pets.
+reminders: Water when droopy · feed monthly in warm months.
+task: 10-01 | Peace lily: feed | | FREQ=MONTHLY | 6
+
+@ Pothos
+botanical: Epipremnum aureum
+group: Indoor plants
+aka: devil's ivy, golden pothos
+summary: Trailing or climbing indoor vine that tolerates low light and neglect.
+pets: Toxic to dogs and cats if chewed.
+people: Sap irritates skin and mouth.
+glance: Low to bright indirect light | Moderate | Trailing | 15 cm | Good
+Indoors: Low to bright indirect light.
+Soil: Indoor potting mix.
+Water: When the top half of the mix is dry.
+Feeding: Liquid feed monthly in warm months.
+Pruning: Trim long vines to keep it bushy; cuttings root in water.
+Pests: Mealybug.
+Propagation: Stem cuttings in water.
+harvest: Not harvested.
+Home: Hanging baskets, shelves.
+Caution: Keep away from pets.
+reminders: Water when half dry · trim long vines.
+task: 10-01 | Pothos: feed | | FREQ=MONTHLY | 6
+
+@ Snake Plant
+botanical: Dracaena trifasciata
+group: Indoor plants
+aka: sansevieria, mother-in-law's tongue
+summary: Upright, nearly indestructible indoor plant that tolerates low light and drought.
+pets: Can upset dogs' and cats' stomachs if chewed.
+people: None known.
+glance: Low to bright light | Low | 30 cm | 15 cm | Good
+Indoors: Any light from low to bright.
+Soil: Cactus or succulent mix.
+Water: Only when completely dry; every 3–4 weeks, less in winter. Overwatering is the main killer.
+Feeding: Light feed twice a year.
+Pests: Root rot from overwatering.
+Propagation: Division or leaf cuttings.
+harvest: Not harvested.
+Home: Bedrooms and offices.
+reminders: Water only when dry.
+task: 10-01 | Snake plant: check soil and water | Only water when completely dry. | FREQ=WEEKLY;INTERVAL=3 | 12
+
+@ ZZ Plant
+botanical: Zamioculcas zamiifolia
+group: Indoor plants
+aka: zz, zanzibar gem
+summary: Glossy, drought-tolerant indoor plant that copes with low light.
+pets: Toxic to dogs and cats if chewed.
+people: Sap irritates skin; wash hands after handling.
+glance: Low to bright indirect light | Low | 40 cm | 20 cm | Good
+Indoors: Low to bright indirect light.
+Soil: Free-draining mix.
+Water: When fully dry, every 2–4 weeks.
+Feeding: Light feed in spring and summer.
+Pests: Root rot from overwatering.
+Propagation: Division or leaf cuttings (slow).
+harvest: Not harvested.
+Home: Low-light corners.
+Caution: Keep away from pets.
+reminders: Water when fully dry.
+task: 10-01 | ZZ plant: check soil | | FREQ=WEEKLY;INTERVAL=3 | 12
+
+@ Fiddle Leaf Fig
+botanical: Ficus lyrata
+group: Indoor plants
+summary: Indoor tree with big violin-shaped leaves. Likes bright light and hates being moved.
+pets: Sap can upset dogs' and cats' stomachs and irritate skin.
+people: Milky sap irritates skin.
+glance: Bright indirect light | Moderate | 1 m | 30 cm+ | Good
+Indoors: Very bright, indirect light near a window; keep away from draughts and air conditioning.
+Soil: Free-draining indoor mix.
+Water: When the top 5 cm is dry; less in winter.
+Feeding: Liquid feed monthly in warm months.
+Care: Wipe leaves; rotate a quarter turn monthly for even growth. Leaf drop usually means it was moved or overwatered.
+Pests: Scale, mealybug.
+Propagation: Cuttings or air layering.
+harvest: Not harvested.
+Home: Statement indoor tree.
+reminders: Water when top 5 cm dry · rotate monthly.
+task: 10-01 | Fiddle leaf fig: feed and rotate | | FREQ=MONTHLY | 6
+
+@ Spider Plant
+botanical: Chlorophytum comosum
+group: Indoor plants
+aka: spider plants
+summary: Easy, pet-friendly indoor plant with arching striped leaves and dangling baby plants.
+pets: Non-toxic to dogs and cats (cats may chew it).
+people: None known.
+glance: Bright indirect light | Moderate | 30 cm | 15 cm or hanging basket | Good
+Indoors: Bright, indirect light.
+Soil: Indoor potting mix.
+Water: When the top few cm are dry.
+Feeding: Liquid feed monthly in warm months.
+Care: Brown tips usually mean fluoride in tap water or dry air.
+Propagation: Pot up the baby plants (spiderettes).
+harvest: Not harvested.
+Home: Hanging baskets; a safe choice for homes with pets.
+reminders: Water when top dry · pot up babies.
+task: 10-01 | Spider plant: feed | | FREQ=MONTHLY | 6
+
+@ Rubber Plant
+botanical: Ficus elastica
+group: Indoor plants
+aka: rubber tree
+summary: Glossy-leaved indoor tree that's more forgiving than the fiddle leaf fig.
+pets: Sap can upset dogs' and cats' stomachs.
+people: Milky sap irritates skin.
+glance: Bright indirect light | Moderate | 1 m | 30 cm | Good
+Indoors: Bright, indirect light.
+Soil: Free-draining indoor mix.
+Water: When the top 5 cm is dry.
+Feeding: Liquid feed monthly in warm months.
+Pruning: Prune the top to make it branch; wear gloves.
+Pests: Scale, mealybug.
+Propagation: Cuttings or air layering.
+harvest: Not harvested.
+Home: Easy indoor tree.
+reminders: Water when top 5 cm dry · feed monthly in warm months.
+task: 10-01 | Rubber plant: feed | | FREQ=MONTHLY | 6
+
+@ Heartleaf Philodendron
+botanical: Philodendron hederaceum
+group: Indoor plants
+aka: philodendron, sweetheart plant
+summary: Fast trailing vine with heart-shaped leaves; one of the easiest indoor plants.
+pets: Toxic to dogs and cats if chewed.
+people: Sap irritates skin and mouth.
+glance: Low to bright indirect light | Moderate | Trailing | 15 cm | Good
+Indoors: Low to bright indirect light.
+Soil: Indoor potting mix.
+Water: When the top few cm are dry.
+Feeding: Liquid feed monthly in warm months.
+Pruning: Pinch long stems to keep it full.
+Pests: Mealybug, aphids.
+Propagation: Cuttings in water.
+harvest: Not harvested.
+Home: Shelves and hanging pots.
+Caution: Keep away from pets.
+reminders: Water when top dry · pinch long stems.
+task: 10-01 | Philodendron: feed | | FREQ=MONTHLY | 6
+
+@ Aloe Vera
+botanical: Aloe vera
+group: Indoor plants
+aka: aloe
+summary: Succulent with fleshy leaves whose gel soothes minor burns. Grows indoors or outdoors in sun.
+pets: Toxic to dogs and cats if eaten; causes vomiting and diarrhoea.
+people: The yellow latex under the skin is a strong laxative; use only the clear gel on skin.
+glance: Bright light to full sun | Low | 40 cm | 20 cm | Good on a sunny windowsill
+Indoors: Brightest window available.
+Position: Outdoors in full sun to part shade.
+Soil: Cactus and succulent mix.
+Water: Only when completely dry.
+Feeding: Light feed in spring.
+Pests: Mealybug, root rot from overwatering.
+Propagation: Pot up offsets (pups).
+harvest: Cut an outer leaf and use the clear gel.
+Traditional: Gel soothes minor burns and sunburn.
+Home: Skin care.
+Caution: Don't eat it; keep away from pets.
+reminders: Water only when dry.
+task: 10-01 | Aloe vera: check soil | | FREQ=WEEKLY;INTERVAL=3 | 12
+
+@ Boston Fern
+botanical: Nephrolepis exaltata
+group: Indoor plants
+aka: sword fern
+summary: Lush, pet-safe fern for humid bathrooms, verandahs and hanging baskets.
+pets: Non-toxic to dogs and cats.
+people: None known.
+glance: Bright indirect light | Keep moist | 40 cm | 20 cm or hanging basket | Good
+Indoors: Bright, indirect light with humidity; bathrooms are ideal.
+Soil: Rich potting mix.
+Water: Keep evenly moist; mist in dry weather.
+Feeding: Half-strength liquid feed monthly in warm months.
+Care: Brown fronds mean dry air or dry soil; trim them off.
+Pests: Mealybug, scale.
+Propagation: Division.
+harvest: Not harvested.
+Home: Hanging baskets; pet-safe.
+reminders: Keep moist · mist in dry weather.
+task: 10-01 | Boston fern: feed | | FREQ=MONTHLY | 6
+
+@ Moth Orchid
+botanical: Phalaenopsis hybrids
+group: Indoor plants
+aka: phalaenopsis, orchid
+summary: Easy indoor orchid whose flower sprays last for months.
+pets: Non-toxic to dogs and cats.
+people: None known.
+glance: Bright indirect light | Low | 20 cm | 12 cm clear orchid pot | Good
+Indoors: Bright, indirect light; east window is ideal.
+Soil: Orchid bark, never potting mix.
+Water: When roots turn silvery, usually weekly; drain well. Never leave water in the crown.
+Feeding: Orchid fertiliser at quarter strength every 2 weeks.
+Care: After flowering, cut the spike above the second node for a second flush, or at the base to rest the plant.
+Pests: Mealybug, scale.
+Propagation: Keiki (baby plants) on flower spikes.
+harvest: Not harvested.
+Home: Long-lasting indoor flowers; pet-safe.
+reminders: Water when roots silver · weak feed fortnightly.
+task: 10-01 | Moth orchid: orchid feed | | FREQ=WEEKLY;INTERVAL=2 | 6

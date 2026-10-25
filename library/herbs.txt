@@ -1,0 +1,386 @@
+# Ready-made guides: kitchen herbs. Written for temperate and subtropical coastal Australia.
+
+@ Basil
+botanical: Ocimum basilicum
+group: Kitchen herbs
+aka: sweet basil, genovese basil
+summary: Fragrant warm-season annual, 40–60 cm. The classic partner for tomatoes; dies with the first cold snap.
+pets: None widely known; considered non-toxic to dogs and cats.
+glance: Full sun | Regular | 25–30 cm | 15 cm | Good on a sunny windowsill
+Position: Full sun, sheltered; morning sun and afternoon shade in heatwaves.
+Soil: Rich, well-drained soil or potting mix.
+Water: Keep evenly moist; water at the base in the morning.
+Feeding: Liquid feed every 2–3 weeks.
+Pruning: Pinch out tips and flower spikes weekly to keep it bushy and leafy.
+Pests: Snails on seedlings, downy mildew in humid weather, aphids.
+Winter: Annual; frost or cold nights below 10°C finish it.
+Propagation: Sow seed or plant seedlings October to January. Tip cuttings root in water.
+harvest: Pick tips from 6 weeks, just above a pair of leaves.
+Kitchen: Pesto, caprese, pasta, pizza, Thai and Italian cooking.
+Garden: Flowers attract bees; plant near tomatoes.
+reminders: Plant Oct–Jan · pinch tips weekly · feed every 3 weeks.
+task: 10-15 | Basil: plant seedlings | | |
+task: 11-07 | Basil: pinch out flowers | Pinch tips and flower spikes. | FREQ=WEEKLY | 4
+
+@ Thai Basil
+botanical: Ocimum basilicum var. thyrsiflora
+group: Kitchen herbs
+summary: Aniseed-flavoured basil with purple stems and flowers. Tougher in heat than sweet basil.
+pets: None widely known; considered non-toxic to dogs and cats.
+glance: Full sun | Regular | 30 cm | 15 cm | Good on a sunny windowsill
+Position: Full sun.
+Soil: Rich, well-drained soil.
+Water: Keep evenly moist.
+Feeding: Liquid feed every 3 weeks.
+Pruning: Pinch tips regularly; let a few flowers open for bees.
+Pests: Snails, aphids.
+Winter: Annual or short-lived perennial in frost-free spots.
+Propagation: Seed or seedlings October to January; cuttings root easily.
+harvest: Pick tips and leaves from 6 weeks.
+Kitchen: Thai curries, pho, stir-fries, salads.
+Garden: Attractive flowers for bees.
+reminders: Plant Oct–Jan · pinch tips · feed every 3 weeks.
+task: 10-15 | Thai basil: plant seedlings | | |
+
+@ Parsley
+botanical: Petroselinum crispum
+group: Kitchen herbs
+aka: curly parsley, flat-leaf parsley, italian parsley
+summary: Biennial herb grown for leaves. Flat-leaf has more flavour; curly is the classic garnish.
+pets: Can cause skin sensitivity to sunlight in pets that eat large amounts.
+people: None known in culinary amounts. Avoid large medicinal doses in pregnancy.
+glance: Sun to part shade | Regular | 20 cm | 15 cm | Good on a bright windowsill
+Position: Sun to part shade.
+Soil: Rich, moist soil with compost.
+Water: Keep evenly moist.
+Feeding: Liquid feed monthly.
+Care: Pick outer stems; remove flower stalks in its second year, or let it seed.
+Pests: Few; aphids occasionally. Food plant for swallowtail caterpillars.
+Propagation: Seed is slow (3–4 weeks) — soak overnight. Or plant seedlings year-round.
+harvest: Pick outer stems from 8 weeks.
+Kitchen: Tabbouleh, gremolata, sauces, garnish.
+Garden: Flowers attract beneficial insects.
+reminders: Pick outer stems · feed monthly · resow yearly.
+task: 11-01 | Parsley: liquid feed | | FREQ=MONTHLY | 6
+
+@ Coriander
+botanical: Coriandrum sativum
+group: Kitchen herbs
+aka: cilantro
+summary: Fast annual herb that bolts quickly in heat. Best in autumn, winter and early spring.
+pets: None widely known.
+glance: Part shade in summer, sun in winter | Keep moist | 15 cm | 20 cm deep | Possible
+Position: Full sun in cool months; afternoon shade otherwise.
+Soil: Well-drained soil with compost.
+Water: Keep moist; dryness triggers bolting.
+Feeding: Light liquid feed every 3 weeks.
+Care: Sow small batches every 3–4 weeks. Slow-bolt varieties help.
+Pests: Aphids.
+Propagation: Sow seed direct (it dislikes transplanting); lightly crush seed first.
+harvest: Pick leaves from 5–6 weeks. Seeds and green seed pods are also used.
+Kitchen: Thai, Mexican, Indian and Vietnamese dishes; seeds as spice.
+Garden: Flowers attract hoverflies.
+reminders: Sow every 3–4 weeks in cool months.
+task: 03-15 | Coriander: sow | | FREQ=WEEKLY;INTERVAL=4 | 7
+
+@ Mint
+botanical: Mentha spp.
+group: Kitchen herbs
+aka: spearmint, peppermint
+summary: Vigorous perennial that spreads by runners. Grow in a pot to keep it contained.
+pets: Can upset dogs' and cats' stomachs in large amounts.
+people: Peppermint oil can trigger reflux; pennyroyal (a mint) is toxic and should not be eaten.
+glance: Sun to part shade | Keep moist | 30 cm | 25 cm | Good on a bright windowsill
+Position: Sun to part shade.
+Soil: Moist, rich soil.
+Water: Keep moist; it wilts fast when dry.
+Feeding: Liquid feed monthly.
+Spreading: Very invasive in beds. Use a pot, or sink a bottomless bucket into the ground.
+Pruning: Cut back hard after flowering for fresh leaves.
+Pests: Rust (remove affected stems), aphids.
+Winter: Dies back in cold areas; regrows in spring.
+Propagation: Division or cuttings, which root in water.
+harvest: Pick stems any time.
+Kitchen: Tea, mojitos, salads, sauces, desserts.
+Traditional: Tea for indigestion.
+reminders: Cut back after flowering · feed monthly · keep contained.
+task: 01-15 | Mint: cut back hard | | |
+
+@ Chives
+botanical: Allium schoenoprasum
+group: Kitchen herbs
+summary: Perennial clump of mild onion-flavoured leaves with edible purple flowers.
+pets: Toxic to dogs and cats, like all onions.
+glance: Sun to part shade | Regular | 20 cm | 15 cm | Good on a sunny windowsill
+Position: Sun to part shade.
+Soil: Rich, well-drained soil.
+Water: Regular.
+Feeding: Liquid feed monthly in the growing season.
+Care: Cut to 5 cm a few times a season for fresh growth. Divide every 2–3 years.
+Pests: Few.
+Winter: May die back; regrows in spring.
+Propagation: Seed or division.
+harvest: Snip leaves from the base as needed.
+Kitchen: Eggs, potatoes, dips, soups. Flowers in salads.
+Garden: Flowers attract bees.
+Caution: Keep away from pets.
+reminders: Cut back regularly · divide every few years.
+task: 11-01 | Chives: cut back and feed | | FREQ=MONTHLY | 5
+
+@ Garlic Chives
+botanical: Allium tuberosum
+group: Kitchen herbs
+aka: chinese chives
+summary: Flat-leaved perennial with a mild garlic flavour and white flowers. Very hardy.
+pets: Toxic to dogs and cats, like all onions.
+glance: Sun to part shade | Regular | 20 cm | 15 cm | Good on a sunny windowsill
+Position: Sun to part shade.
+Soil: Any reasonable soil.
+Water: Regular.
+Feeding: Liquid feed monthly.
+Spreading: Self-seeds freely; deadhead to control.
+Care: Cut back to 5 cm for fresh leaves.
+Propagation: Seed or division.
+harvest: Cut leaves as needed.
+Kitchen: Dumplings, stir-fries, omelettes, pad thai.
+Garden: Bees love the flowers.
+Caution: Keep away from pets.
+reminders: Deadhead to stop seeding · cut back for fresh growth.
+task: 02-01 | Garlic chives: deadhead | | |
+
+@ Rosemary
+botanical: Salvia rosmarinus
+group: Kitchen herbs
+summary: Tough, drought-hardy evergreen shrub, 0.5–1.5 m, with blue flowers for bees. Prostrate types trail.
+pets: None widely known.
+people: Avoid large medicinal doses in pregnancy.
+glance: Full sun | Low once established | 60 cm | 30 cm | Poor
+Position: Full sun and good airflow. Handles wind and salt.
+Soil: Very well-drained, even poor or sandy soil. Hates wet feet.
+Water: Water in for the first month, then only in long dry spells.
+Feeding: Rarely needed.
+Pruning: Trim after flowering; don't cut into bare old wood.
+Pests: Few; root rot in wet soil.
+Propagation: Tip cuttings in spring or autumn.
+harvest: Snip sprigs any time.
+Kitchen: Roast lamb and potatoes, bread, oils.
+Garden: Low hedge; flowers feed bees in winter.
+Traditional: Associated with memory; used in hair rinses.
+reminders: Trim after flowering · water only when dry.
+task: 10-15 | Rosemary: trim after flowering | | |
+
+@ Thyme
+botanical: Thymus vulgaris
+group: Kitchen herbs
+aka: common thyme, lemon thyme
+summary: Small woody perennial, 20–30 cm, with tiny aromatic leaves. Lemon thyme is a popular variety.
+pets: None widely known.
+glance: Full sun | Low | 25 cm | 15 cm | Poor
+Position: Full sun, warm and dry.
+Soil: Very well-drained, gritty soil; ideal in sandy soil or between pavers.
+Water: Sparingly once established.
+Feeding: Not needed.
+Pruning: Trim lightly after flowering to keep it compact; replace every 3–4 years when woody.
+Pests: Root rot in heavy, wet soil.
+Propagation: Cuttings or layering.
+harvest: Snip sprigs any time.
+Kitchen: Roasts, stews, stuffings, soups.
+Garden: Flowers attract bees; good edging plant.
+reminders: Trim after flowering · keep on the dry side.
+task: 12-01 | Thyme: trim after flowering | | |
+
+@ Oregano
+botanical: Origanum vulgare
+group: Kitchen herbs
+aka: greek oregano
+summary: Spreading perennial herb, 30–45 cm, whose flavour is strongest in hot, dry conditions.
+pets: Can upset dogs' and cats' stomachs if eaten in quantity.
+glance: Full sun | Low | 30 cm | 20 cm | Possible on a sunny windowsill
+Position: Full sun.
+Soil: Well-drained, not too rich.
+Water: Moderate; allow to dry between waterings.
+Feeding: Rarely.
+Pruning: Cut back by half after flowering; cut to ground in late winter.
+Pests: Few.
+Propagation: Division or cuttings.
+harvest: Pick sprigs any time; dry bunches just before flowering for best flavour.
+Kitchen: Pizza, Greek and Italian dishes; dries well.
+Garden: Bees love the flowers.
+reminders: Cut back after flowering and in late winter.
+task: 08-15 | Oregano: cut back old stems | | |
+
+@ Sage
+botanical: Salvia officinalis
+group: Kitchen herbs
+aka: common sage, garden sage
+summary: Grey-leaved woody perennial, 50–60 cm. Dislikes humidity, so give it airflow.
+pets: None widely known in culinary amounts.
+people: Avoid large medicinal doses in pregnancy or with epilepsy.
+glance: Full sun | Low | 45 cm | 25 cm | Poor
+Position: Full sun with good airflow.
+Soil: Well-drained, gritty soil.
+Water: Allow to dry between waterings; wet humid summers can rot it.
+Feeding: Not needed.
+Pruning: Trim after flowering; replace every 3–4 years.
+Pests: Powdery mildew in humidity.
+Propagation: Cuttings in spring.
+harvest: Pick leaves any time.
+Kitchen: Burnt butter sauce, stuffing, pork.
+Traditional: Gargle for sore throats.
+reminders: Trim after flowering · keep dry.
+task: 12-01 | Sage: trim | | |
+
+@ Dill
+botanical: Anethum graveolens
+group: Kitchen herbs
+summary: Feathery annual, 60–90 cm, grown for leaves and seeds. Runs to seed quickly in heat.
+pets: None widely known.
+glance: Full sun | Regular | 20 cm | 25 cm deep | Poor
+Position: Full sun, sheltered from wind.
+Soil: Well-drained soil.
+Water: Keep moist.
+Feeding: Light liquid feed monthly.
+Care: Sow every 3–4 weeks; dislikes transplanting.
+Pests: Aphids.
+Propagation: Sow seed direct in spring and autumn.
+harvest: Pick leaves from 6 weeks; seed heads when brown.
+Kitchen: Fish, potatoes, pickles, tzatziki.
+Garden: Flowers attract hoverflies and ladybirds.
+reminders: Sow every 3–4 weeks spring and autumn.
+task: 09-15 | Dill: sow | | FREQ=WEEKLY;INTERVAL=4 | 3
+
+@ Bay Tree
+botanical: Laurus nobilis
+group: Kitchen herbs
+aka: bay leaf, bay laurel
+summary: Slow-growing evergreen tree that clips well into a hedge or potted topiary.
+pets: Leaves can upset dogs' and cats' stomachs if eaten.
+people: Remove whole leaves before eating; they're a choking hazard. Ornamental "laurels" are different, toxic plants.
+glance: Sun to part shade | Moderate | 1 m (hedge) | 40 cm+ | Poor
+Position: Sun to part shade, sheltered from hot wind.
+Soil: Well-drained soil with compost.
+Water: Moderate; water pots more often.
+Feeding: Slow-release fertiliser in spring.
+Pruning: Clip in spring and summer to shape.
+Pests: Scale and sooty mould; wipe leaves or spray horticultural oil.
+Propagation: Cuttings (slow).
+harvest: Pick leaves any time; dry flat for stronger flavour.
+Kitchen: Stocks, stews, soups, rice.
+Garden: Formal hedges and potted standards.
+reminders: Clip in spring · check for scale.
+task: 10-01 | Bay tree: clip and feed | | |
+
+@ Vietnamese Mint
+botanical: Persicaria odorata
+group: Kitchen herbs
+aka: rau ram, vietnamese coriander
+summary: Spicy, coriander-like herb that loves warmth and water. Spreads quickly.
+pets: None widely known.
+glance: Part shade | Keep wet | 30 cm | 20 cm | Good on a bright windowsill
+Position: Part shade; will grow in boggy spots.
+Soil: Rich, moist soil.
+Water: Never let it dry out; a saucer of water under the pot is fine.
+Feeding: Liquid feed monthly.
+Spreading: Spreads by runners; best in a pot.
+Winter: Dies back in cold; regrows in spring.
+Propagation: Cuttings root in water within days.
+harvest: Pick leaves any time.
+Kitchen: Laksa, Vietnamese salads, rice paper rolls.
+reminders: Keep wet · feed monthly.
+task: 11-01 | Vietnamese mint: feed | | FREQ=MONTHLY | 5
+
+@ Tarragon
+botanical: Artemisia dracunculus
+group: Kitchen herbs
+aka: french tarragon
+summary: Perennial with aniseed-flavoured leaves. True French tarragon is grown from cuttings, not seed.
+pets: Can upset dogs' and cats' stomachs if eaten in quantity.
+glance: Full sun | Moderate | 45 cm | 25 cm | Poor
+Position: Full sun to light shade.
+Soil: Well-drained soil.
+Water: Moderate; dislikes wet feet.
+Feeding: Light feed in spring.
+Pruning: Cut back to the ground in late autumn.
+Winter: Dies back; regrows in spring.
+Propagation: Division in spring.
+harvest: Pick leaves in spring and summer.
+Kitchen: Béarnaise, chicken, eggs, vinegar.
+reminders: Cut back in autumn · divide every 3 years.
+task: 05-01 | Tarragon: cut back | | |
+
+@ Marjoram
+botanical: Origanum majorana
+group: Kitchen herbs
+aka: sweet marjoram
+summary: Sweeter, milder relative of oregano. Short-lived perennial, 30 cm.
+pets: Can upset dogs' and cats' stomachs if eaten in quantity.
+glance: Full sun | Low | 25 cm | 15 cm | Possible on a sunny windowsill
+Position: Full sun.
+Soil: Well-drained soil.
+Water: Moderate.
+Feeding: Rarely.
+Pruning: Trim after flowering.
+Propagation: Seed or cuttings.
+harvest: Pick sprigs any time.
+Kitchen: Tomato sauces, sausages, eggs.
+reminders: Trim after flowering.
+task: 01-15 | Marjoram: trim | | |
+
+@ Ginger
+botanical: Zingiber officinale
+group: Kitchen herbs
+summary: Tropical perennial grown from rhizomes. Leafy stems to 1 m die back in winter.
+pets: None widely known.
+glance: Part shade | Regular in summer | 30 cm | 40 cm wide | Possible
+Position: Warm, part shade, sheltered.
+Soil: Rich, free-draining soil with compost.
+Water: Regular in the growing season; much less in winter.
+Feeding: Liquid feed every 3 weeks in summer.
+Winter: Dies back; keep dry so rhizomes don't rot.
+Propagation: Plant plump supermarket or seed ginger pieces with buds in spring.
+harvest: Young ginger from 4 months; mature rhizomes when leaves die down in late autumn.
+Kitchen: Stir-fries, curries, tea, baking.
+Traditional: Ginger tea for nausea.
+reminders: Plant in spring · harvest when leaves die back.
+task: 09-15 | Ginger: plant rhizomes | | |
+task: 05-15 | Ginger: harvest | Dig when leaves die down. | |
+
+@ Turmeric
+botanical: Curcuma longa
+group: Kitchen herbs
+summary: Ginger relative with orange rhizomes and showy flowers. Grows like ginger.
+pets: None widely known.
+people: Stains skin and benches orange.
+glance: Part shade | Regular in summer | 30 cm | 40 cm wide | Possible
+Position: Warm, part shade.
+Soil: Rich, well-drained soil.
+Water: Regular in summer; keep drier in winter.
+Feeding: Liquid feed every 3 weeks in summer.
+Winter: Dies back in winter.
+Propagation: Plant rhizome pieces in spring.
+harvest: When leaves yellow and die back, 8–10 months after planting.
+Kitchen: Curries, golden milk, rice.
+Traditional: Anti-inflammatory spice.
+reminders: Plant in spring · harvest in late autumn.
+task: 09-15 | Turmeric: plant rhizomes | | |
+
+@ Curry Leaf
+botanical: Murraya koenigii
+group: Kitchen herbs
+aka: curry tree
+summary: Small aromatic tree, 2–4 m, whose leaves flavour South Indian cooking. Frost tender.
+pets: Berries and seeds should not be eaten.
+people: Seeds are toxic; use leaves only.
+glance: Full sun to part shade | Moderate | 1.5 m | 40 cm+ | Possible
+Position: Warm, sheltered spot; frost tender.
+Soil: Well-drained soil.
+Water: Moderate; dry between waterings in winter.
+Feeding: Citrus or general fertiliser in spring and summer.
+Pruning: Prune to keep bushy; pinch off flowers if you want more leaves.
+Spreading: Suckers and self-seeds in warm areas.
+Pests: Scale, psyllids.
+Propagation: Suckers or fresh seed.
+harvest: Pick leaf stems any time.
+Kitchen: Dhal, curries, chutney; fry leaves in oil to release flavour.
+reminders: Feed in spring · prune for bushiness.
+task: 09-15 | Curry leaf: feed | | |
