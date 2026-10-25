@@ -1,0 +1,829 @@
+[
+  {
+    "slug": "chilli-bell-lantern",
+    "name": "Chilli Bell Lantern",
+    "group": "Chillies",
+    "botanical": "Capsicum baccatum",
+    "summary": "Mild-to-medium heat, bell-shaped fruit, 1–1.5 m tall. A long-lived perennial in frost-free peninsula gardens.",
+    "glance": {
+      "sun": "Full sun",
+      "water": "Regular, even",
+      "spacing": "50 cm",
+      "pot": "30 cm+",
+      "indoors": "Possible on a sunny enclosed verandah"
+    },
+    "growing": [
+      [
+        "Position",
+        "6+ hours of sun, sheltered from salty north-easterlies."
+      ],
+      [
+        "Soil",
+        "Rich and free-draining, pH 6–7. Dig compost and aged manure into peninsula sand; apply wetting agent."
+      ],
+      [
+        "Water",
+        "Deeply 2–3 times a week in summer and mulch well. Erratic watering causes flower drop."
+      ],
+      [
+        "Feeding",
+        "Potassium-rich liquid feed (tomato food) every 2 weeks once flowering. Go easy on nitrogen."
+      ],
+      [
+        "Support",
+        "Stake once it passes 50 cm."
+      ],
+      [
+        "Indoors",
+        "Hand-pollinate every couple of days while flowering."
+      ],
+      [
+        "Pests",
+        "Queensland fruit fly (bag or net fruit from December), aphids, whitefly."
+      ],
+      [
+        "Winter",
+        "Cut back by a third in late autumn; it regrows in spring."
+      ]
+    ],
+    "harvest": "From about 90 days. Pick green or wait for full red colour; regular picking keeps it producing.",
+    "uses": [
+      [
+        "Kitchen",
+        "Fruity flavour. Stuff whole, or use in salsas, chilli jam and pickles."
+      ],
+      [
+        "Home",
+        "Capsaicin is used in warming rubs."
+      ],
+      [
+        "Garden",
+        "Ornamental fruit; looks great in a large pot."
+      ]
+    ],
+    "reminders": "Water Mon/Wed/Fri · liquid feed every 2nd Sunday · fruit fly check on the 1st, Dec–Apr · stake 6 Dec · hand-pollinate if indoors · prune back mid-May.",
+    "calendar": false,
+    "tasks": [],
+    "added": "2026-10-25"
+  },
+  {
+    "slug": "chilli-long-red",
+    "name": "Chilli Long Red",
+    "group": "Chillies",
+    "botanical": "Capsicum annuum",
+    "summary": "Cayenne-type chilli, medium-hot, 60–90 cm tall. Crops heavily through summer and autumn.",
+    "glance": {
+      "sun": "Full sun",
+      "water": "Regular, even",
+      "spacing": "40 cm",
+      "pot": "25 cm+",
+      "indoors": "Good on a north-facing window"
+    },
+    "growing": [
+      [
+        "Position",
+        "Full sun, warm and sheltered from salt wind."
+      ],
+      [
+        "Soil",
+        "Rich and well-drained, pH 6–7. Improve peninsula sand with compost and manure."
+      ],
+      [
+        "Water",
+        "Keep evenly moist; let the top 2 cm dry between waterings. Mulch."
+      ],
+      [
+        "Feeding",
+        "Potassium-rich liquid feed every 2 weeks from first flowers."
+      ],
+      [
+        "Tip",
+        "Pinch out the first few flowers for a bushier, more productive plant."
+      ],
+      [
+        "Support",
+        "A single stake once laden with fruit."
+      ],
+      [
+        "Indoors",
+        "Hand-pollinate every couple of days while flowering."
+      ],
+      [
+        "Pests",
+        "Queensland fruit fly, aphids."
+      ],
+      [
+        "Winter",
+        "Overwinters outdoors on the peninsula if pruned back; crops best in its first two years."
+      ]
+    ],
+    "harvest": "From 70–90 days. Snip with scissors rather than pulling. Red fruit is hotter and sweeter than green.",
+    "uses": [
+      [
+        "Kitchen",
+        "Stir-fries, curries, hot sauce. Dries well for flakes and powder."
+      ],
+      [
+        "Home",
+        "Warming rubs; blended chilli-garlic spray deters chewing insects."
+      ],
+      [
+        "Garden",
+        "Compact, heavy cropper for pots."
+      ]
+    ],
+    "reminders": "Water Mon/Wed/Fri · liquid feed every 2nd Sunday · fruit fly check on the 1st, Dec–Apr · stake 6 Dec · hand-pollinate if indoors · prune back mid-May.",
+    "calendar": false,
+    "tasks": [],
+    "added": "2026-10-25"
+  },
+  {
+    "slug": "self-heal",
+    "name": "Self Heal",
+    "group": "Medicinal herbs",
+    "botanical": "Prunella vulgaris",
+    "summary": "Low spreading groundcover, 10–30 cm, with purple flower spikes from late spring to autumn. Very easy.",
+    "glance": {
+      "sun": "Part shade to sun",
+      "water": "Keep moist",
+      "spacing": "30 cm",
+      "pot": "15–20 cm",
+      "indoors": "Good in bright indirect light"
+    },
+    "growing": [
+      [
+        "Position",
+        "Part shade is ideal; full sun only if kept moist."
+      ],
+      [
+        "Soil",
+        "Moisture-retentive. Add plenty of compost to peninsula sand so it doesn't dry out."
+      ],
+      [
+        "Water",
+        "Keep consistently moist; it wilts fast in hot, dry spells."
+      ],
+      [
+        "Feeding",
+        "A handful of compost in spring is enough."
+      ],
+      [
+        "Care",
+        "Spreads by creeping stems. Trim after flowering for a tidy plant and a second flush."
+      ],
+      [
+        "Propagation",
+        "Divide clumps in autumn or spring."
+      ]
+    ],
+    "harvest": "Pick leaves and flowering tops in summer while in bloom.",
+    "uses": [
+      [
+        "Kitchen",
+        "Young leaves in salads or cooked as greens."
+      ],
+      [
+        "Traditional",
+        "Used as a mouthwash, gargle and wash for minor wounds."
+      ],
+      [
+        "Garden",
+        "Bee-friendly groundcover under taller plants."
+      ]
+    ],
+    "reminders": "Water Mon/Wed/Fri · indoor check Tue and Sat if potted inside.",
+    "calendar": false,
+    "tasks": [],
+    "added": "2026-10-25"
+  },
+  {
+    "slug": "calendula",
+    "name": "Calendula",
+    "group": "Kitchen herbs",
+    "botanical": "Calendula officinalis",
+    "summary": "Pot marigold. Annual, 40–60 cm, with orange or yellow edible flowers. Flowers best in cooler months but carries on into early summer.",
+    "glance": {
+      "sun": "Full sun",
+      "water": "Moderate",
+      "spacing": "30 cm",
+      "pot": "20 cm",
+      "indoors": "Possible with 6 hours direct sun"
+    },
+    "growing": [
+      [
+        "Position",
+        "Full sun; afternoon shade helps it last into summer."
+      ],
+      [
+        "Soil",
+        "Average, well-drained. Copes with sandy peninsula soil."
+      ],
+      [
+        "Water",
+        "Moderate. Water at the base to avoid mildew."
+      ],
+      [
+        "Feeding",
+        "Light liquid feed once a month."
+      ],
+      [
+        "Deadheading",
+        "Pick spent flowers every few days to keep it blooming."
+      ],
+      [
+        "Problems",
+        "Powdery mildew in humid weather. Improve airflow and remove affected leaves."
+      ],
+      [
+        "Next year",
+        "Let a few heads set seed; it self-sows for an autumn crop."
+      ]
+    ],
+    "harvest": "Pick fully open flowers in the morning. Dry petals on paper in the shade.",
+    "uses": [
+      [
+        "Kitchen",
+        "Petals in salads, rice, butter and as a garnish."
+      ],
+      [
+        "Home",
+        "Infused oil and balms for dry skin, minor cuts and nappy rash."
+      ],
+      [
+        "Garden",
+        "Draws hoverflies and bees; acts as a trap crop for aphids near the chillies."
+      ]
+    ],
+    "reminders": "Water Mon/Wed/Fri · deadhead Saturdays · snail checks to mid-Nov · save seed 7 Feb.",
+    "calendar": false,
+    "tasks": [],
+    "added": "2026-10-25"
+  },
+  {
+    "slug": "lemon-balm",
+    "name": "Lemon Balm",
+    "group": "Kitchen herbs",
+    "botanical": "Melissa officinalis",
+    "summary": "Lemon-scented mint relative forming a bushy clump 50–80 cm tall. Hardy and fast-growing.",
+    "glance": {
+      "sun": "Morning sun, afternoon shade",
+      "water": "Moderate",
+      "spacing": "45 cm",
+      "pot": "20 cm",
+      "indoors": "Good on a bright window"
+    },
+    "growing": [
+      [
+        "Position",
+        "Morning sun and afternoon shade; leaves scorch in harsh summer afternoons. Shelter from salt wind."
+      ],
+      [
+        "Soil",
+        "Moist and fertile. Add compost to sandy soil."
+      ],
+      [
+        "Water",
+        "Regularly in warm weather; tolerates short dry spells once established."
+      ],
+      [
+        "Feeding",
+        "Compost in spring only; heavy feeding weakens the flavour."
+      ],
+      [
+        "Care",
+        "Cut back by half in midsummer and again in late autumn."
+      ],
+      [
+        "Spreading",
+        "Self-seeds heavily. Trim off flowers before they set seed."
+      ],
+      [
+        "Indoors",
+        "Pinch tips often to keep it compact."
+      ]
+    ],
+    "harvest": "Pick leaves any time; best flavour just before flowering. Use fresh, or dry quickly in shade.",
+    "uses": [
+      [
+        "Kitchen",
+        "Tea, desserts, salads, cordials and iced water."
+      ],
+      [
+        "Traditional",
+        "Calming tea for stress, sleep and an upset stomach."
+      ],
+      [
+        "Garden",
+        "Strong bee attractant; the name Melissa means honey bee."
+      ],
+      [
+        "Caution",
+        "Check with a GP before medicinal use if pregnant or on thyroid or sedative medication."
+      ]
+    ],
+    "reminders": "Water Mon/Wed/Fri · pinch tips Saturdays · cut back 10 Jan and 9 May · indoor check Tue and Sat if potted inside.",
+    "calendar": false,
+    "tasks": [],
+    "added": "2026-10-25"
+  },
+  {
+    "slug": "french-lavender",
+    "name": "French Lavender",
+    "group": "Garden workhorses",
+    "botanical": "Lavandula dentata",
+    "summary": "Toothed grey-green leaves and flowers almost year-round; grows to about 1 m. Handles humidity and salty coastal air better than English lavender.",
+    "glance": {
+      "sun": "Full sun",
+      "water": "Low once established",
+      "spacing": "60 cm",
+      "pot": "30 cm",
+      "indoors": "Poor; use a sunny balcony"
+    },
+    "growing": [
+      [
+        "Position",
+        "Full sun and good airflow. A good windbreak for the windward side of the garden."
+      ],
+      [
+        "Soil",
+        "Sharply drained, slightly alkaline. Peninsula sand suits it; add a little garden lime. No rich compost."
+      ],
+      [
+        "Drainage",
+        "In low spots near Brisbane Water that stay wet after rain, plant on a mound or raised bed."
+      ],
+      [
+        "Water",
+        "Water in well for the first month, then only when dry. Wet roots are the main cause of death."
+      ],
+      [
+        "Feeding",
+        "Rarely; a light sprinkle of slow-release in spring at most."
+      ],
+      [
+        "Pruning",
+        "Trim lightly after each flush, removing spent spikes and a few cm of foliage. Never cut into bare old wood."
+      ],
+      [
+        "Mulch",
+        "Gravel, or keep organic mulch well away from the stem."
+      ]
+    ],
+    "harvest": "Cut stems when flowers are just opening; hang upside down in bunches to dry.",
+    "uses": [
+      [
+        "Kitchen",
+        "Flowers sparingly in baking and syrups; stronger and more camphor-like than English lavender."
+      ],
+      [
+        "Home",
+        "Dried sachets, bath soaks, linen spray and potpourri."
+      ],
+      [
+        "Garden",
+        "Bees and butterflies; a hardy low hedge."
+      ]
+    ],
+    "reminders": "Water Mon/Wed/Fri only if dry · trim 17 Jan and 18 Apr · spring soil prep each September.",
+    "calendar": false,
+    "tasks": [],
+    "added": "2026-10-25"
+  },
+  {
+    "slug": "hops",
+    "name": "Hops",
+    "group": "Garden workhorses",
+    "botanical": "Humulus lupulus",
+    "summary": "Vigorous climbing vine growing 4–6 m a season; dies back in winter and reshoots in spring. Peninsula winters are mild, so expect a lighter cone crop than cooler areas.",
+    "glance": {
+      "sun": "Full sun",
+      "water": "Heavy in summer",
+      "spacing": "1 m",
+      "pot": "50 cm+",
+      "indoors": "No"
+    },
+    "growing": [
+      [
+        "Position",
+        "Full sun with tall support: a pergola, fence, or strings up to an eave. Shelter from salt wind."
+      ],
+      [
+        "Soil",
+        "Deep and rich. Dig plenty of compost and manure into the sand."
+      ],
+      [
+        "Water",
+        "Deeply 2–3 times a week in summer; mulch thickly."
+      ],
+      [
+        "Feeding",
+        "Nitrogen-rich feed in spring for growth, then balanced feed from midsummer. Feed little and often in sandy soil."
+      ],
+      [
+        "Training",
+        "Choose 2–4 strong shoots and wind them clockwise around the support; remove the rest."
+      ],
+      [
+        "Pests",
+        "Aphids and two-spotted mites in hot, dry weather."
+      ],
+      [
+        "Winter",
+        "Cut dead bines to ground level once they brown off."
+      ]
+    ],
+    "harvest": "Late summer to early autumn, when cones feel papery and leave yellow lupulin powder on your fingers.",
+    "uses": [
+      [
+        "Kitchen",
+        "Young spring shoots cooked like asparagus."
+      ],
+      [
+        "Home",
+        "Beer brewing; dried cones in sleep pillows or tea."
+      ],
+      [
+        "Garden",
+        "Fast summer screen over a pergola or fence."
+      ],
+      [
+        "Caution",
+        "Toxic to dogs. Adds to the effect of sedatives and alcohol; check with a GP before medicinal use."
+      ]
+    ],
+    "reminders": "Train bines 1 Nov · water Mon/Wed/Fri · liquid feed every 2nd Sunday · cone checks weekly from 21 Feb · cut back 6 Jun.",
+    "calendar": false,
+    "tasks": [],
+    "added": "2026-10-25"
+  },
+  {
+    "slug": "toothache-plant",
+    "name": "Toothache Plant",
+    "group": "Kitchen herbs",
+    "botanical": "Acmella oleracea",
+    "summary": "Paracress or buzz buttons. Sprawling plant 30–40 cm tall with gold-and-red button flowers that make your mouth tingle and go numb.",
+    "glance": {
+      "sun": "Sun to part shade",
+      "water": "Keep moist",
+      "spacing": "30 cm",
+      "pot": "20 cm or hanging basket",
+      "indoors": "Good on the sunniest window"
+    },
+    "growing": [
+      [
+        "Position",
+        "Full sun to part shade; loves warm, humid summers. Shelter from salt wind."
+      ],
+      [
+        "Soil",
+        "Rich and moist. Sandy soil needs lots of compost to hold water."
+      ],
+      [
+        "Water",
+        "Never let it dry out; it wilts quickly."
+      ],
+      [
+        "Feeding",
+        "Balanced liquid feed every 2–3 weeks in summer."
+      ],
+      [
+        "Care",
+        "Pinch tips to keep it bushy."
+      ],
+      [
+        "Winter",
+        "Frost-free on the peninsula, so it may carry on as a short-lived perennial in a sheltered spot."
+      ],
+      [
+        "Next year",
+        "Save seed from dried heads or take tip cuttings in autumn as backup."
+      ]
+    ],
+    "harvest": "Pick flower buds and leaves as needed through summer and autumn.",
+    "uses": [
+      [
+        "Kitchen",
+        "Leaves and flowers add a tingle to salads, cocktails and Brazilian dishes such as tacacá."
+      ],
+      [
+        "Traditional",
+        "Flower buds chewed to numb toothache and sore gums."
+      ],
+      [
+        "Garden",
+        "Striking bullseye flowers; good in hanging baskets."
+      ]
+    ],
+    "reminders": "Water Mon/Wed/Fri · liquid feed every 2nd Sunday · pinch tips Saturdays · seed and cuttings 11 Apr · indoor check Tue and Sat if potted inside.",
+    "calendar": false,
+    "tasks": [],
+    "added": "2026-10-25"
+  },
+  {
+    "slug": "echinacea-purpurea",
+    "name": "Echinacea Purpurea",
+    "group": "Medicinal herbs",
+    "botanical": "Echinacea purpurea",
+    "summary": "Purple coneflower. Clumping perennial 60–100 cm tall with pink-purple daisies in summer. May flower lightly in its first season while it establishes.",
+    "glance": {
+      "sun": "Full sun",
+      "water": "Low to moderate",
+      "spacing": "45 cm",
+      "pot": "30 cm",
+      "indoors": "Poor; outdoor pot only"
+    },
+    "growing": [
+      [
+        "Position",
+        "6+ hours of sun. Shade gives floppy stems and few flowers."
+      ],
+      [
+        "Soil",
+        "Well-drained, average fertility. Sandy soil is fine with a little compost."
+      ],
+      [
+        "Drainage",
+        "Raise beds in low, soggy spots; wet winter soil causes crown rot."
+      ],
+      [
+        "Water",
+        "Regularly for the first couple of months, then drought-tolerant."
+      ],
+      [
+        "Feeding",
+        "Compost once in spring."
+      ],
+      [
+        "Care",
+        "Deadhead to extend flowering; leave late heads for birds. Cut to the ground in late autumn; it reshoots in spring."
+      ],
+      [
+        "Pests",
+        "Snails and slugs on young shoots in the first few weeks."
+      ]
+    ],
+    "harvest": "Flowers and leaves in summer. Roots are usually dug from plants 3+ years old, in autumn.",
+    "uses": [
+      [
+        "Kitchen",
+        "Rarely eaten."
+      ],
+      [
+        "Traditional",
+        "Tea or tincture from roots, leaves and flowers, taken at the first signs of a cold."
+      ],
+      [
+        "Garden",
+        "Long-lasting cut flower; seed heads feed finches."
+      ],
+      [
+        "Caution",
+        "Avoid with daisy-family allergies or autoimmune conditions; check with a GP first."
+      ]
+    ],
+    "reminders": "Snail checks to mid-Nov · water Mon/Wed/Fri only if dry · deadhead Saturdays · cut back 16 May.",
+    "calendar": false,
+    "tasks": [],
+    "added": "2026-10-25"
+  },
+  {
+    "slug": "valerian",
+    "name": "Valerian",
+    "group": "Medicinal herbs",
+    "botanical": "Valeriana officinalis",
+    "summary": "Leafy clump that sends up flower stalks to 1–1.5 m with fragrant white-pink flowers in summer.",
+    "glance": {
+      "sun": "Sun to part shade",
+      "water": "Moist",
+      "spacing": "60 cm",
+      "pot": "40 cm",
+      "indoors": "No"
+    },
+    "growing": [
+      [
+        "Position",
+        "Sun to part shade; afternoon shade helps on hot westerly days."
+      ],
+      [
+        "Soil",
+        "Moist, rich and loamy. Sandy peninsula soil needs heavy compost and mulch to hold moisture."
+      ],
+      [
+        "Water",
+        "Keep consistently moist."
+      ],
+      [
+        "Feeding",
+        "Compost or balanced feed in spring."
+      ],
+      [
+        "Care",
+        "Stake tall flower stems in windy spots. Remove flower heads before seeding unless you want it spreading."
+      ],
+      [
+        "Propagation",
+        "Divide clumps in autumn or spring."
+      ]
+    ],
+    "harvest": "Dig roots in the second autumn (around April 2028), wash and dry. Replant a division to keep it going.",
+    "uses": [
+      [
+        "Kitchen",
+        "Not a culinary herb."
+      ],
+      [
+        "Traditional",
+        "Root tea or tincture as a sleep aid."
+      ],
+      [
+        "Garden",
+        "Fragrant flowers for bees and butterflies. Cats love the dried root."
+      ],
+      [
+        "Caution",
+        "Adds to the effect of sedatives and alcohol. Check with a GP before use, especially if pregnant."
+      ]
+    ],
+    "reminders": "Water Mon/Wed/Fri · dig roots 9 Apr 2028.",
+    "calendar": false,
+    "tasks": [],
+    "added": "2026-10-25"
+  },
+  {
+    "slug": "comfrey",
+    "name": "Comfrey",
+    "group": "Garden workhorses",
+    "botanical": "Symphytum",
+    "summary": "Big deep-rooted perennial up to 1 m with large hairy leaves and bell flowers. The gardener's fertiliser plant.",
+    "glance": {
+      "sun": "Sun to part shade",
+      "water": "Moderate",
+      "spacing": "90 cm",
+      "pot": "Not suited",
+      "indoors": "No"
+    },
+    "growing": [
+      [
+        "Position",
+        "Choose its spot permanently; any root fragment left behind regrows. Tough enough to shelter other plants from salt wind."
+      ],
+      [
+        "Soil",
+        "Almost any. Grows biggest in rich, moist soil."
+      ],
+      [
+        "Water",
+        "Regular in summer; deep roots make it tough once established."
+      ],
+      [
+        "Feeding",
+        "Loves nitrogen; mulch with manure."
+      ],
+      [
+        "Pets",
+        "Keep away from grazing pets."
+      ]
+    ],
+    "harvest": "Cut leaves 5 cm above ground once about 60 cm tall; it regrows for 3–5 cuts a season. Wear gloves; the hairs irritate skin.",
+    "uses": [
+      [
+        "Kitchen",
+        "Not for eating or tea. It contains liver-toxic alkaloids."
+      ],
+      [
+        "Home",
+        "Ointments and poultices for bruises and sprains, on unbroken skin only."
+      ],
+      [
+        "Garden",
+        "Steep leaves in water 4–6 weeks for liquid fertiliser (dilute 1:10). Chop-and-drop mulch and compost activator, great for feeding hungry peninsula sand."
+      ]
+    ],
+    "reminders": "Water Mon/Wed/Fri · cut leaves every 6 weeks from 13 Dec.",
+    "calendar": false,
+    "tasks": [],
+    "added": "2026-10-25"
+  },
+  {
+    "slug": "yarrow-white",
+    "name": "Yarrow White",
+    "group": "Medicinal herbs",
+    "botanical": "Achillea millefolium",
+    "summary": "Feathery leaves and flat white flower heads on 50–90 cm stems from late spring to autumn. Tough and low-maintenance.",
+    "glance": {
+      "sun": "Full sun",
+      "water": "Low",
+      "spacing": "45 cm",
+      "pot": "25 cm",
+      "indoors": "Poor; outdoor pot only"
+    },
+    "growing": [
+      [
+        "Position",
+        "Full sun. Handles heat, wind and salt; a good front-line plant near the beach."
+      ],
+      [
+        "Soil",
+        "Poor to average and well-drained. Peninsula sand suits it; rich soil makes it floppy."
+      ],
+      [
+        "Water",
+        "Water in for a few weeks, then very drought-tolerant."
+      ],
+      [
+        "Feeding",
+        "Not needed."
+      ],
+      [
+        "Care",
+        "Deadhead to prolong flowering; cut back to the leafy base after flowering."
+      ],
+      [
+        "Spreading",
+        "Spreads by underground runners. Divide every 2–3 years in spring."
+      ]
+    ],
+    "harvest": "Cut flowers and leaves when blooms are fully open; dry in bunches.",
+    "uses": [
+      [
+        "Kitchen",
+        "Young leaves sparingly in salads."
+      ],
+      [
+        "Traditional",
+        "Applied to minor cuts to slow bleeding; tea for colds."
+      ],
+      [
+        "Garden",
+        "Draws ladybirds and hoverflies that eat aphids, so plant near the chillies. Also a compost activator."
+      ],
+      [
+        "Caution",
+        "Avoid in pregnancy and with daisy-family allergies."
+      ]
+    ],
+    "reminders": "Water Mon/Wed/Fri only if dry · deadhead Saturdays · spring soil prep each September.",
+    "calendar": false,
+    "tasks": [],
+    "added": "2026-10-25"
+  },
+  {
+    "slug": "lemongrass",
+    "name": "Lemongrass",
+    "group": "Kitchen herbs",
+    "botanical": "Cymbopogon citratus",
+    "summary": "Dense grassy clump up to 1–1.5 m tall and wide. Thrives in warm, frost-free peninsula summers.",
+    "glance": {
+      "sun": "Full sun",
+      "water": "Regular",
+      "spacing": "60–90 cm",
+      "pot": "40 cm+",
+      "indoors": "Possible in your sunniest spot"
+    },
+    "growing": [
+      [
+        "Position",
+        "Full sun, warm and sheltered."
+      ],
+      [
+        "Soil",
+        "Rich and moist. Dig compost and manure into sandy soil."
+      ],
+      [
+        "Water",
+        "Regularly through summer; much less in winter."
+      ],
+      [
+        "Feeding",
+        "Nitrogen-rich feed (pelleted chicken manure) every 4–6 weeks in the growing season."
+      ],
+      [
+        "Care",
+        "Cut the whole clump back to about 20 cm in late winter. Divide every 2–3 years."
+      ],
+      [
+        "Caution",
+        "Leaf edges are sharp; wear gloves."
+      ]
+    ],
+    "harvest": "After about 3 months, snap or cut outer stalks at the base once 1–2 cm thick. Use the pale lower stem; leaves make tea.",
+    "uses": [
+      [
+        "Kitchen",
+        "Thai and Vietnamese curries, soups, marinades and tea. Freezes well."
+      ],
+      [
+        "Traditional",
+        "Calming tea for digestion."
+      ],
+      [
+        "Garden",
+        "Clumping screen; cut leaves make mulch."
+      ]
+    ],
+    "reminders": "Water Mon/Wed/Fri · liquid feed every 2nd Sunday · cut back 22 Aug.",
+    "calendar": false,
+    "tasks": [],
+    "added": "2026-10-25"
+  }
+]

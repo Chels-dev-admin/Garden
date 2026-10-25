@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Garden Guide</title>
+  <meta name="description" content="Growing guides, uses and care reminders for my garden on the Woy Woy peninsula.">
+  <meta name="theme-color" content="#2f4a2c">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="icon-btn menu-btn" id="menuBtn" aria-label="Show plants" aria-expanded="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <a href="#/" class="brand">
+      <span class="brand-title">Garden Guide</span>
+      <span class="brand-sub">Woy Woy peninsula</span>
+    </a>
+    <div class="topbar-actions">
+      <button class="btn btn-primary" id="addBtn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        <span>Add plant</span>
+      </button>
+      <button class="icon-btn" id="settingsBtn" aria-label="Settings">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar" id="sidebar" aria-label="Plants"></nav>
+    <main id="main" tabindex="-1"><p class="loading">Loading your garden…</p></main>
+  </div>
+
+  <div class="status" id="status" role="status" aria-live="polite" hidden></div>
+
+  <dialog id="addDialog">
+    <form method="dialog" id="addForm">
+      <h2>Add a plant</h2>
+      <p class="muted">Type a plant's name. Claude writes a guide for the peninsula, adds it as a new tab, and puts its care reminders in your calendar feed. Takes about a minute.</p>
+      <label>Plant name
+        <input name="plant" required maxlength="80" autocomplete="off" placeholder="e.g. Thai basil">
+      </label>
+      <label>Group
+        <input name="group" list="groupList" maxlength="40" autocomplete="off" placeholder="Pick a group or type a new one">
+      </label>
+      <datalist id="groupList"></datalist>
+      <div class="dialog-actions">
+        <button type="button" class="btn" data-close>Cancel</button>
+        <button type="submit" class="btn btn-primary" value="add">Add plant</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="groupDialog">
+    <form method="dialog" id="groupForm">
+      <h2>Change group</h2>
+      <label>Group for <strong id="groupPlantName"></strong>
+        <input name="group" list="groupList" required maxlength="40" autocomplete="off">
+      </label>
+      <div class="dialog-actions">
+        <button type="button" class="btn" data-close>Cancel</button>
+        <button type="submit" class="btn btn-primary" value="save">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="removeDialog">
+    <form method="dialog" id="removeForm">
+      <h2>Remove <span id="removePlantName"></span>?</h2>
+      <p class="muted" id="removeNote"></p>
+      <div class="dialog-actions">
+        <button type="button" class="btn" data-close>Cancel</button>
+        <button type="submit" class="btn btn-danger" value="remove">Remove</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="settingsDialog">
+    <form method="dialog" id="settingsForm">
+      <h2>Settings</h2>
+      <p class="muted">Adding, removing and grouping plants runs a GitHub Action in your repository. The token is saved only in this browser.</p>
+      <label>Repository (owner/name)
+        <input name="repo" required pattern="[\w.-]+/[\w.-]+" autocomplete="off" placeholder="your-name/garden-guide">
+      </label>
+      <label>Branch
+        <input name="branch" required autocomplete="off" value="main">
+      </label>
+      <label>GitHub token
+        <input name="token" type="password" autocomplete="off" placeholder="github_pat_…">
+      </label>
+      <p class="hint">Fine-grained token for this repo only, with <b>Actions: Read and write</b> and <b>Contents: Read</b>.</p>
+      <div class="dialog-actions">
+        <button type="button" class="btn" data-close>Cancel</button>
+        <button type="submit" class="btn btn-primary" value="save">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>
