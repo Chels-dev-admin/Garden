@@ -191,3 +191,8 @@ input:focus { outline: 2px solid var(--leaf-2); outline-offset: 1px; }
 .cautions li { display: grid; grid-template-columns: 20px 1fr; gap: 10px; align-items: start; font-size: .95rem; }
 .cautions svg { color: var(--clay); margin-top: 2px; }
 .cautions b { color: var(--clay); }
+
+.kv li.na span { color: var(--muted); }
+.cautions.none { background: var(--surface); border-color: var(--line); }
+.cautions.none h2 { color: var(--muted); }
+.cautions.none p { margin: 0; color: var(--muted); }

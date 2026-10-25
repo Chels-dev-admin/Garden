@@ -129,7 +129,7 @@ function renderSidebar(r) {
 }
 
 const kv = (pairs) =>
-  `<ul class="kv">${pairs.map(([k, v]) => `<li class="${/caution/i.test(k) ? "caution" : ""}"><b>${esc(k)}</b><span>${esc(v)}</span></li>`).join("")}</ul>`;
+  `<ul class="kv">${pairs.map(([k, v]) => `<li class="${/^n\/?a$/i.test(String(v).trim()) ? "na" : /caution/i.test(k) ? "caution" : ""}"><b>${esc(k)}</b><span>${esc(v)}</span></li>`).join("")}</ul>`;
 
 const DAYS = { MO: "Mon", TU: "Tue", WE: "Wed", TH: "Thu", FR: "Fri", SA: "Sat", SU: "Sun" };
 function describeRrule(rr) {
@@ -158,7 +158,7 @@ function cautionsFor(p) {
 }
 
 function cautionBox(list) {
-  if (!list.length) return "";
+  if (!list.length) return `<aside class="cautions none" aria-label="Safety"><h2>Safety</h2><p>N/A</p></aside>`;
   const icon = (who) => /pet/i.test(who)
     ? '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5.5" cy="10" r="2"/><circle cx="9.5" cy="5.5" r="2"/><circle cx="14.5" cy="5.5" r="2"/><circle cx="18.5" cy="10" r="2"/><path d="M12 12c-3 0-5.5 3.5-5.5 6 0 1.5 1.2 2 2.5 2 1.2 0 2-.6 3-.6s1.8.6 3 .6c1.3 0 2.5-.5 2.5-2 0-2.5-2.5-6-5.5-6z"/></svg>'
     : '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20h20L12 3z"/><path d="M12 10v4M12 17h.01"/></svg>';
@@ -171,7 +171,7 @@ function cautionBox(list) {
 function plantView(p) {
   const g = p.glance || {};
   const glance = [["Sun", g.sun], ["Water", g.water], ["Spacing", g.spacing], ["Pot size", g.pot], ["Indoors", g.indoors]]
-    .filter(([, v]) => v).map(([k, v]) => `<div><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join("");
+    .map(([k, v]) => [k, v || "N/A"]).map(([k, v]) => `<div><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join("");
   const pendingHere = state.pending.find((x) => x.plant === p.slug || x.plant === p.name);
   const tasks = (p.tasks || []).slice().sort((a, b) => a.start.localeCompare(b.start));
   return `
@@ -183,22 +183,23 @@ function plantView(p) {
       ${p.calendar && tasks.length ? `<span class="chip">In calendar feed</span>` : ""}
     </div>
     <h1>${esc(p.name)}</h1>
-    ${p.botanical ? `<p class="botanical">${esc(p.botanical)}</p>` : ""}
+    <p class="botanical">${esc(p.botanical || "N/A")}</p>
     ${cautionBox(cautionsFor(p))}
     <p class="lead">${esc(p.summary)}</p>
     ${glance ? `<dl class="glance">${glance}</dl>` : ""}
     <h2>Growing</h2>${kv(p.growing || [])}
-    ${p.harvest ? `<h2>Harvest</h2><p>${esc(p.harvest)}</p>` : ""}
+    <h2>Harvest</h2><p>${esc(p.harvest || "N/A")}</p>
     <h2>Uses</h2>${kv(p.uses || [])}
+    <h2>Calendar reminders</h2>
+    ${!tasks.length ? `<p class="muted">N/A${p.calendar === false && p.reminders && p.reminders !== "N/A" ? " in the feed. This plant's reminders were added straight to your phone calendar; see Care schedule below." : ""}</p>` : ""}
     ${tasks.length ? `
-      <h2>Calendar reminders</h2>
       <div class="card">
         <ul class="tasks">${tasks.map((t) => `
           <li><span class="task-date">${esc(fmtDate(t.start, { day: "numeric", month: "short" }))}</span>
           <span><b>${esc(t.title)}</b>${t.rrule ? `<div class="task-repeat">${esc(describeRrule(t.rrule))}</div>` : ""}${t.notes ? `<div class="muted">${esc(t.notes)}</div>` : ""}</span></li>`).join("")}
         </ul>
       </div>` : ""}
-    ${p.reminders ? `<h2>Care schedule</h2><p>${esc(p.reminders)}</p>` : ""}
+    <h2>Care schedule</h2><p>${esc(p.reminders || "N/A")}</p>
     <div class="page-actions">
       ${tasks.length ? `<button class="btn" id="icsBtn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Download reminders</button>` : ""}
       <button class="btn" id="regroupBtn">Change group</button>

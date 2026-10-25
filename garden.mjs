@@ -50,7 +50,48 @@ function localToday(settings) {
 
 const where = (s) => `${s.location}${s.notes ? ` (${s.notes})` : ""}`;
 
-function plantPrompt(name, settings, today, hint = "") {
+// Every plant shows the same fields. Headings any plant uses are given to all,
+// in this order (unknown headings go after, A–Z); missing ones read "N/A".
+export const NA = "N/A";
+const GROWING_ORDER = ["Position", "Soil", "Drainage", "Water", "Mulch", "Feeding", "Support", "Training", "Pruning", "Deadheading", "Care", "Tip", "Spreading", "Propagation", "Indoors", "Pests", "Problems", "Pets", "Caution", "Winter", "Next year"];
+const USES_ORDER = ["Kitchen", "Home", "Traditional", "Garden", "Caution"];
+const GLANCE_KEYS = ["sun", "water", "spacing", "pot", "indoors"];
+const TEXT_KEYS = ["botanical", "summary", "harvest", "reminders"];
+
+function headings(plants, key, order) {
+  const seen = new Map();
+  for (const p of plants) for (const [k] of p[key] || []) {
+    const lk = k.toLowerCase();
+    if (!seen.has(lk)) seen.set(lk, order.find((o) => o.toLowerCase() === lk) || k);
+  }
+  for (const o of order.slice(0, key === "uses" ? 3 : 4)) if (!seen.has(o.toLowerCase())) seen.set(o.toLowerCase(), o);
+  const rank = (k) => { const i = order.findIndex((o) => o.toLowerCase() === k.toLowerCase()); return i < 0 ? order.length : i; };
+  return [...seen.values()].sort((a, b) => rank(a) - rank(b) || a.localeCompare(b));
+}
+
+export function fieldSets(plants) {
+  return { growing: headings(plants, "growing", GROWING_ORDER), uses: headings(plants, "uses", USES_ORDER) };
+}
+
+export function normalise(plants) {
+  const sets = fieldSets(plants);
+  const fill = (pairs, labels) => {
+    const map = new Map((pairs || []).map(([k, v]) => [k.toLowerCase(), v]));
+    return labels.map((l) => [l, (map.get(l.toLowerCase()) || "").trim() || NA]);
+  };
+  for (const p of plants) {
+    p.growing = fill(p.growing, sets.growing);
+    p.uses = fill(p.uses, sets.uses);
+    p.glance = Object.fromEntries(GLANCE_KEYS.map((k) => [k, (p.glance?.[k] || "").trim() || NA]));
+    for (const k of TEXT_KEYS) p[k] = (p[k] || "").trim() || NA;
+    if (!Array.isArray(p.cautions)) p.cautions = [];
+    if (!Array.isArray(p.tasks)) p.tasks = [];
+  }
+  return plants;
+}
+
+function plantPrompt(name, settings, today, hint = "", sets = fieldSets([])) {
+  const list = (a) => a.map((x) => `"${x}"`).join(", ");
   return `You are an expert horticulturist. Write a growing guide for "${name}"${hint} for a home gardener in ${where(settings)}. Today is ${today}.
 
 Reply with ONLY a JSON object, no prose, matching exactly:
@@ -72,7 +113,8 @@ Reply with ONLY a JSON object, no prose, matching exactly:
 Rules:
 - Tailor every point to that location's climate, soil, frost risk, pests and the correct hemisphere's seasons. Use the local units and names gardeners there would use.
 - "cautions": every safety concern for pets (dogs, cats, birds, livestock) and people (toxicity, skin irritation, allergies, pregnancy, medication interactions, thorns or sharp leaves). One item per audience, under 30 words each. Use [] if there are none; don't invent risks.
-- "growing" has 5-8 items; keep each under 30 words.
+- "growing" must have exactly these headings, in this order: ${list(sets.growing)}. Keep each under 30 words. Where a heading doesn't apply to this plant, write "${NA}".
+- "uses" must have exactly these headings, in this order: ${list(sets.uses)}. Where one doesn't apply, write "${NA}".
 - "tasks": 4-10 important care reminders for the next 12 months (planting out, watering, feeding, pruning, pollinating, pest checks, frost protection, harvest, seed saving), timed for that location. Start dates must be on or after ${today}. Use RRULE only for repeating jobs and always bound them with UNTIL or COUNT. No general watering task more often than weekly.
 - If "${name}" is not a real plant, reply {"error": "reason"}.`;
 }
@@ -114,8 +156,8 @@ async function callClaude(content, maxTokens = 4000) {
   }
 }
 
-async function askGuide(name, settings, today, hint) {
-  const text = await callClaude(plantPrompt(name, settings, today, hint));
+async function askGuide(name, settings, today, hint, sets) {
+  const text = await callClaude(plantPrompt(name, settings, today, hint, sets), 5000);
   return JSON.parse(text.slice(text.indexOf("{"), text.lastIndexOf("}") + 1));
 }
 
@@ -156,7 +198,7 @@ async function addPlant(plants, settings) {
   if (!plantArg) throw new Error("No plant name given.");
   if (findPlant(plants, plantArg)) throw new Error(`"${plantArg}" is already in the guide.`);
   const today = localToday(settings);
-  const g = await askGuide(plantArg, settings, today);
+  const g = await askGuide(plantArg, settings, today, "", fieldSets(plants));
   if (g.error) throw new Error(`Could not create a guide: ${g.error}`);
   const name = str(g.name, 60) || plantArg;
   const slug = slugify(name);
@@ -208,8 +250,9 @@ async function relocate(plants) {
   console.log(`Location set to ${settings.location}.`);
   if (!regenerate) return;
   const today = localToday(settings);
+  const sets = fieldSets(plants);
   const results = await pool(plants, 4, async (p) => {
-    const g = await askGuide(p.name, settings, today, p.botanical ? ` (${p.botanical})` : "");
+    const g = await askGuide(p.name, settings, today, p.botanical && p.botanical !== NA ? ` (${p.botanical})` : "", sets);
     if (g.error) throw new Error(g.error);
     Object.assign(p, guideFields(g, today), { updated: today });
   });
@@ -223,7 +266,8 @@ async function main() {
   else if (action === "remove") plants = removePlant(plants);
   else if (action === "group") regroup(plants);
   else if (action === "location") await relocate(plants);
-  else if (action !== "calendar") throw new Error(`Unknown action "${action}".`);
+  else if (!["calendar", "normalise"].includes(action)) throw new Error(`Unknown action "${action}".`);
+  normalise(plants);
   save(plants);
   const s = loadSettings();
   writeFileSync(CAL, buildCalendar(plants, { name: `Garden reminders (${s.label})`, timezone: s.timezone }));
