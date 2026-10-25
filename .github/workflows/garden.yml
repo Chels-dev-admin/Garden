@@ -4,10 +4,10 @@ on:
   workflow_dispatch:
     inputs:
       action:
-        description: "add, remove, group or calendar"
+        description: "add, remove, group, location or calendar"
         required: true
         type: choice
-        options: [add, remove, group, calendar]
+        options: [add, remove, group, location, calendar]
       plant:
         description: "Plant name (or page name for remove/group)"
         required: false
@@ -16,6 +16,19 @@ on:
         description: "Group to put the plant in"
         required: false
         type: string
+      location:
+        description: "Garden location, e.g. 'Hobart, Tasmania, Australia' (location action)"
+        required: false
+        type: string
+      timezone:
+        description: "Time zone, e.g. Australia/Hobart (location action)"
+        required: false
+        type: string
+      regenerate:
+        description: "Rewrite every plant guide for the new location (location action)"
+        required: false
+        type: boolean
+        default: true
 
 permissions:
   contents: write
@@ -40,21 +53,24 @@ jobs:
           PLANT: ${{ inputs.plant }}
           GROUP: ${{ inputs.group }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          LOCATION: ${{ inputs.location }}
+          TIMEZONE: ${{ inputs.timezone }}
+          REGENERATE: ${{ inputs.regenerate }}
           CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL }}
-          GARDEN_LOCATION: ${{ vars.GARDEN_LOCATION }}
         run: node garden.mjs
 
       - name: Commit changes
         env:
           ACTION: ${{ inputs.action }}
           PLANT: ${{ inputs.plant }}
+          LOCATION: ${{ inputs.location }}
         run: |
           git config user.name "garden-guide-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add plants.json calendar.ics
+          git add plants.json calendar.ics settings.json overview.md
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "Garden guide: $ACTION $PLANT"
+            git commit -m "Garden guide: $ACTION $PLANT$LOCATION"
             git push
           fi

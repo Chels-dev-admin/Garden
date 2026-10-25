@@ -5,7 +5,8 @@ const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "
 const OTHER = "Other plants";
 const WORKFLOW = "garden.yml";
 
-const state = { plants: [], overview: "", settings: loadSettings(), pending: [] };
+const DEFAULT_GARDEN = { location: "Woy Woy peninsula, Central Coast NSW, Australia", label: "Woy Woy peninsula", timezone: "Australia/Sydney" };
+const state = { plants: [], overview: "", garden: DEFAULT_GARDEN, settings: loadSettings(), pending: [] };
 
 /* ---------- settings ---------- */
 function store(key, value) {
@@ -40,24 +41,32 @@ async function gh(path, opts = {}) {
   return res;
 }
 
-async function fetchPlants() {
+// Reads a repo file: fresh from GitHub when connected, else the site's copy.
+async function fetchFile(path) {
   if (canSync()) {
     try {
-      const res = await gh(`/contents/plants.json?ref=${encodeURIComponent(state.settings.branch)}`, { headers: { Accept: "application/vnd.github.raw+json" } });
-      return await res.json();
-    } catch (e) { console.warn("Falling back to site copy:", e.message); }
+      const res = await gh(`/contents/${path}?ref=${encodeURIComponent(state.settings.branch)}`, { headers: { Accept: "application/vnd.github.raw+json" } });
+      return await res.text();
+    } catch (e) { console.warn(`Falling back to site copy of ${path}:`, e.message); }
   }
-  const res = await fetch(`plants.json?t=${Date.now()}`, { cache: "no-store" });
-  return res.json();
+  const res = await fetch(`${path}?t=${Date.now()}`, { cache: "no-store" });
+  if (!res.ok) throw new Error(`Couldn't load ${path}`);
+  return res.text();
+}
+const fetchPlants = async () => JSON.parse(await fetchFile("plants.json"));
+
+async function refreshGarden() {
+  const [garden, overview] = await Promise.all([
+    fetchFile("settings.json").then(JSON.parse).catch(() => ({})),
+    fetchFile("overview.md").catch(() => ""),
+  ]);
+  state.garden = { ...DEFAULT_GARDEN, ...garden };
+  state.overview = overview;
 }
 
 async function init() {
-  const [plants, overview] = await Promise.all([
-    fetchPlants(),
-    fetch(`overview.md?t=${Date.now()}`).then((r) => (r.ok ? r.text() : "")).catch(() => ""),
-  ]);
+  const [plants] = await Promise.all([fetchPlants(), refreshGarden()]);
   state.plants = plants;
-  state.overview = overview;
   render();
 }
 
@@ -100,6 +109,7 @@ function render() {
     bindOverview();
     document.title = "Garden Guide";
   }
+  $("#brandSub").textContent = state.garden.label || state.garden.location;
   $("#groupList").innerHTML = groupNames().map((g) => `<option value="${esc(g)}">`).join("");
 }
 
@@ -222,14 +232,22 @@ function overviewView() {
   const feedCount = state.plants.filter((p) => p.calendar && p.tasks?.length).length;
   return `
     <h1>Your garden</h1>
-    <p class="lead">${all.length} plants in ${groups().length} groups, with growing guides tailored to sandy, frost-free, salt-breezy peninsula conditions.</p>
+    <p class="lead">${all.length} plants in ${groups().length} groups, with growing guides tailored to your garden's conditions.</p>
+
+    <div class="card location-row">
+      <p>Guides are written for <b>${esc(state.garden.location)}</b>.</p>
+      <button class="btn btn-sm" id="locationBtn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        Change location
+      </button>
+    </div>
 
     <div class="card">
       <h3>Automatic calendar reminders</h3>
       <p>Every plant you add here puts its care reminders (pruning, feeding, pollinating, harvest) into one calendar feed. Subscribe once and new plants appear on their own; removed plants disappear. ${feedCount ? `${feedCount} plant${feedCount > 1 ? "s are" : " is"} in the feed now.` : "The feed starts filling when you add your first plant."}</p>
       <div class="feed-url"><input readonly value="${esc(feed)}" aria-label="Calendar feed address"><button class="btn btn-sm" id="copyFeed">Copy</button></div>
       <p><a href="${esc(google)}" target="_blank" rel="noopener">Subscribe in Google Calendar</a> · <a href="${esc(webcal)}">Open in calendar app</a></p>
-      <p class="hint">On Android, subscribe in Google Calendar on the web and it appears in your phone's calendar. Subscribed calendars refresh every few hours. The 13 original plants' reminders were added to your phone calendar directly, so they aren't repeated in the feed.</p>
+      <p class="hint">On Android, subscribe in Google Calendar on the web and it appears in your phone's calendar. Subscribed calendars refresh every few hours.${state.plants.some((p) => !p.calendar) ? " Plants whose reminders were added straight to your phone calendar aren't repeated in the feed." : ""}</p>
     </div>
 
     <h2>At a glance</h2>
@@ -241,6 +259,7 @@ function overviewView() {
 }
 
 function bindOverview() {
+  $("#locationBtn").onclick = openLocation;
   const btn = $("#copyFeed");
   if (btn) btn.onclick = async () => {
     try { await navigator.clipboard.writeText(feedUrl()); btn.textContent = "Copied"; }
@@ -279,7 +298,7 @@ function toast(html, { busy = false, sticky = false } = {}) {
 /* ---------- sync via GitHub Actions ---------- */
 const claimed = new Set();
 
-async function runAction(action, plant, group, label) {
+async function runAction(action, plant, group, label, extra = {}) {
   if (!canSync()) {
     openSettings("Connect your GitHub repository first.");
     return false;
@@ -291,11 +310,12 @@ async function runAction(action, plant, group, label) {
   try {
     await gh(`/actions/workflows/${WORKFLOW}/dispatches`, {
       method: "POST",
-      body: JSON.stringify({ ref: state.settings.branch, inputs: { action, plant: plant || "", group: group || "" } }),
+      body: JSON.stringify({ ref: state.settings.branch, inputs: { action, plant: plant || "", group: group || "", ...extra } }),
     });
     const run = await waitForRun(job);
     if (run.conclusion !== "success") throw Object.assign(new Error("The update didn't finish."), { url: run.html_url });
     state.plants = await fetchPlants();
+    if (action === "location") await refreshGarden();
     return true;
   } catch (e) {
     toast(`${esc(e.message)}${e.url ? ` <a href="${esc(e.url)}" target="_blank" rel="noopener">See details</a>` : ""}`, { sticky: true });
@@ -308,7 +328,8 @@ async function runAction(action, plant, group, label) {
 }
 
 async function waitForRun(job) {
-  const deadline = Date.now() + 6 * 60 * 1000;
+  const minutes = job.action === "location" ? 25 : 6;
+  const deadline = Date.now() + minutes * 60 * 1000;
   let run = null;
   while (Date.now() < deadline) {
     await new Promise((r) => setTimeout(r, run ? 6000 : 4000));
@@ -324,7 +345,7 @@ async function waitForRun(job) {
     }
     if (run && run.status === "completed") return run;
   }
-  throw new Error("Still working after 6 minutes. Refresh the page in a bit to see if it finished.");
+  throw new Error(`Still working after ${minutes} minutes. Refresh the page in a bit to see if it finished.`);
 }
 
 /* ---------- dialogs ---------- */
@@ -344,6 +365,51 @@ $("#addBtn").onclick = () => {
   $("#addDialog").showModal();
 };
 $("#settingsBtn").onclick = () => openSettings();
+
+/* ---------- location ---------- */
+function openLocation() {
+  const f = $("#locationForm");
+  f.location.value = state.garden.location;
+  f.regenerate.checked = true;
+  $("#plantCount").textContent = state.plants.length;
+  $("#locationDialog").showModal();
+}
+
+$("#geoBtn").onclick = () => {
+  const btn = $("#geoBtn");
+  const input = $("#locationForm").location;
+  if (!navigator.geolocation) return toast("Location isn't available in this browser. Type your town instead.");
+  btn.disabled = true;
+  navigator.geolocation.getCurrentPosition(async ({ coords }) => {
+    try {
+      const url = `https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=12&lat=${coords.latitude.toFixed(3)}&lon=${coords.longitude.toFixed(3)}`;
+      const { address: a = {} } = await (await fetch(url, { headers: { "Accept-Language": "en" } })).json();
+      const town = a.suburb || a.town || a.village || a.city || a.hamlet || a.county || "";
+      input.value = [town, a.state, a.country].filter(Boolean).join(", ") || `${coords.latitude.toFixed(2)}, ${coords.longitude.toFixed(2)}`;
+    } catch {
+      input.value = `${coords.latitude.toFixed(2)}, ${coords.longitude.toFixed(2)}`;
+    } finally {
+      btn.disabled = false;
+    }
+  }, () => {
+    btn.disabled = false;
+    toast("Couldn't get your location. Type your town instead.");
+  }, { timeout: 15000, maximumAge: 600000 });
+};
+
+$("#locationForm").onsubmit = async (e) => {
+  const f = e.target;
+  const loc = f.location.value.trim();
+  if (!loc || loc === state.garden.location) return;
+  const regenerate = f.regenerate.checked;
+  const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
+  const ok = await runAction("location", "", "", regenerate ? `Rewriting your garden for ${loc}. This takes 5–10 minutes` : `Updating tips for ${loc}`, {
+    location: loc,
+    timezone,
+    regenerate: String(regenerate),
+  });
+  if (ok) toast(`Your garden is now set to ${esc(state.garden.location)}.${regenerate ? " Every guide and reminder has been rewritten." : ""}`, { sticky: regenerate });
+};
 
 $("#addForm").onsubmit = async (e) => {
   const f = e.target;

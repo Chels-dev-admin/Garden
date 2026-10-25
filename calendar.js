@@ -2,25 +2,6 @@
 // GitHub Action (Node) and the web app (per-plant download).
 
 const TZ = "Australia/Sydney";
-const VTIMEZONE = [
-  "BEGIN:VTIMEZONE",
-  `TZID:${TZ}`,
-  "BEGIN:STANDARD",
-  "DTSTART:19700405T030000",
-  "RRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU",
-  "TZOFFSETFROM:+1100",
-  "TZOFFSETTO:+1000",
-  "TZNAME:AEST",
-  "END:STANDARD",
-  "BEGIN:DAYLIGHT",
-  "DTSTART:19701004T020000",
-  "RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU",
-  "TZOFFSETFROM:+1000",
-  "TZOFFSETTO:+1100",
-  "TZNAME:AEDT",
-  "END:DAYLIGHT",
-  "END:VTIMEZONE",
-];
 
 const esc = (s) => String(s).replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\r?\n/g, "\\n");
 
@@ -51,10 +32,11 @@ function hash(s) {
   return h.toString(36);
 }
 
-// UNTIL must be a UTC date-time when DTSTART has a time; end of that Sydney day.
+// Reminders use floating local times (6pm wherever the garden is), so UNTIL is
+// a local date-time too, at the end of that day.
 function normaliseRrule(rrule) {
   if (!rrule) return "";
-  return rrule.replace(/UNTIL=(\d{8})(T\d{6}Z?)?/, (_, d) => `UNTIL=${d}T125959Z`);
+  return rrule.replace(/UNTIL=(\d{8})(T\d{6}Z?)?/, (_, d) => `UNTIL=${d}T235959`);
 }
 
 const stamp = () => new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "");
@@ -66,7 +48,7 @@ export function eventsFor(plant, time = "180000") {
       "BEGIN:VEVENT",
       `UID:${plant.slug}-${hash(t.title + t.start)}@garden-guide`,
       `DTSTAMP:${stamp()}`,
-      `DTSTART;TZID=${TZ}:${day}T${time}`,
+      `DTSTART:${day}T${time}`,
       `DURATION:PT30M`,
       `SUMMARY:${esc(t.title)}`,
       `DESCRIPTION:${esc(`${t.notes || ""}\n\n${plant.name} — garden guide`)}`,
@@ -79,7 +61,7 @@ export function eventsFor(plant, time = "180000") {
   });
 }
 
-export function buildCalendar(plants, { name = "Garden reminders", onlyCalendar = true } = {}) {
+export function buildCalendar(plants, { name = "Garden reminders", onlyCalendar = true, timezone = TZ } = {}) {
   const lines = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
@@ -87,10 +69,9 @@ export function buildCalendar(plants, { name = "Garden reminders", onlyCalendar 
     "CALSCALE:GREGORIAN",
     "METHOD:PUBLISH",
     `X-WR-CALNAME:${esc(name)}`,
-    `X-WR-TIMEZONE:${TZ}`,
+    `X-WR-TIMEZONE:${timezone}`,
     "REFRESH-INTERVAL;VALUE=DURATION:PT12H",
     "X-PUBLISHED-TTL:PT12H",
-    ...VTIMEZONE,
   ];
   for (const p of plants) {
     if (onlyCalendar && !p.calendar) continue;

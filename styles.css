@@ -179,3 +179,8 @@ input:focus { outline: 2px solid var(--leaf-2); outline-offset: 1px; }
 .dialog-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 4px; }
 .status[hidden] { display: none; }
 @media (max-width: 820px) { .sidebar { overflow-y: auto; top: 60px; bottom: auto; height: calc(100dvh - 60px); } }
+
+.check { display: flex; gap: 10px; align-items: flex-start; font-weight: 400; }
+.check input { width: 18px; height: 18px; margin-top: 3px; flex: none; accent-color: var(--leaf-2); }
+.location-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; }
+.location-row p { margin: 0; }

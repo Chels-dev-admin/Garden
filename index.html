@@ -19,7 +19,7 @@
     </button>
     <a href="#/" class="brand">
       <span class="brand-title">Garden Guide</span>
-      <span class="brand-sub">Woy Woy peninsula</span>
+      <span class="brand-sub" id="brandSub">&nbsp;</span>
     </a>
     <div class="topbar-actions">
       <button class="btn btn-primary" id="addBtn">
@@ -42,7 +42,7 @@
   <dialog id="addDialog">
     <form method="dialog" id="addForm">
       <h2>Add a plant</h2>
-      <p class="muted">Type a plant's name. Claude writes a guide for the peninsula, adds it as a new tab, and puts its care reminders in your calendar feed. Takes about a minute.</p>
+      <p class="muted">Type a plant's name. Claude writes a guide for your location, adds it as a new tab, and puts its care reminders in your calendar feed. Takes about a minute.</p>
       <label>Plant name
         <input name="plant" required maxlength="80" autocomplete="off" placeholder="e.g. Thai basil">
       </label>
@@ -66,6 +66,26 @@
       <div class="dialog-actions">
         <button type="button" class="btn" data-close>Cancel</button>
         <button type="submit" class="btn btn-primary" value="save">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="locationDialog">
+    <form method="dialog" id="locationForm">
+      <h2>Your garden's location</h2>
+      <p class="muted">Guides, tips and reminder dates are written for this place: its climate, frosts, soil and seasons.</p>
+      <label>Location
+        <input name="location" required maxlength="120" autocomplete="off" placeholder="e.g. Ballarat, Victoria, Australia">
+      </label>
+      <button type="button" class="btn btn-sm" id="geoBtn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        Use my current location
+      </button>
+      <label class="check"><input type="checkbox" name="regenerate" checked> <span>Rewrite all <b id="plantCount">your</b> plant guides and reminders for this location</span></label>
+      <p class="hint" id="locationNote">Rewriting takes about 5–10 minutes and costs a few cents per plant. Rewritten reminders go into your calendar feed, so delete any old ones you added to your phone by hand. Unticked, only the overview tips and new plants use the new location.</p>
+      <div class="dialog-actions">
+        <button type="button" class="btn" data-close>Cancel</button>
+        <button type="submit" class="btn btn-primary" value="save">Save location</button>
       </div>
     </form>
   </dialog>
