@@ -1,0 +1,104 @@
+name: Deploy backend
+
+# Sets up the Supabase project (database tables, sign-in settings, backend
+# function, secrets) and writes config.json so the site can find it.
+# Runs when backend files change, or by hand from the Actions tab.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "supabase/**"
+      - "calendar.js"
+      - ".github/workflows/deploy-backend.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: deploy-backend
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+      REF: ${{ secrets.SUPABASE_PROJECT_REF }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      API: https://api.supabase.com/v1/projects/${{ secrets.SUPABASE_PROJECT_REF }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check repository secrets
+        run: |
+          missing=""
+          [ -n "$SUPABASE_ACCESS_TOKEN" ] || missing="$missing SUPABASE_ACCESS_TOKEN"
+          [ -n "$REF" ] || missing="$missing SUPABASE_PROJECT_REF"
+          [ -n "$ANTHROPIC_API_KEY" ] || missing="$missing ANTHROPIC_API_KEY"
+          if [ -n "$missing" ]; then
+            echo "::error::Add these repository secrets (Settings → Secrets and variables → Actions):$missing"
+            exit 1
+          fi
+
+      - uses: supabase/setup-cli@v1
+        with:
+          version: latest
+
+      - name: Create or update database tables
+        run: |
+          jq -n --rawfile q supabase/schema.sql '{query: $q}' > /tmp/schema.json
+          code=$(curl -sS -o /tmp/out.json -w '%{http_code}' -X POST "$API/database/query" \
+            -H "Authorization: Bearer $SUPABASE_ACCESS_TOKEN" -H "Content-Type: application/json" --data @/tmp/schema.json)
+          if [ "$code" -ge 300 ]; then
+            echo "::error::Database setup failed (HTTP $code). Check SUPABASE_PROJECT_REF and SUPABASE_ACCESS_TOKEN."
+            cat /tmp/out.json; exit 1
+          fi
+
+      - name: Configure sign-in
+        run: |
+          owner=$(echo "${GITHUB_REPOSITORY%%/*}" | tr '[:upper:]' '[:lower:]')
+          site="https://$owner.github.io/${GITHUB_REPOSITORY#*/}/"
+          jq -n --arg s "$site" '{site_url: $s, uri_allow_list: ($s + "**"), mailer_autoconfirm: true}' > /tmp/auth.json
+          code=$(curl -sS -o /tmp/out.json -w '%{http_code}' -X PATCH "$API/config/auth" \
+            -H "Authorization: Bearer $SUPABASE_ACCESS_TOKEN" -H "Content-Type: application/json" --data @/tmp/auth.json)
+          if [ "$code" -ge 300 ]; then echo "::error::Sign-in setup failed (HTTP $code)."; cat /tmp/out.json; exit 1; fi
+          echo "Sign-in links will return to $site"
+
+      - name: Set backend secrets
+        env:
+          DAILY_LIMIT: ${{ vars.DAILY_LIMIT }}
+          GLOBAL_DAILY_LIMIT: ${{ vars.GLOBAL_DAILY_LIMIT }}
+          CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL }}
+        run: |
+          {
+            echo "ANTHROPIC_API_KEY=$ANTHROPIC_API_KEY"
+            echo "DAILY_LIMIT=${DAILY_LIMIT:-30}"
+            echo "GLOBAL_DAILY_LIMIT=${GLOBAL_DAILY_LIMIT:-300}"
+            [ -z "$CLAUDE_MODEL" ] || echo "CLAUDE_MODEL=$CLAUDE_MODEL"
+          } > /tmp/backend.env
+          supabase secrets set --project-ref "$REF" --env-file /tmp/backend.env
+          rm /tmp/backend.env
+
+      - name: Deploy backend function
+        run: |
+          cp calendar.js supabase/functions/garden/calendar.js
+          supabase functions deploy garden --project-ref "$REF" --no-verify-jwt --use-api
+
+      - name: Write site config
+        run: |
+          keys=$(curl -sS "$API/api-keys?reveal=true" -H "Authorization: Bearer $SUPABASE_ACCESS_TOKEN")
+          key=$(echo "$keys" | jq -r '[.[]? | select(.type == "publishable")][0].api_key // empty')
+          [ -n "$key" ] || key=$(echo "$keys" | jq -r '[.[]? | select(.name == "anon")][0].api_key // empty')
+          if [ -z "$key" ]; then echo "::error::Couldn't read the project's public API key."; exit 1; fi
+          url="https://$REF.supabase.co"
+          jq -n --arg u "$url" --arg k "$key" '{supabaseUrl: $u, supabaseKey: $k, functionsUrl: ($u + "/functions/v1")}' > config.json
+          git config user.name "garden-guide-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add config.json
+          if git diff --cached --quiet; then
+            echo "config.json unchanged."
+          else
+            git commit -m "Connect site to its Supabase backend"
+            git push
+          fi

@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en-AU">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Garden Guide</title>
-  <meta name="description" content="Growing guides, uses and care reminders for my garden on the Woy Woy peninsula.">
+  <meta name="description" content="Growing guides, uses, safety notes and calendar reminders for your plants, tailored to where you live.">
   <meta name="theme-color" content="#2f4a2c">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,8 +26,8 @@
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
         <span>Add plant</span>
       </button>
-      <button class="icon-btn" id="settingsBtn" aria-label="Settings">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
+      <button class="icon-btn" id="accountBtn" aria-label="Account">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>
       </button>
     </div>
   </header>
@@ -42,7 +42,7 @@
   <dialog id="addDialog">
     <form method="dialog" id="addForm">
       <h2>Add a plant</h2>
-      <p class="muted">Type a plant's name. Claude writes a guide for your location, adds it as a new tab, and puts its care reminders in your calendar feed. Takes about a minute.</p>
+      <p class="muted">Type a plant's name. Claude writes a guide for your location, adds it to your garden, and puts its care reminders in your calendar feed. Takes about half a minute.</p>
       <label>Plant name
         <input name="plant" required maxlength="80" autocomplete="off" placeholder="e.g. Thai basil">
       </label>
@@ -70,26 +70,6 @@
     </form>
   </dialog>
 
-  <dialog id="locationDialog">
-    <form method="dialog" id="locationForm">
-      <h2>Your garden's location</h2>
-      <p class="muted">Guides, tips and reminder dates are written for this place: its climate, frosts, soil and seasons.</p>
-      <label>Location
-        <input name="location" required maxlength="120" autocomplete="off" placeholder="e.g. Ballarat, Victoria, Australia">
-      </label>
-      <button type="button" class="btn btn-sm" id="geoBtn">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
-        Use my current location
-      </button>
-      <label class="check"><input type="checkbox" name="regenerate" checked> <span>Rewrite all <b id="plantCount">your</b> plant guides and reminders for this location</span></label>
-      <p class="hint" id="locationNote">Rewriting takes about 5–10 minutes and costs a few cents per plant. Rewritten reminders go into your calendar feed, so delete any old ones you added to your phone by hand. Unticked, only the overview tips and new plants use the new location.</p>
-      <div class="dialog-actions">
-        <button type="button" class="btn" data-close>Cancel</button>
-        <button type="submit" class="btn btn-primary" value="save">Save location</button>
-      </div>
-    </form>
-  </dialog>
-
   <dialog id="removeDialog">
     <form method="dialog" id="removeForm">
       <h2>Remove <span id="removePlantName"></span>?</h2>
@@ -101,23 +81,57 @@
     </form>
   </dialog>
 
-  <dialog id="settingsDialog">
-    <form method="dialog" id="settingsForm">
-      <h2>Settings</h2>
-      <p class="muted">Adding, removing and grouping plants runs a GitHub Action in your repository. The token is saved only in this browser.</p>
-      <label>Repository (owner/name)
-        <input name="repo" required pattern="[\w.-]+/[\w.-]+" autocomplete="off" placeholder="your-name/garden-guide">
+  <dialog id="locationDialog">
+    <form method="dialog" id="locationForm">
+      <h2>Your garden's location</h2>
+      <p class="muted">Guides, tips and reminder dates are written for this place: its climate, frosts, soil and seasons.</p>
+      <label>Location
+        <input name="location" required maxlength="120" autocomplete="off" placeholder="e.g. Ballarat, Victoria, Australia">
       </label>
-      <label>Branch
-        <input name="branch" required autocomplete="off" value="main">
-      </label>
-      <label>GitHub token
-        <input name="token" type="password" autocomplete="off" placeholder="github_pat_…">
-      </label>
-      <p class="hint">Fine-grained token for this repo only, with <b>Actions: Read and write</b> and <b>Contents: Read</b>.</p>
+      <button type="button" class="btn btn-sm" id="geoBtn2">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        Use my current location
+      </button>
+      <label class="check"><input type="checkbox" name="regenerate" checked> <span>Rewrite all <b id="plantCount">your</b> plant guides and reminders for this location</span></label>
+      <p class="hint">Rewriting takes about half a minute per plant; keep this page open. Rewritten reminders go into your calendar feed, so delete any old ones you added to your phone by hand. Unticked, only the local tips and new plants use the new location.</p>
       <div class="dialog-actions">
         <button type="button" class="btn" data-close>Cancel</button>
-        <button type="submit" class="btn btn-primary" value="save">Save</button>
+        <button type="submit" class="btn btn-primary" value="save">Save location</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="accountDialog">
+    <div class="dialog-body">
+      <h2>Account</h2>
+      <p class="muted">Signed in as <b id="accountEmail"></b>. Sign in with the same email on any device to see your garden.</p>
+      <form id="passwordForm" class="form-inline">
+        <label>New password
+          <input name="password" type="password" minlength="8" autocomplete="new-password" required>
+        </label>
+        <button class="btn" type="submit">Change password</button>
+      </form>
+      <div class="stack">
+        <button class="btn" id="rerunSetup">Run setup again</button>
+        <button class="btn" id="signOutBtn">Sign out</button>
+        <button class="btn btn-danger" id="deleteAccountBtn">Delete account</button>
+      </div>
+      <div class="dialog-actions">
+        <button type="button" class="btn" data-close>Close</button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog id="deleteDialog">
+    <form method="dialog" id="deleteForm">
+      <h2>Delete your account?</h2>
+      <p class="muted">This permanently deletes your account, every plant guide and your calendar feed. It can't be undone.</p>
+      <label>Type DELETE to confirm
+        <input name="confirm" autocomplete="off" required>
+      </label>
+      <div class="dialog-actions">
+        <button type="button" class="btn" data-close>Cancel</button>
+        <button type="submit" class="btn btn-danger" value="delete">Delete everything</button>
       </div>
     </form>
   </dialog>
