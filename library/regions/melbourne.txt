@@ -1,0 +1,120 @@
+# Melbourne & southern Victoria. Per-plant advice.
+# Format: slug | suitability | planting time | local tip | reminder shift in months (blank = plant type default)
+tomato | Grows well in summer. | Early November (Melbourne Cup weekend is traditional). | Earlier plantings stall in cold soil; wait for warm nights. |
+cherry-tomato | Grows very well. | November. | Ripens reliably even in cool summers. |
+capsicum | Grows in warm spots. | November. | Needs the warmest spot; a north-facing wall helps. |
+eggplant | Grows in warm spots. | November. | Slow in cool summers; choose early varieties. |
+zucchini | Grows very well. | November to December. | Very productive in Melbourne summers. |
+cucumber | Grows well. | November to December. | Wait until nights stay above 12°C. |
+pumpkin | Grows well. | November. | Plant early to ripen before autumn cold. |
+bush-beans | Grows well. | November to January. | Cold soil rots seed; wait until November. |
+climbing-beans | Grows well. | November to December. | Runner beans love Melbourne's mild summers. |
+sweet-corn | Grows well. | November to December. | Plant in blocks for good pollination. |
+sweet-potato | Hard. | November. | Needs a long hot season; grow in a black pot against a sunny wall. |
+chilli-bell-lantern | Grows in warm spots. | November. | Overwinter in a pot in a greenhouse or sunny porch. |
+chilli-long-red | Grows in warm spots. | November. | Usually grown as an annual. |
+basil | Grows in summer. | November to December. | Hates cold nights; plant out late. |
+thai-basil | Grows in summer. | November to December. | Annual in Melbourne. |
+sunflower | Grows well. | October to December. | Easy summer colour. |
+marigold | Grows well. | October to December. | Plant after frost. |
+toothache-plant | Grows in summer. | November. | Treat as a summer annual. |
+broccoli | Grows very well. | January to April. | Crops through autumn and winter. |
+cabbage | Grows very well. | January to May. | Cool winters give firm heads. |
+cauliflower | Grows very well. | January to March. | Melbourne's cool autumns suit cauliflower. |
+kale | Grows very well. | January to May. | Sweeter after frost. |
+english-spinach | Grows very well. | March to August. | One of the best winter greens here. |
+peas | Grows very well. | April to June, and August to September. | Spring sowings crop well too. |
+snow-peas | Grows very well. | April to June, and August to September. | Very reliable. |
+bok-choy | Grows well. | February to May, and August to September. | Bolts in summer heat. |
+coriander | Grows well. | March to May, and August to October. | Spring sowings last longer than in warmer areas. |
+dill | Grows well. | September to December. | Spring is best. |
+sweet-pea | Grows very well. | March to May. | Flowers through spring. |
+onion | Grows very well. | April to June. | Intermediate and long-day varieties suit Victoria. |
+garlic | Grows very well. | March to May. | Cold winters suit hardneck garlic. |
+leek | Grows very well. | January to April. | Hardy through winter. |
+potato | Grows very well. | August to October. | Frost burns leaves; plant after the last frost. | 1
+calendula | Grows very well. | February to April, and September. | Flowers most of the year. |
+lettuce | Grows well. | August to April. | Easy in mild weather. |
+rocket | Grows well. | August to May. | Very easy. |
+carrot | Grows well. | August to March. | Loosen heavy clay first. |
+beetroot | Grows well. | September to March. | Easy and reliable. |
+radish | Grows well. | Most of the year. | Very quick in spring. |
+silverbeet | Grows year-round. | All year. | Very hardy. |
+celery | Grows well. | September to December. | Needs constant moisture. |
+spring-onion | Grows year-round. | All year. | Very easy. |
+parsley | Grows year-round. | All year. | Hardy through winter. |
+nasturtium | Grows well. | September to January. | Frost kills it; self-seeds in spring. |
+apple | Grows very well. | Winter. | Melbourne's winters give enough chill for most varieties. |
+peach | Grows well. | Winter. | Spray copper for leaf curl at bud swell. |
+raspberry | Grows very well. | Winter. | Classic Victorian crop. |
+rhubarb | Grows very well. | Winter crowns. | Red-stemmed varieties colour well in the cold. |
+asparagus | Grows very well. | Winter crowns. | Spears from September to November. |
+hops | Grows well. | Winter rhizomes. | Victoria grows commercial hops in the north-east. |
+rosemary | Grows very well. | Spring or autumn. | Tough and easy. |
+thyme | Grows well. | Spring. | Needs good drainage in wet winters. |
+oregano | Grows well. | Spring. | Dies back in winter, returns in spring. |
+sage | Grows well. | Spring. | Needs good drainage. |
+marjoram | Grows well. | Spring. | Protect from hard frost. |
+tarragon | Grows very well. | Spring. | French tarragon suits the cool climate. |
+bay-tree | Grows very well. | Autumn or spring. | Classic Melbourne potted standard. |
+french-lavender | Grows well. | Spring. | Protect from hard frost; English lavender is hardier. |
+yarrow-white | Grows very well. | Spring or autumn. | Very hardy. |
+mint | Grows very well. | Spring. | Keep contained in a pot. |
+chives | Grows very well. | Spring. | Dies back in winter. |
+garlic-chives | Grows very well. | Spring. | Very easy. |
+lemon-balm | Grows very well. | Spring. | Self-seeds freely. |
+self-heal | Grows very well. | Spring or autumn. | Enjoys the moist cool climate. |
+valerian | Grows very well. | Spring. | Suits the cooler climate. |
+comfrey | Grows very well. | Spring or autumn. | Very hardy. |
+echinacea-purpurea | Grows very well. | Spring. | Loves cold winters and warm summers. |
+avocado | Hard. | Spring. | Choose cold-tolerant 'Bacon' or 'Fuerte' and a frost-free microclimate. |
+banana | Not suited outdoors. | Spring. | Rarely fruits; grow as a foliage plant in a warm courtyard. |
+passionfruit | Grows in warm spots. | Spring. | Needs a sunny, sheltered wall; protect from frost. |
+frangipani | Hard. | Spring. | Needs a frost-free, sheltered courtyard. |
+bougainvillea | Grows in warm spots. | Spring. | Needs full sun and shelter from frost. |
+ginger | Grows in pots. | October. | Keep indoors or in a greenhouse in winter. |
+turmeric | Grows in pots. | October. | Bring indoors over winter. |
+lemongrass | Grows in pots. | Spring. | Protect from frost; often dies back. |
+curry-leaf | Hard. | Spring. | Grow in a pot and move to shelter in winter. |
+vietnamese-mint | Grows in summer. | Spring. | Dies back in cold; keep a pot indoors. |
+lemon | Grows well. | Spring. | Meyer copes best with cold. |
+lime | Grows in sheltered spots. | Spring. | More frost-tender than lemons. |
+orange | Grows in warm spots. | Spring. | Valencias may need a very warm spot to sweeten. |
+mandarin | Grows in warm spots. | Spring. | Early varieties ripen before winter cold. |
+finger-lime | Grows in pots or sheltered spots. | Spring. | Protect from frost. |
+strawberry | Grows very well. | April to May, or September. | Crops October to February. |
+fig | Grows well. | Winter. | Plant against a warm wall; 'Brown Turkey' is reliable. |
+feijoa | Grows well. | Autumn or spring. | Hardy to frost once established. |
+olive | Grows well. | Autumn or spring. | Grows in sunny, well-drained spots. |
+grape | Grows well. | Winter. | Victoria grows grapes widely; choose early table varieties. |
+mulberry | Grows very well. | Winter. | Very hardy. |
+camellia | Grows very well. | Autumn. | Classic Melbourne shrub. |
+azalea | Grows very well. | Autumn. | Thrives in the cool, moist climate. |
+gardenia | Grows in sheltered spots. | Spring. | Cold winters can yellow the leaves. |
+hydrangea | Grows very well. | Winter. | Classic Melbourne garden plant. |
+blueberry | Grows very well. | Winter. | Northern highbush types suit Victoria. |
+rose | Grows very well. | Winter. | Melbourne's climate suits roses beautifully. |
+pelargonium | Grows well. | Spring. | Protect from hard frost. |
+salvia | Grows very well. | Spring. | Many salvias are hardy here. |
+agapanthus | Grows very well. | Autumn. | Can be weedy in Victorian bushland; deadhead. |
+grevillea | Grows well. | Autumn. | Many Victorian species are hardy. |
+bottlebrush | Grows very well. | Autumn. | Very hardy. |
+kangaroo-paw | Grows well. | Spring. | Needs good drainage. |
+lilly-pilly | Grows well. | Autumn or spring. | Protect young plants from frost. |
+westringia | Grows very well. | Autumn. | Very tough. |
+lomandra | Grows very well. | Autumn. | Very tough. |
+banksia | Grows well. | Autumn. | Coast banksia and silver banksia are local natives. |
+correa | Grows very well. | Autumn. | Several are Victorian natives. |
+warrigal-greens | Grows in summer. | Spring. | Frost kills it; self-seeds. |
+monstera | Easy indoors. | Any time. | Keep away from cold windows in winter. |
+peace-lily | Easy indoors. | Any time. | Keep warm in winter. |
+pothos | Easy indoors. | Any time. | Easy care. |
+snake-plant | Easy indoors. | Any time. | Water very little in winter. |
+zz-plant | Easy indoors. | Any time. | Very tolerant. |
+fiddle-leaf-fig | Grows indoors with bright light. | Any time. | Keep away from heaters. |
+spider-plant | Easy indoors. | Any time. | Easy care. |
+rubber-plant | Easy indoors. | Any time. | Easy care. |
+heartleaf-philodendron | Easy indoors. | Any time. | Easy care. |
+aloe-vera | Easy indoors. | Any time. | Bring pots under cover in frosty weather. |
+boston-fern | Easy indoors. | Any time. | Keep away from heaters. |
+moth-orchid | Easy indoors. | Any time. | Keep above 15°C at night. |

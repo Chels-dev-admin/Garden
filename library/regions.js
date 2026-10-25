@@ -345,10 +345,13 @@ function shiftMonth(md, months) {
 }
 
 // Merges regional advice into a ready-made guide (before reminder dates are set).
-export function applyRegion(t, regionId) {
+// perPlant is this region's entry from library/region-plants.json: { slug: { suit, when, tip, shift } }.
+export function applyRegion(t, regionId, perPlant = {}) {
   const r = regionById(regionId);
-  const block = r?.classes[CLASS_OF[t.slug]];
-  if (!r || !block) return t;
+  const type = r?.classes[CLASS_OF[t.slug]];
+  if (!r || !type) return t;
+  const own = perPlant[t.slug] || {};
+  const block = { ...type, suit: own.suit || type.suit, when: own.when || type.when, tip: own.tip || "", shift: own.shift ?? type.shift };
   const swap = (s) => {
     let out = String(s ?? "");
     if (r.fruitFly !== "Queensland fruit fly") out = out.replace(/Queensland fruit fly/g, r.fruitFly);
@@ -369,6 +372,7 @@ export function applyRegion(t, regionId) {
   // "Planting time" sits after Position.
   const pi = growing.findIndex(([k]) => k === "Position");
   growing.splice(pi < 0 ? 0 : pi + 1, 0, ["Planting time", block.when]);
+  if (block.tip) growing.splice(pi < 0 ? 1 : pi + 2, 0, ["Local tip", block.tip]);
   add(growing, "Soil", block.soil);
   add(growing, "Water", block.water);
   add(growing, "Climate", block.climate);
@@ -381,7 +385,8 @@ export function applyRegion(t, regionId) {
     cautions: (t.cautions || []).map((c) => ({ ...c, text: swap(c.text) })),
     harvest: swap(t.harvest),
     reminders: swap(t.reminders),
-    tasks: (t.tasks || []).map((task) => (task.md ? { ...task, md: shiftMonth(task.md, block.shift || 0), title: swap(task.title), notes: swap(task.notes) } : task)),
+    // No reminders for plants that aren't recommended in this region.
+    tasks: /not recommended/i.test(block.when) ? [] : (t.tasks || []).map((task) => (task.md ? { ...task, md: shiftMonth(task.md, block.shift || 0), title: swap(task.title), notes: swap(task.notes) } : task)),
     region: r.id,
   };
 }

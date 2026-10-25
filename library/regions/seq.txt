@@ -1,0 +1,120 @@
+# South-east Queensland & northern NSW. Per-plant advice.
+# Format: slug | suitability | planting time | local tip | reminder shift in months (blank = plant type default)
+tomato | Grows well in spring and autumn; struggles in midsummer. | August to September, and February to March. | Autumn plantings dodge the worst fruit fly and summer disease. | -2
+cherry-tomato | Grows very well; the most reliable tomato here. | August to October, and February to March. | Small fruit ripens fast enough to beat most fruit fly. |
+capsicum | Grows well. | August to October, and February. | Crops well into winter in frost-free gardens. |
+eggplant | Grows very well; loves the heat. | August to November. | One of the few fruiting crops that handles midsummer here. |
+zucchini | Grows in spring and autumn. | August to September, and February to March. | Summer crops collapse with mildew and fruit rot; avoid December plantings. | -2
+cucumber | Grows in spring and autumn. | August to October, and February. | Grow up a trellis to keep fruit off wet ground. |
+pumpkin | Grows well. | August to October, and January to February. | Pumpkin beetle and mildew are heavy; Queensland Blue copes well. |
+bush-beans | Grows well except midsummer. | August to October, and February to April. | Bean fly is bad in summer; autumn sowings crop best. |
+climbing-beans | Grows well. | August to September, and February to March. | Snake beans are a better choice for summer here. |
+sweet-corn | Grows well. | August to January. | Corn earworm is common; check silks and remove grubs. |
+sweet-potato | Grows very well. | September to December. | Thrives in the heat; often crops year-round. |
+chilli-bell-lantern | Grows very well; perennial here. | August to October. | Fruit fly attacks soft ripe fruit; bag clusters. |
+chilli-long-red | Grows very well; perennial here. | August to October. | Can crop for several years without frost. |
+basil | Grows very well. | August to March. | Often lives through winter; replace when woody. |
+thai-basil | Grows very well; perennial here. | All year except midwinter. | Handles summer humidity better than sweet basil. |
+sunflower | Grows well. | August to February. | Storms flatten tall types; choose dwarf or stake well. |
+marigold | Grows well. | August to March. | Spider mites flare in dry spring heat. |
+toothache-plant | Grows very well; perennial here. | August to November. | Thrives in the warm, humid summers. |
+broccoli | Grows well in winter. | March to June. | Choose quick, heat-tolerant varieties for early plantings. |
+cabbage | Grows well in winter. | March to June. | Mini cabbages mature before spring heat. |
+cauliflower | Hard: needs cool nights to head. | April to May. | Choose fast, subtropical varieties and plant on time. |
+kale | Grows well in winter. | March to June. | Aphids explode in spring; pull plants by October. |
+english-spinach | Possible in midwinter only. | April to June. | Grow Warrigal greens or Brazilian spinach for the rest of the year. |
+peas | Grows well in winter. | April to June. | Sow once days cool; mildew ends crops by September. |
+snow-peas | Grows very well in winter. | March to June. | Very reliable through the dry, sunny winter. |
+bok-choy | Grows very well. | March to August. | Bolts fast once spring warms up. |
+coriander | Grows in winter only. | April to July. | Bolts as soon as days warm; grow Vietnamese mint in summer. |
+dill | Grows in winter. | April to July. | Hates summer humidity. |
+sweet-pea | Grows in winter. | March to April. | Choose early-flowering varieties to beat spring heat. |
+onion | Hard: choose short-day types. | April to May. | Only short-day varieties bulb here; harvest by November. |
+garlic | Hard: needs a cold period. | April to May. | Refrigerate cloves for 4–6 weeks before planting to help them bulb. |
+leek | Grows in winter. | March to May. | Grows quickly; harvest before summer. |
+potato | Grows well. | July to August, and February to March. | Late-winter plantings crop before summer heat. |
+calendula | Grows well in winter. | March to June. | Dies off in summer heat. |
+lettuce | Grows best March to October. | March to October; heat-tolerant types in summer. | Summer lettuce needs shade cloth and daily water. |
+rocket | Grows best in the cool months. | March to October. | Bolts quickly in summer. |
+carrot | Grows best March to October. | February to October. | Summer sowings germinate poorly in hot soil. |
+beetroot | Grows well. | February to October. | Leaves get leaf spot in humid weather. |
+radish | Grows best in the cool months. | March to October. | Gets hot and woody in summer. |
+silverbeet | Grows year-round. | All year. | Leaf spot in summer; remove affected leaves. |
+celery | Grows in the cool months. | February to July. | Bolts in spring heat. |
+spring-onion | Grows year-round. | All year. | Very easy; regrows after cutting. |
+parsley | Grows best in the cool months. | February to August. | Often dies in summer wet season. |
+nasturtium | Grows well in the cool months. | March to August. | Fades in midsummer heat. |
+apple | Hard: needs chill. | Winter. | Only very low-chill types such as 'Anna' or 'Tropic Sweet' fruit. |
+peach | Possible with very low-chill types. | Winter. | 'Tropic Snow' and 'FlordaPrince'; fruit fly is a major problem. |
+raspberry | Hard. | Winter. | Try native raspberries or 'Heritage'; humidity brings disease. |
+rhubarb | Hard; often rots in summer. | Autumn crowns. | Grow as a winter crop in a pot with excellent drainage. |
+asparagus | Possible; lighter crops. | Winter crowns. | Spears come in late winter. |
+hops | Not suited. | Not recommended. | Needs long summer days and winter cold. |
+rosemary | Grows with excellent drainage. | Autumn or spring. | Plant in a raised bed; wet summers rot it in clay. |
+thyme | Hard in summer. | Autumn. | Often rots in the wet season; grow in pots and keep dry. |
+oregano | Grows well. | Autumn or spring. | Greek oregano copes best with humidity. |
+sage | Hard: humidity rots it. | Autumn. | Grow in a pot in full sun; replace yearly. |
+marjoram | Grows in the dry season. | Autumn. | Often a short-lived annual here. |
+tarragon | Hard. | Autumn. | Grow Mexican tarragon (Tagetes lucida) instead; it loves the heat. |
+bay-tree | Grows well. | Autumn. | Watch for scale in humid weather. |
+french-lavender | Grows well. | Autumn. | The best lavender for subtropical gardens. |
+yarrow-white | Grows well. | Autumn or spring. | Cut back after flowering to stop rot in wet weather. |
+mint | Grows very well. | Autumn or spring. | Rust appears in humid summers; cut back hard. |
+chives | Grows in the cool months. | Autumn. | Often sulks in summer; garlic chives are tougher. |
+garlic-chives | Grows very well. | Any time. | Loves the warmth. |
+lemon-balm | Grows with afternoon shade. | Autumn. | Can scorch in summer sun. |
+self-heal | Grows in part shade. | Autumn. | Keep moist through dry winters. |
+valerian | Hard: prefers cool climates. | Autumn. | Often short-lived; grow in afternoon shade. |
+comfrey | Grows well. | Autumn or spring. | Dies back in heat but returns. |
+echinacea-purpurea | Hard: humidity rots the crown. | Autumn. | Grow in a raised bed or pot with gritty mix. |
+avocado | Grows very well. | Spring. | Choose Hass with a pollinator such as Bacon; plant on a mound. |
+banana | Grows very well. | Spring. | Check Queensland rules: you may need a permit to plant bananas. |
+passionfruit | Grows very well. | Spring. | Passionvine hopper and fruit fly are common. |
+frangipani | Grows very well. | Spring. | Rust shows in humid autumns but rarely harms the tree. |
+bougainvillea | Grows very well. | Spring. | Prune hard after flowering to control size. |
+ginger | Grows very well. | September to October. | A classic SEQ crop; harvest young ginger from February. |
+turmeric | Grows very well. | September to October. | Harvest in June when leaves die back. |
+lemongrass | Grows very well. | Spring. | Divide clumps every couple of years. |
+curry-leaf | Grows very well. | Spring. | Suckers freely; can become weedy. |
+vietnamese-mint | Grows very well. | Any time. | The perfect summer replacement for coriander. |
+lemon | Grows very well. | Autumn or spring. | Lemonade (a lemon-mandarin cross) is popular here. |
+lime | Grows very well. | Autumn or spring. | Tahitian lime crops heavily here. |
+orange | Grows well. | Autumn or spring. | Navels can be dry; Valencias suit the climate. |
+mandarin | Grows very well. | Autumn or spring. | Imperial and Murcott suit SEQ. |
+finger-lime | Grows very well. | Spring. | Native to this region's rainforests. |
+strawberry | Grows as a winter crop. | March to April. | Plant new runners each autumn; summer heat kills them. |
+fig | Grows; rust and fruit fly are problems. | Winter. | Bag fruit; choose 'Brown Turkey' or 'Black Genoa'. |
+feijoa | Grows; fruit fly can attack fruit. | Autumn. | Use fruit fly traps in autumn. |
+olive | Possible; fruits poorly in humidity. | Autumn. | Grow mainly as an ornamental screen. |
+grape | Hard: humidity brings mildew. | Winter. | Choose disease-resistant types such as 'Isabella' or 'Flame Seedless'. |
+mulberry | Grows very well. | Winter. | Dwarf types crop on and off most of the year. |
+camellia | Grows in part shade. | Autumn. | Sasanquas cope better with heat than japonicas. |
+azalea | Grows in shade with mulch. | Autumn. | Lace bug is common in dry winters. |
+gardenia | Grows very well. | Spring or autumn. | Loves the warm, humid summers. |
+hydrangea | Grows with afternoon shade. | Autumn. | Wilts in hot afternoons; water deeply. |
+blueberry | Grows with low-chill varieties. | Winter. | Rabbiteye and southern highbush types such as 'Biloxi' suit SEQ. |
+rose | Grows; black spot is common. | Winter. | Choose disease-resistant roses and prune to open the centre. |
+pelargonium | Grows in the dry season. | Autumn. | Wet summers rot them; grow in pots under eaves. |
+salvia | Grows very well. | Autumn or spring. | Many salvias love the subtropical warmth. |
+agapanthus | Grows well. | Autumn. | Deadhead to stop it spreading. |
+grevillea | Grows very well. | Autumn. | Local hybrids such as 'Superb' suit the climate. |
+bottlebrush | Grows very well. | Autumn. | Handles wet summers well. |
+kangaroo-paw | Hard: humidity brings ink disease. | Autumn. | Grow hybrid types in pots with gritty mix. |
+lilly-pilly | Grows very well. | Autumn or spring. | Native to the region; choose psyllid-resistant types. |
+westringia | Grows well. | Autumn. | Prune regularly to stay dense. |
+lomandra | Grows very well. | Any time. | Native to the region. |
+banksia | Grows; choose eastern species. | Autumn. | Coast banksia and wallum banksia suit sandy coastal soils. |
+correa | Grows in shade. | Autumn. | Needs good drainage in wet summers. |
+warrigal-greens | Grows very well. | Any time. | A good summer spinach substitute. |
+monstera | Grows outdoors in shade. | Any time. | Can become weedy outdoors; keep it contained. |
+peace-lily | Grows indoors or in outdoor shade. | Any time. | Thrives in the humidity. |
+pothos | Easy indoors. | Any time. | Keep indoors; it climbs and spreads in local bushland. |
+snake-plant | Easy indoors. | Any time. | Can be weedy outdoors in Queensland; keep it potted. |
+zz-plant | Easy indoors. | Any time. | Very tolerant of air conditioning. |
+fiddle-leaf-fig | Grows indoors or outdoors in shade. | Any time. | Can grow into a tree outdoors; keep it potted. |
+spider-plant | Easy indoors. | Any time. | Grows outdoors as a shady groundcover. |
+rubber-plant | Easy indoors. | Any time. | Grows into a huge tree outdoors; keep potted. |
+heartleaf-philodendron | Easy indoors. | Any time. | Thrives in the humidity. |
+aloe-vera | Grows indoors or outdoors. | Any time. | Keep dry in the wet season. |
+boston-fern | Grows indoors or outdoors in shade. | Any time. | Loves the humidity. |
+moth-orchid | Easy indoors. | Any time. | Can grow outdoors on a tree in sheltered shade. |

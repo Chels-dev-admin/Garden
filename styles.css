@@ -301,3 +301,7 @@ select { font: inherit; padding: 10px 12px; border-radius: 10px; border: 1px sol
 .region-opt .muted { font-size: .82rem; }
 .region-opt:has(input:checked) { border-color: var(--leaf-2); background: var(--leaf-soft); }
 #locRegions { display: grid; gap: 6px; max-height: 260px; overflow-y: auto; }
+
+.fit { font-size: .72rem; font-weight: 600; padding: 1px 7px; border-radius: 99px; margin-left: 6px; white-space: nowrap; }
+.fit.no { background: color-mix(in srgb, var(--danger) 12%, transparent); color: var(--danger); }
+.fit.hard { background: var(--clay-soft); color: var(--clay); }

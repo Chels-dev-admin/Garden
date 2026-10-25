@@ -44,15 +44,16 @@ const timezone = () => { try { return Intl.DateTimeFormat().resolvedOptions().ti
 // Ready-made guides: the Woy Woy starter set plus the general library.
 async function loadStarter() {
   if (state.starter) return state.starter;
-  const [starter, library, overview] = await Promise.all([
+  const [starter, library, overview, regional] = await Promise.all([
     fetch("starter/plants.json").then((r) => r.json()).catch(() => []),
     fetch("library/plants.json").then((r) => r.json()).catch(() => []),
     fetch("starter/overview.md").then((r) => (r.ok ? r.text() : "")).catch(() => ""),
+    fetch("library/region-plants.json").then((r) => r.json()).catch(() => ({})),
   ]);
   const plants = [...starter.map((p) => ({ ...p, starter: true, aka: [] })), ...library];
   const index = new Map();
   for (const p of plants) for (const n of [p.name, ...(p.aka || [])]) index.set(n.toLowerCase(), p);
-  return (state.starter = { plants, overview, index });
+  return (state.starter = { plants, overview, index, regional });
 }
 
 const findReady = (name) => state.starter?.index.get(String(name).trim().toLowerCase()) || null;
@@ -63,7 +64,7 @@ function fromReady(t, group) {
   const today = localToday(state.garden?.timezone);
   const now = new Date(`${today}T12:00:00`);
   const iso = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
-  t = applyRegion(t, state.garden?.region);
+  t = applyRegion(t, state.garden?.region, state.starter?.regional?.[state.garden?.region]);
   const tasks = (t.tasks || []).map((task) => {
     if (!task.md) return task; // already dated
     const [m, d] = task.md.split("-").map(Number);
@@ -344,10 +345,18 @@ function pickListHtml() {
     return `<details class="pick-sec" data-key="${esc(key)}" ${q || s.open.has(key) ? "open" : ""}>
       <summary><span>${esc(title)}</span><span class="pick-count">${n ? `${n} of ` : ""}${items.length}</span></summary>
       <button type="button" class="link-btn pick-all" data-group="${esc(key)}">${n === items.length ? "Clear" : "Select all"}</button>
-      ${vis.map((p) => `<label class="check pick"><input type="checkbox" value="${esc(p.slug)}" ${s.picks.has(p.slug) ? "checked" : ""}><span>${esc(p.name)}${p.aka?.length ? `<span class="muted"> · ${esc(p.aka.slice(0, 2).join(", "))}</span>` : ""}</span></label>`).join("")}
+      ${vis.map((p) => `<label class="check pick"><input type="checkbox" value="${esc(p.slug)}" ${s.picks.has(p.slug) ? "checked" : ""}><span>${esc(p.name)}${p.aka?.length ? `<span class="muted"> · ${esc(p.aka.slice(0, 2).join(", "))}</span>` : ""}${fitBadge(p.slug)}</span></label>`).join("")}
     </details>`;
   }).join("");
   return shown ? html : `<p class="muted">No ready-made guide for "${esc(s.search)}". Add it below${state.ai ? " and Claude will write one" : " as a blank guide"}.</p>`;
+}
+
+// "Not suited" / "Hard here" label from the chosen region's per-plant advice.
+function fitBadge(slug) {
+  const suit = state.starter?.regional?.[state.garden?.region]?.[slug]?.suit || "";
+  if (/^not suited/i.test(suit)) return ` <span class="fit no">not suited here</span>`;
+  if (/^hard\b|^difficult/i.test(suit)) return ` <span class="fit hard">hard here</span>`;
+  return "";
 }
 
 function pickSummary() {

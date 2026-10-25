@@ -1,0 +1,120 @@
+# Adelaide & southern SA. Per-plant advice.
+# Format: slug | suitability | planting time | local tip | reminder shift in months (blank = plant type default)
+tomato | Grows very well. | October to December. | Classic Adelaide crop; plant after mid-October once frost risk passes. |
+cherry-tomato | Grows very well. | October to December. | Copes well with heatwaves. |
+capsicum | Grows well. | October to November. | Shade cloth protects fruit from sunburn in heatwaves. |
+eggplant | Grows very well. | October to December. | Loves Adelaide's hot, dry summers. |
+zucchini | Grows very well. | October to January. | Water deeply before heatwaves. |
+cucumber | Grows well. | October to December. | Mulch well; heat stress makes fruit bitter. |
+pumpkin | Grows very well. | October to December. | Cures well in the dry autumn. |
+bush-beans | Grows well. | October to February. | Flowers drop above 35°C; water the night before. |
+climbing-beans | Grows well. | October to January. | Plant where they get afternoon shade. |
+sweet-corn | Grows very well. | October to January. | Needs deep regular water. |
+sweet-potato | Grows in warm spots. | November to December. | Needs the warmest spot in the garden. |
+chilli-bell-lantern | Grows well. | October to November. | Cut back and protect over winter; frost can kill it. |
+chilli-long-red | Grows well. | October to November. | Usually grown as an annual. |
+basil | Grows very well. | October to January. | Dies with the first autumn cold. |
+thai-basil | Grows very well. | October to January. | Annual here. |
+sunflower | Grows very well. | October to January. | Loves the dry heat. |
+marigold | Grows very well. | October to January. | Easy summer colour. |
+toothache-plant | Grows with water. | October to December. | Treat as a summer annual. |
+broccoli | Grows very well. | February to May. | Cool, wet winters suit it. |
+cabbage | Grows very well. | February to June. | Very reliable in winter. |
+cauliflower | Grows well. | February to April. | Needs rich soil with compost. |
+kale | Grows very well. | February to June. | Crops into spring. |
+english-spinach | Grows well in winter. | March to August. | Bolts in spring. |
+peas | Grows very well. | April to July. | Sow after the autumn break in rain. |
+snow-peas | Grows very well. | April to July. | Very reliable. |
+bok-choy | Grows well. | March to August. | Quick in autumn. |
+coriander | Grows well in the cool months. | March to August. | Bolts in summer. |
+dill | Grows well. | March to May and August to October. | Self-seeds. |
+sweet-pea | Grows very well. | March to April. | Alkaline soil suits sweet peas. |
+onion | Grows very well. | March to June. | Intermediate-day types suit SA. |
+garlic | Grows very well. | March to May. | Adelaide grows excellent garlic. |
+leek | Grows very well. | February to May. | Easy winter crop. |
+potato | Grows very well. | August to September, and February. | Avoid planting into cold wet soil. |
+calendula | Grows very well. | February to June. | Winter-spring colour. |
+lettuce | Grows well; shade in summer. | August to May. | Summer crops need shade and daily water. |
+rocket | Grows well. | Most of the year. | Bolts in heat. |
+carrot | Grows well. | August to March. | Loosen heavy clay or grow in raised beds. |
+beetroot | Grows very well. | August to March. | Tolerates alkaline soil. |
+radish | Grows well. | Most of the year. | Water daily in summer. |
+silverbeet | Grows year-round. | All year. | Very easy. |
+celery | Grows with constant water. | August to February. | Needs rich, moist soil. |
+spring-onion | Grows year-round. | All year. | Very easy. |
+parsley | Grows year-round. | All year. | Shade in summer. |
+nasturtium | Grows well. | March to October. | Self-seeds in winter. |
+apple | Grows well. | Winter. | The Adelaide Hills grow excellent apples; plains need lower-chill types. |
+peach | Grows very well. | Winter. | Spray for leaf curl at bud swell. |
+raspberry | Grows well in the Hills. | Winter. | Hard in plains heat; give afternoon shade. |
+rhubarb | Grows well. | Winter crowns. | Water well in summer. |
+asparagus | Grows very well. | Winter crowns. | Tolerates alkaline soils. |
+hops | Grows in the Hills. | Winter rhizomes. | The plains are hot for good cones. |
+rosemary | Thrives. | Autumn or spring. | Loves the dry, alkaline conditions. |
+thyme | Thrives. | Autumn or spring. | Very easy here. |
+oregano | Thrives. | Autumn or spring. | Excellent flavour in the dry heat. |
+sage | Thrives. | Autumn or spring. | Grows much better than in humid climates. |
+marjoram | Thrives. | Autumn or spring. | Easy and long-lived. |
+tarragon | Grows well. | Spring. | French tarragon suits the dry summers. |
+bay-tree | Grows very well. | Autumn. | Tolerates alkaline soil. |
+french-lavender | Thrives. | Autumn or spring. | Perfect for the climate. |
+yarrow-white | Thrives. | Autumn or spring. | Drought-hardy. |
+mint | Grows with shade and water. | Autumn or spring. | Keep in a pot; water daily in summer. |
+chives | Grows well. | Autumn or spring. | Afternoon shade in summer. |
+garlic-chives | Grows well. | Autumn or spring. | Easy and tough. |
+lemon-balm | Grows with afternoon shade. | Autumn. | Scorches in hot sun. |
+self-heal | Grows in shade with water. | Autumn. | Needs moisture. |
+valerian | Possible in shade. | Autumn. | Better in the Adelaide Hills. |
+comfrey | Grows well. | Autumn or spring. | Very hardy. |
+echinacea-purpurea | Grows well. | Spring. | Likes dry summers and cold winters. |
+avocado | Hard. | Spring. | Frost, heat and alkaline soil make it difficult; needs a warm, sheltered spot. |
+banana | Hard. | Spring. | Rarely fruits; grow as a foliage plant in a sheltered spot. |
+passionfruit | Grows well in sheltered spots. | Spring. | Protect from frost in winter. |
+frangipani | Grows in warm, sheltered spots. | Spring. | Keep dry in winter; frost damages it. |
+bougainvillea | Grows well. | Spring. | Loves the heat; frost-tender when young. |
+ginger | Possible in pots. | October. | Grow in a warm, sheltered spot. |
+turmeric | Possible in pots. | October. | Needs warmth and water. |
+lemongrass | Grows well. | Spring. | Dies back in winter; protect from frost. |
+curry-leaf | Grows in sheltered spots. | Spring. | Frost-tender when young. |
+vietnamese-mint | Grows with water. | Spring. | Dies back in winter. |
+lemon | Grows very well. | Spring. | Alkaline soil can yellow leaves; feed chelated iron. |
+lime | Grows well. | Spring. | Protect from frost. |
+orange | Grows very well. | Spring. | The Riverland is a major citrus area; Adelaide suits citrus too. |
+mandarin | Grows very well. | Spring. | Heavy crops in alternate years. |
+finger-lime | Grows in part shade. | Spring. | Protect from frost and hot sun. |
+strawberry | Grows very well. | April to May. | Crops through spring; mulch well. |
+fig | Thrives. | Winter. | Adelaide's dry summers give excellent figs. |
+feijoa | Grows very well. | Autumn. | Tough and drought-hardy. |
+olive | Thrives. | Autumn. | Can become a weed in bushland; manage fallen fruit. |
+grape | Thrives. | Winter. | SA wine country; table grapes do just as well. |
+mulberry | Thrives. | Winter. | Very hardy. |
+camellia | Grows in pots. | Autumn. | Alkaline soil causes yellow leaves; use acidic mix and rainwater. |
+azalea | Hard. | Autumn. | Pots of acidic mix in shade only. |
+gardenia | Possible in pots. | Spring. | Needs acidic mix and shelter. |
+hydrangea | Grows in shade. | Winter. | Alkaline soil turns flowers pink. |
+blueberry | Possible in pots. | Winter. | Acidic potting mix and rainwater are essential. |
+rose | Thrives. | Winter. | Adelaide has a long rose-growing tradition; dry summers limit disease. |
+pelargonium | Thrives. | Autumn. | Perfect for the climate. |
+salvia | Thrives. | Autumn or spring. | Very drought-hardy. |
+agapanthus | Grows very well. | Autumn. | Deadhead to stop spread. |
+grevillea | Grows well. | Autumn. | Choose species from dry areas. |
+bottlebrush | Grows very well. | Autumn. | Tolerates alkaline soil. |
+kangaroo-paw | Grows well. | Autumn. | Needs good drainage. |
+lilly-pilly | Grows with water. | Autumn. | Needs summer water and shelter from hot winds. |
+westringia | Grows very well. | Autumn. | Very tough. |
+lomandra | Grows very well. | Autumn. | Very tough. |
+banksia | Grows with good drainage. | Autumn. | Choose lime-tolerant species; many banksias hate alkaline soil. |
+correa | Grows very well. | Autumn. | Several correas are SA natives. |
+warrigal-greens | Grows well. | Spring to autumn. | Native to SA coasts. |
+monstera | Easy indoors. | Any time. | Keep away from hot windows. |
+peace-lily | Easy indoors. | Any time. | Mist in dry weather. |
+pothos | Easy indoors. | Any time. | Easy care. |
+snake-plant | Easy indoors. | Any time. | Handles dry air. |
+zz-plant | Easy indoors. | Any time. | Very tolerant. |
+fiddle-leaf-fig | Grows indoors with bright light. | Any time. | Avoid draughts. |
+spider-plant | Easy indoors. | Any time. | Easy outdoors in shade. |
+rubber-plant | Easy indoors. | Any time. | Easy care. |
+heartleaf-philodendron | Easy indoors. | Any time. | Easy care. |
+aloe-vera | Grows indoors or out. | Any time. | Protect from frost outdoors. |
+boston-fern | Grows indoors with humidity. | Any time. | Mist in dry weather. |
+moth-orchid | Easy indoors. | Any time. | Keep away from heaters in winter. |

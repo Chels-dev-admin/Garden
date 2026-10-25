@@ -1,0 +1,120 @@
+# Inland & arid (Alice Springs, Kalgoorlie, Broken Hill, Mildura, Dubbo). Per-plant advice.
+# Format: slug | suitability | planting time | local tip | reminder shift in months (blank = plant type default)
+tomato | Grows in spring and autumn; summer heat stops fruit set. | August to September after frost, and February. | Use 50% shade cloth from December; heat above 35°C stops flowers setting. |
+cherry-tomato | Grows well. | August to September, and February. | Copes with heat better than large tomatoes. |
+capsicum | Grows well with shade. | September to October. | Fruit sunburns easily; keep leaf cover and use shade cloth. |
+eggplant | Grows very well. | September to November. | One of the best heat-lovers for inland gardens. |
+zucchini | Grows in spring and autumn. | August to October, and February. | Midsummer heat stops fruiting; plant early. |
+cucumber | Grows with shade and water. | September to October. | Mulch heavily; heat makes fruit bitter. |
+pumpkin | Grows very well. | September to November. | Thrives in the heat with deep watering. |
+bush-beans | Grows in spring and autumn. | August to September, and February. | Flowers drop in heat; avoid midsummer flowering. |
+climbing-beans | Grows in spring and autumn. | August to September, and February. | Snake beans cope with summer heat. |
+sweet-corn | Grows well with water. | September to December. | Needs lots of water; drip irrigation is best. |
+sweet-potato | Grows very well. | October to December. | Loves the heat. |
+chilli-bell-lantern | Grows well. | September to October. | Protect from frost in winter. |
+chilli-long-red | Grows very well. | September to October. | Chillies love dry heat. |
+basil | Grows well with shade. | September to December. | Needs afternoon shade in summer. |
+thai-basil | Grows very well. | September to December. | Handles heat well. |
+sunflower | Grows very well. | August to December. | Loves the sun; stake against wind. |
+marigold | Grows very well. | August to November. | Tough in heat. |
+toothache-plant | Grows with shade and water. | September to October. | Needs constant moisture in dry air. |
+broccoli | Grows well. | March to April. | Plant once heat breaks in autumn. |
+cabbage | Grows well. | March to May. | Grows steadily through mild winter days. |
+cauliflower | Grows well. | March to April. | Frosty nights help it head. |
+kale | Grows very well. | March to May. | Very hardy to frost. |
+english-spinach | Grows well in winter. | April to July. | Bolts in spring heat. |
+peas | Grows well. | April to June. | Frost can damage flowers; plant so they flower in late winter. |
+snow-peas | Grows well. | April to June. | Reliable winter crop. |
+bok-choy | Grows well. | March to August. | Quick in the cool months. |
+coriander | Grows well in winter. | April to August. | Bolts quickly in spring. |
+dill | Grows well. | March to May. | Autumn sowings are best. |
+sweet-pea | Grows well. | March to April. | Flowers in late winter and spring. |
+onion | Grows well. | April to June. | Intermediate-day types suit most inland areas. |
+garlic | Grows well. | March to May. | Frosty winters suit garlic. |
+leek | Grows well. | March to May. | Hardy through frost. |
+potato | Grows well. | July to August, and February. | Plant so tubers form before summer heat. |
+calendula | Grows very well. | March to June. | Flowers through winter. |
+lettuce | Grows in the cool months. | March to May, and August to October. | Summer crops need heavy shade. |
+rocket | Grows in the cool months. | March to October. | Bolts in heat. |
+carrot | Grows well. | February to May, and August to October. | Keep soil moist for germination. |
+beetroot | Grows well. | February to April, and August to October. | Tolerates alkaline soil. |
+radish | Grows in the cool months. | March to October. | Water daily. |
+silverbeet | Grows most of the year. | February to October. | Shade in summer. |
+celery | Hard. | March to April. | Needs constant water; grow in a wicking bed. |
+spring-onion | Grows year-round. | All year. | Very easy. |
+parsley | Grows well. | February to May, and August. | Shade in summer. |
+nasturtium | Grows in the cool months. | March to August. | Dies in summer heat. |
+apple | Possible where winters are cold. | Winter. | Hot summers sunburn fruit; give afternoon shade and plenty of water. |
+peach | Grows well. | Winter. | Inland stone fruit is very sweet; net against birds. |
+raspberry | Hard. | Winter. | Hot, dry summers stress canes; needs shade and constant water. |
+rhubarb | Hard. | Winter crowns. | Needs afternoon shade and lots of water in summer. |
+asparagus | Grows very well. | Winter crowns. | Tolerates heat and alkaline soil. |
+hops | Possible with water. | Winter rhizomes. | Needs constant summer water. |
+rosemary | Thrives. | Autumn. | Very drought-hardy. |
+thyme | Thrives. | Autumn. | Loves dry heat. |
+oregano | Thrives. | Autumn. | Excellent flavour. |
+sage | Thrives. | Autumn. | Loves dry air. |
+marjoram | Grows well. | Autumn. | Protect from hard frost. |
+tarragon | Grows well. | Spring. | Needs some summer water. |
+bay-tree | Grows well. | Autumn. | Shelter from hot wind. |
+french-lavender | Thrives. | Autumn. | Very drought-hardy. |
+yarrow-white | Thrives. | Autumn. | Very drought-hardy. |
+mint | Grows with shade and water. | Autumn. | Keep in a pot with a saucer. |
+chives | Grows well. | Autumn. | Shade in summer. |
+garlic-chives | Grows well. | Autumn. | Tough. |
+lemon-balm | Grows with shade. | Autumn. | Scorches in full sun. |
+self-heal | Hard. | Autumn. | Needs constant moisture and shade. |
+valerian | Hard. | Autumn. | Needs shade and moisture. |
+comfrey | Grows well. | Autumn. | Deep roots cope with dry soil. |
+echinacea-purpurea | Grows well. | Spring. | Handles heat and cold. |
+avocado | Hard. | Spring. | Frost and dry heat make it difficult. |
+banana | Hard. | Spring. | Needs shelter from frost and wind, and lots of water. |
+passionfruit | Grows with shelter. | Spring. | Protect from frost and water deeply. |
+frangipani | Grows in sheltered spots. | Spring. | Protect from frost. |
+bougainvillea | Grows very well. | Spring. | Loves the heat; protect young plants from frost. |
+ginger | Hard. | October. | Grow in a pot in shade with constant water. |
+turmeric | Hard. | October. | Grow in a pot in shade. |
+lemongrass | Grows well. | Spring. | Protect from frost. |
+curry-leaf | Grows in sheltered spots. | Spring. | Frost-tender. |
+vietnamese-mint | Grows with constant water. | Spring. | Keep in a saucer of water. |
+lemon | Grows very well. | Spring. | Inland areas such as Mildura are citrus-growing regions. |
+lime | Grows well. | Spring. | Protect from frost when young. |
+orange | Grows very well. | Spring. | Sweet fruit in the dry heat. |
+mandarin | Grows very well. | Spring. | Very productive inland. |
+finger-lime | Grows with shade. | Spring. | Needs afternoon shade and water. |
+strawberry | Grows in the cool months. | March to April. | Crops in spring; needs shade in summer. |
+fig | Thrives. | Winter. | Inland figs are excellent. |
+feijoa | Grows well. | Autumn. | Hardy once established. |
+olive | Thrives. | Autumn. | Perfect for hot, dry climates. |
+grape | Thrives. | Winter. | Inland Australia grows most of the nation's grapes. |
+mulberry | Thrives. | Winter. | Very hardy. |
+camellia | Not suited outdoors. | Not recommended. | Alkaline soil, hard water and heat. |
+azalea | Not suited outdoors. | Not recommended. | Needs acidic soil and humidity. |
+gardenia | Hard. | Spring. | Grow in a pot of acidic mix in shade. |
+hydrangea | Hard. | Winter. | Needs deep shade and lots of water. |
+blueberry | Hard. | Winter. | Pots of acidic mix and rainwater only. |
+rose | Grows very well. | Winter. | Dry air means little disease. |
+pelargonium | Thrives. | Autumn. | Very drought-hardy. |
+salvia | Thrives. | Autumn. | Very drought-hardy. |
+agapanthus | Grows well. | Autumn. | Very tough. |
+grevillea | Grows well; choose arid species. | Autumn. | Desert grevilleas thrive. |
+bottlebrush | Grows well. | Autumn. | Tough and drought-hardy. |
+kangaroo-paw | Grows with drainage. | Autumn. | Needs some summer water. |
+lilly-pilly | Hard. | Autumn. | Needs shade, shelter and water. |
+westringia | Grows well. | Autumn. | Drought-hardy. |
+lomandra | Grows very well. | Autumn. | Very tough. |
+banksia | Hard. | Autumn. | Most banksias dislike alkaline soil. |
+correa | Grows with shade. | Autumn. | Needs afternoon shade. |
+warrigal-greens | Grows well. | Spring to autumn. | Tough in heat. |
+monstera | Easy indoors. | Any time. | Keep away from hot windows. |
+peace-lily | Easy indoors. | Any time. | Mist in dry air. |
+pothos | Easy indoors. | Any time. | Easy care. |
+snake-plant | Easy indoors. | Any time. | Handles dry air. |
+zz-plant | Easy indoors. | Any time. | Very tolerant. |
+fiddle-leaf-fig | Grows indoors with bright light. | Any time. | Avoid cooler draughts. |
+spider-plant | Easy indoors. | Any time. | Easy care. |
+rubber-plant | Easy indoors. | Any time. | Easy care. |
+heartleaf-philodendron | Easy indoors. | Any time. | Easy care. |
+aloe-vera | Thrives indoors or out. | Any time. | Protect from frost outdoors. |
+boston-fern | Grows indoors with humidity. | Any time. | Dry air browns fronds; mist often. |
+moth-orchid | Easy indoors. | Any time. | Group plants for humidity. |

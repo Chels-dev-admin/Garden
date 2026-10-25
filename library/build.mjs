@@ -10,6 +10,7 @@
 // Reminder dates are turned into real dates when someone adds the plant.
 import { readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { slugify } from "../supabase/functions/garden/guide.js";
+import { CLASS_OF, REGIONS } from "./regions.js";
 
 const DIR = new URL("./", import.meta.url);
 const GROWING = ["Position", "Soil", "Drainage", "Water", "Mulch", "Feeding", "Support", "Training", "Pruning", "Deadheading", "Care", "Tip", "Spreading", "Propagation", "Indoors", "Pests", "Problems", "Pets", "Winter", "Next year"];
@@ -81,6 +82,30 @@ function build() {
   return { out, errors };
 }
 
+// Per-plant regional advice: library/regions/<region>.txt, one line per plant:
+//   slug | suitability | planting time | local tip | reminder shift in months (blank = plant type default)
+function buildRegions(slugs) {
+  const out = {};
+  const errors = [];
+  for (const r of REGIONS) {
+    const file = new URL(`regions/${r.id}.txt`, DIR);
+    const map = {};
+    readFileSync(file, "utf8").split(/\r?\n/).forEach((line, i) => {
+      if (!line.trim() || line.startsWith("#")) return;
+      const [slug, suit, when, tip, shift] = line.split("|").map((x) => x.trim());
+      if (!CLASS_OF[slug]) errors.push(`regions/${r.id}.txt:${i + 1}: unknown plant "${slug}"`);
+      if (!suit || !when) errors.push(`regions/${r.id}.txt:${i + 1}: needs suitability and planting time`);
+      map[slug] = { suit, when, ...(tip ? { tip } : {}), ...(shift !== "" && shift !== undefined ? { shift: Number(shift) } : {}) };
+    });
+    const missing = slugs.filter((s) => !map[s]);
+    if (missing.length) errors.push(`regions/${r.id}.txt is missing: ${missing.join(", ")}`);
+    out[r.id] = map;
+  }
+  if (errors.length) { console.error(errors.join("\n")); process.exit(1); }
+  console.log(`library/region-plants.json: ${REGIONS.length} regions × ${slugs.length} plants`);
+  return out;
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const { out, errors } = build();
   if (errors.length) {
@@ -88,6 +113,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     process.exit(1);
   }
   writeFileSync(new URL("plants.json", DIR), JSON.stringify(out) + "\n");
+  const regional = buildRegions([...out.map((p) => p.slug), ...JSON.parse(readFileSync(new URL("../starter/plants.json", DIR), "utf8")).map((p) => p.slug)]);
+  writeFileSync(new URL("region-plants.json", DIR), JSON.stringify(regional) + "\n");
   const groups = out.reduce((m, p) => ((m[p.group] = (m[p.group] || 0) + 1), m), {});
   console.log(`library/plants.json: ${out.length} guides`, groups);
 }

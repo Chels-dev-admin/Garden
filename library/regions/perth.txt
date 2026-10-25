@@ -1,0 +1,120 @@
+# Perth & south-west WA. Per-plant advice.
+# Format: slug | suitability | planting time | local tip | reminder shift in months (blank = plant type default)
+tomato | Grows well. | September to December. | Plant by October so fruit sets before the hottest weeks; Medfly is the main pest. |
+cherry-tomato | Grows very well. | September to December. | Copes with Perth heat better than large tomatoes. |
+capsicum | Grows well. | October to November. | Fruit sunburns in January heat; keep leaf cover and use shade cloth. |
+eggplant | Grows very well; loves the heat. | October to December. | Thrives in Perth's long, hot summers. |
+zucchini | Grows very well. | September to January. | Water at the base; powdery mildew appears in autumn. |
+cucumber | Grows well. | October to December. | Mulch thickly; dry sand makes fruit bitter. |
+pumpkin | Grows very well. | October to December. | Grow over a pile of compost; sand alone holds too little water. |
+bush-beans | Grows well. | September to February. | Beans wilt on 40°C days; water the evening before. |
+climbing-beans | Grows well. | September to January. | Plant against an east-facing fence to avoid afternoon heat. |
+sweet-corn | Grows very well. | September to January. | Needs lots of water; drippers under mulch work best on rostered days. |
+sweet-potato | Grows very well. | October to December. | Perth's sand grows smooth, clean tubers. |
+chilli-bell-lantern | Grows very well. | October to November. | Can overwinter in sheltered coastal suburbs. |
+chilli-long-red | Grows very well. | October to November. | Medfly attacks ripe fruit; pick promptly. |
+basil | Grows very well. | October to January. | Needs afternoon shade on the hottest days. |
+thai-basil | Grows very well. | October to January. | Handles the heat better than sweet basil. |
+sunflower | Grows very well. | September to January. | Loves the long, sunny summers. |
+marigold | Grows very well. | September to January. | Good companion for tomatoes against nematodes in sand. |
+toothache-plant | Grows with regular water. | October to December. | Wilts fast in dry sand; mulch and water daily in summer. |
+broccoli | Grows well. | February to May. | Plant as soon as March cools; heads form through winter. |
+cabbage | Grows well. | February to June. | Winter rain does much of the watering. |
+cauliflower | Grows well. | February to April. | Needs rich soil; dig in plenty of compost. |
+kale | Grows very well. | February to June. | Crops right through the wet winter. |
+english-spinach | Grows well in winter. | March to July. | Bolts by October as days lengthen. |
+peas | Grows well. | April to July. | Winter rain suits them; sow after the first autumn rains. |
+snow-peas | Grows very well. | April to July. | Very reliable in Perth winters. |
+bok-choy | Grows very well. | March to August. | Ready in 6 weeks; sow small batches. |
+coriander | Grows well in winter. | March to August. | Bolts quickly once spring warms. |
+dill | Grows well. | March to May and August to September. | Self-seeds in sandy soil. |
+sweet-pea | Grows very well. | March to April. | Flowers through late winter and spring. |
+onion | Grows well. | March to June. | Short- and intermediate-day varieties suit Perth. |
+garlic | Grows well. | March to May. | Harvest in November before the soil gets hot. |
+leek | Grows well. | February to May. | Hill up sand around stems for long white shanks. |
+potato | Grows very well. | July to September, and February. | Perth's sand grows clean potatoes; a classic WA crop. |
+calendula | Grows very well. | February to June. | Flowers right through winter. |
+lettuce | Grows year-round with shade in summer. | All year; easiest March to October. | Use shade cloth and water daily in summer. |
+rocket | Grows year-round. | All year; best in winter. | Self-seeds readily. |
+carrot | Grows very well. | All year; best February to October. | Sand grows long, straight carrots. |
+beetroot | Grows well. | August to April. | Keep moist; dry sand makes woody roots. |
+radish | Grows well. | All year; best in the cool months. | Water daily in sand. |
+silverbeet | Grows year-round. | All year. | One of the easiest crops in Perth. |
+celery | Grows with constant water. | August to February. | Hard in sand; grow in a wicking bed. |
+spring-onion | Grows year-round. | All year. | Very easy. |
+parsley | Grows year-round. | All year. | Needs shade and water in summer. |
+nasturtium | Grows very well. | March to September. | Self-seeds through winter. |
+apple | Grows with low-chill varieties. | Winter. | Choose low-chill types for the coast; the Perth Hills and south-west grow classic apples. |
+peach | Grows well. | Winter. | Medfly attacks ripe fruit; net or bag. |
+raspberry | Hard on the coast. | Winter. | Better in the Perth Hills and south-west; needs constant water. |
+rhubarb | Grows with water and afternoon shade. | Winter crowns. | Summer heat can collapse plants; mulch heavily. |
+asparagus | Grows well. | Winter crowns. | Sandy soil suits it; feed generously. |
+hops | Possible in the south-west. | Winter rhizomes. | Better in cooler areas such as Margaret River and Albany. |
+rosemary | Thrives. | Autumn or spring. | A perfect plant for Perth's climate and sand. |
+thyme | Thrives. | Autumn or spring. | Loves the dry summers. |
+oregano | Thrives. | Autumn or spring. | Flavour is excellent in Perth's sun. |
+sage | Thrives. | Autumn or spring. | Dry summers suit it far better than the humid east coast. |
+marjoram | Thrives. | Autumn or spring. | Easy in sandy soil. |
+tarragon | Grows well. | Spring. | French tarragon does better here than in humid climates. |
+bay-tree | Grows well. | Autumn. | Shelter young plants from hot easterlies. |
+french-lavender | Thrives. | Autumn or spring. | Perfect for Perth sand. |
+yarrow-white | Thrives. | Autumn or spring. | Very drought-hardy. |
+mint | Grows with shade and water. | Autumn or spring. | Needs daily water in summer; best in a pot with a saucer. |
+chives | Grows well. | Autumn or spring. | Afternoon shade in summer. |
+garlic-chives | Grows well. | Autumn or spring. | Tough and easy. |
+lemon-balm | Grows with afternoon shade. | Autumn. | Scorches in full summer sun. |
+self-heal | Grows in shade with water. | Autumn. | Needs moist soil; hard in dry sand. |
+valerian | Hard. | Autumn. | Needs shade, rich soil and constant moisture. |
+comfrey | Grows well. | Autumn or spring. | Deep roots cope with dry summers. |
+echinacea-purpurea | Grows well. | Spring. | Likes the dry summers. |
+avocado | Grows with care. | Spring. | Needs lots of water and protection from hot easterlies; plant in a sheltered spot. |
+banana | Possible in warm, sheltered spots. | Spring. | Check Department of Agriculture rules before planting; needs constant water. |
+passionfruit | Grows very well. | Spring. | Water deeply; a Perth backyard classic. |
+frangipani | Grows very well. | Spring. | Loves the dry heat. |
+bougainvillea | Grows very well. | Spring. | Thrives in heat with little water. |
+ginger | Possible in warm, shaded spots. | October. | Needs constant moisture; grow in a pot. |
+turmeric | Possible in warm, shaded spots. | October. | Grow in a pot with rich mix. |
+lemongrass | Grows very well. | Spring. | Water well in summer. |
+curry-leaf | Grows in sheltered spots. | Spring. | Protect from frost in outer suburbs. |
+vietnamese-mint | Grows with constant water. | Spring. | Keep the pot in a saucer of water. |
+lemon | Grows very well. | Spring. | Feed little and often; nutrients wash out of sand. |
+lime | Grows well. | Spring. | Shelter from hot winds. |
+orange | Grows very well. | Spring. | Medfly attacks ripe fruit; use traps. |
+mandarin | Grows very well. | Spring. | Medfly is the main pest. |
+finger-lime | Grows in part shade. | Spring. | Needs shelter from hot afternoon sun. |
+strawberry | Grows very well. | April to May. | Crops through spring; protect from Medfly and birds. |
+fig | Thrives. | Winter. | Net against birds and Medfly. |
+feijoa | Grows well. | Autumn. | Tough and drought-hardy once established. |
+olive | Thrives. | Autumn. | Can become weedy in bushland; harvest or remove fallen fruit. |
+grape | Thrives. | Winter. | A Perth backyard staple. |
+mulberry | Thrives. | Winter. | Very drought-hardy. |
+camellia | Possible with care. | Autumn. | Grow in pots of acidic mix in shade; bore water can yellow leaves. |
+azalea | Hard. | Autumn. | Grow in pots in shade; alkaline water causes problems. |
+gardenia | Grows with care. | Spring. | Needs acidic mix and regular water. |
+hydrangea | Possible in shade. | Winter. | Needs deep shade and lots of water in summer. |
+blueberry | Possible in pots. | Winter. | Grow in acidic potting mix and water with rainwater. |
+rose | Grows very well. | Winter. | Dry summers mean less black spot than on the east coast. |
+pelargonium | Thrives. | Autumn. | Native to a similar climate in South Africa. |
+salvia | Thrives. | Autumn or spring. | Very drought-hardy. |
+agapanthus | Grows very well. | Autumn. | Deadhead; it can spread into bushland. |
+grevillea | Thrives; many are WA natives. | Autumn. | Local species thrive in sand without fertiliser. |
+bottlebrush | Grows very well. | Autumn. | Tough and drought-hardy. |
+kangaroo-paw | Thrives; WA's floral emblem. | Autumn. | Perfect in Perth sand; cut back after flowering. |
+lilly-pilly | Grows with water. | Autumn. | Needs regular water in summer; WA natives such as peppermint are hardier. |
+westringia | Grows very well. | Autumn. | Tough coastal hedge. |
+lomandra | Grows very well. | Autumn. | Very tough. |
+banksia | Thrives; many are WA natives. | Autumn. | Local species are the easiest; no fertiliser needed. |
+correa | Grows in shade. | Autumn. | Needs afternoon shade in summer. |
+warrigal-greens | Grows very well. | Spring to autumn. | Thrives in sand and salt. |
+monstera | Easy indoors; outdoors in shade. | Any time. | Shade from hot sun outdoors. |
+peace-lily | Easy indoors. | Any time. | Mist in dry summer air. |
+pothos | Easy indoors. | Any time. | Keep away from hot west windows. |
+snake-plant | Easy indoors. | Any time. | Handles dry air well. |
+zz-plant | Easy indoors. | Any time. | Very tolerant. |
+fiddle-leaf-fig | Grows indoors with bright light. | Any time. | Keep away from air-conditioners. |
+spider-plant | Easy indoors. | Any time. | Easy outdoors in shade too. |
+rubber-plant | Easy indoors. | Any time. | Grows huge outdoors; keep potted. |
+heartleaf-philodendron | Easy indoors. | Any time. | Mist in dry weather. |
+aloe-vera | Thrives indoors or out. | Any time. | Grows outdoors year-round in Perth. |
+boston-fern | Grows indoors with humidity. | Any time. | Dry summer air browns fronds; mist often. |
+moth-orchid | Easy indoors. | Any time. | Group plants together for humidity in dry summers. |

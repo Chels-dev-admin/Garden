@@ -1,0 +1,120 @@
+# Tropical north (Darwin, Cairns, Townsville, Kimberley). Per-plant advice.
+# Format: slug | suitability | planting time | local tip | reminder shift in months (blank = plant type default)
+tomato | Grows in the dry season only. | March to June. | Choose heat-set and disease-resistant varieties; cherry types are most reliable. |
+cherry-tomato | Grows well in the dry season. | March to July. | The best tomato for the tropics. |
+capsicum | Grows in the dry season. | March to June. | Crops until the build-up heat in October. |
+eggplant | Grows very well; can last into the wet. | March to July. | Long Asian types handle the heat best. |
+zucchini | Grows in the dry season only. | April to June. | Hand-pollinate early in the morning; bees are scarce in some areas. |
+cucumber | Grows in the dry season. | April to July. | Apple cucumbers cope best with heat. |
+pumpkin | Grows well. | March to May. | Trombone squash (rampicante) resists pests better than true pumpkins. |
+bush-beans | Grows in the dry season. | April to July. | Snake beans and winged beans grow through the wet instead. |
+climbing-beans | Grows in the dry season. | April to June. | Grow snake beans for wet-season crops. |
+sweet-corn | Grows in the dry season. | March to July. | Needs daily water in the dry. |
+sweet-potato | Grows very well year-round. | Any time, best at the start of the wet. | Leaves are a great wet-season green. | 0
+chilli-bell-lantern | Grows very well; perennial. | Early dry season. | Bird's eye and other chillies thrive here year-round. |
+chilli-long-red | Grows very well; perennial. | Early dry season. | Can crop for years. |
+basil | Grows in the dry season; struggles in the wet. | March to June. | Thai and holy basil cope with the wet season better. |
+thai-basil | Grows very well. | Any time. | Usually perennial in the tropics. | 0
+sunflower | Grows in the dry season. | April to July. | Storms flatten tall types; plant dwarf varieties. |
+marigold | Grows in the dry season. | April to July. | Fades in the build-up heat. |
+toothache-plant | Grows very well. | Any time. | Native to tropical America; thrives here. | 0
+broccoli | Hard. | May to June. | Choose sprouting types and plant in the coolest weeks. |
+cabbage | Possible in the dry season. | May to June. | Chinese cabbage is more reliable than round cabbage. |
+cauliflower | Not suited. | Not recommended. | Rarely forms heads without cool nights. |
+kale | Possible in the dry season. | May to June. | Collards and Asian greens are easier. |
+english-spinach | Not suited. | Not recommended. | Grow Ceylon spinach, kangkong or Warrigal greens instead. |
+peas | Possible in the dry season. | May to June. | Snow peas do better than shelling peas. |
+snow-peas | Possible in the dry season. | May to June. | Sow in the coolest weeks for a short crop. |
+bok-choy | Grows in the dry season. | April to July. | Quick and reliable; ready in 5–6 weeks. | -6
+coriander | Possible in the dry season. | May to July. | Bolts fast; grow Vietnamese coriander or culantro year-round. |
+dill | Possible in the dry season. | May to June. | Short-lived; sow small batches. |
+sweet-pea | Hard. | May. | Short flowering in the coolest weeks only. |
+onion | Hard: needs short-day varieties. | April to May. | Grow spring onions and shallots instead; they're far easier. |
+garlic | Not suited. | Not recommended. | Bulbs rarely form; grow garlic chives instead. |
+leek | Possible in the dry season. | April to May. | Grows quickly; harvest before the wet. |
+potato | Possible in the dry season. | April to June. | Plant certified seed potatoes; tubers rot in wet soil. | 8
+calendula | Grows in the dry season. | April to June. | Dies off in the build-up heat. |
+lettuce | Grows in the dry season. | April to August. | Shade cloth and daily water are essential. |
+rocket | Grows in the dry season. | April to August. | Bolts fast in heat. |
+carrot | Grows in the dry season. | April to July. | Short varieties suit hard or sandy soils. |
+beetroot | Grows in the dry season. | April to July. | Water evenly to stop woody roots. |
+radish | Grows in the dry season. | April to August. | Ready in 4 weeks. |
+silverbeet | Grows in the dry season; can survive the wet. | April to July. | Ceylon spinach is better for the wet season. |
+celery | Hard. | April to May. | Needs constant water; grow in shade. |
+spring-onion | Grows year-round. | Any time. | One of the easiest crops in the tropics. | 0
+parsley | Grows in the dry season. | April to July. | Flat-leaf copes better than curly. |
+nasturtium | Grows in the dry season. | April to July. | Dies in the wet-season heat. |
+apple | Not suited: needs winter chill. | Not recommended. | Try tropical fruit such as mango, lychee or star apple instead. |
+peach | Not suited. | Not recommended. | Even low-chill types rarely fruit here. |
+raspberry | Not suited. | Not recommended. | Try native or Atherton raspberries in Far North Queensland highlands. |
+rhubarb | Not suited. | Not recommended. | Rots in the wet season; rosella stems make a tart substitute. |
+asparagus | Not suited. | Not recommended. | Spears don't form without a cool rest period. |
+hops | Not suited. | Not recommended. | Needs long summer days and cold winters. |
+rosemary | Hard. | April to May. | Grow in a pot of gritty mix and keep it out of monsoon rain. |
+thyme | Hard. | April to May. | Treat as a dry-season annual in pots. |
+oregano | Possible in the dry season. | April to June. | Cuban oregano (a succulent) thrives here instead. |
+sage | Hard. | April to May. | Usually dies in the wet season. |
+marjoram | Hard. | April to May. | Grow as a dry-season annual. |
+tarragon | Not suited. | Not recommended. | Mexican tarragon grows well instead. |
+bay-tree | Possible in pots. | Dry season. | Grows slowly in the heat; keep in part shade. |
+french-lavender | Hard. | April to May. | Grow in a pot under cover during the wet. |
+yarrow-white | Possible in the dry season. | April to May. | Often rots in the wet. |
+mint | Grows with shade and water. | Any time. | Vietnamese mint is more reliable in the wet. | 0
+chives | Hard. | April to May. | Garlic chives are much easier here. |
+garlic-chives | Grows very well. | Any time. | Thrives in heat and humidity. | 0
+lemon-balm | Possible in shade. | April to May. | Often short-lived in the heat. |
+self-heal | Possible in shade. | April to May. | Treat as an annual. |
+valerian | Not suited. | Not recommended. | Needs a cool climate. |
+comfrey | Possible in part shade. | April to May. | Dies back in the build-up; returns with water. |
+echinacea-purpurea | Not suited. | Not recommended. | Rots in the wet season. |
+avocado | Grows; choose tropical varieties. | Start of the wet season. | Hass struggles here; ask a local nursery for tropical (West Indian) types and plant on a mound. |
+banana | Grows very well. | Start of the wet season. | Check local biosecurity rules; permits may be required to plant bananas. |
+passionfruit | Grows very well. | Start of the wet season. | Panama and yellow passionfruit cope best with humidity. |
+frangipani | Grows very well. | Start of the wet season. | Flowers for most of the year. |
+bougainvillea | Grows very well. | Dry season. | Flowers best in the dry season. |
+ginger | Grows very well. | Start of the wet season. | Harvest when leaves die back in the dry. |
+turmeric | Grows very well. | Start of the wet season. | Harvest in the dry season. |
+lemongrass | Grows very well. | Any time. | Thrives in the heat and rain. |
+curry-leaf | Grows very well. | Any time. | Can become a small tree. |
+vietnamese-mint | Grows very well. | Any time. | Loves the wet season. |
+lemon | Grows; fruit can be dry. | Start of the wet season. | Lemonade and Meyer types do best. |
+lime | Grows very well. | Start of the wet season. | Tahitian and kaffir limes are the best citrus for the tropics. |
+orange | Grows; fruit stays green-skinned. | Start of the wet season. | Green-skinned oranges can still be sweet and ripe. |
+mandarin | Grows; fruit colours poorly. | Start of the wet season. | Taste-test rather than wait for orange skin. |
+finger-lime | Grows in part shade. | Start of the wet season. | Needs shade from harsh dry-season sun. |
+strawberry | Grows as a dry-season crop. | April to May. | Plant runners each April; they die in the wet. |
+fig | Hard: rust and rain. | Dry season. | Grows, but fruit often splits or rots in the wet. |
+feijoa | Hard. | Dry season. | Needs some cold to fruit well. |
+olive | Not suited. | Not recommended. | Needs dry summers and cool winters. |
+grape | Hard. | Dry season. | Only tropical varieties fruit; mildew is heavy. |
+mulberry | Grows very well. | Dry season. | One of the few berries that thrives in the tropics. |
+camellia | Hard. | Dry season. | Needs shade and acidic mix; often struggles. |
+azalea | Hard. | Dry season. | Rarely thrives; grow ixora for a similar look. |
+gardenia | Grows in shade. | Dry season. | The best of the acid-lovers for the tropics. |
+hydrangea | Hard. | Dry season. | Needs deep shade and lots of water. |
+blueberry | Hard. | Dry season. | Only very low-chill types in pots; often disappointing. |
+rose | Hard. | Dry season. | Some old Chinese and tropical roses cope; black spot is severe. |
+pelargonium | Grows in the dry season. | April to May. | Rots in the wet season; keep pots under cover. |
+salvia | Possible. | Dry season. | Tropical salvias such as Salvia leucantha cope best. |
+agapanthus | Possible. | Dry season. | Grows but flowers poorly in the heat. |
+grevillea | Grows; choose tropical species. | Start of the wet season. | Northern species and hybrids such as 'Honey Gem' thrive. |
+bottlebrush | Grows well. | Start of the wet season. | Tropical weeping bottlebrushes suit the climate. |
+kangaroo-paw | Not suited. | Not recommended. | Humidity rots it. |
+lilly-pilly | Grows very well. | Start of the wet season. | Many tropical lilly pillies are local natives. |
+westringia | Possible. | Dry season. | Needs good drainage in the wet. |
+lomandra | Grows well. | Any time. | Tough and low-maintenance. |
+banksia | Possible with northern species. | Start of the wet season. | Banksia dentata is the tropical banksia. |
+correa | Not suited. | Not recommended. | A southern plant that struggles in the heat. |
+warrigal-greens | Grows in the dry season. | April to July. | Kangkong is better for the wet season. |
+monstera | Grows outdoors in shade. | Any time. | Can be invasive outdoors; keep it contained. |
+peace-lily | Grows outdoors in shade. | Any time. | Thrives in humidity. |
+pothos | Grows outdoors in shade. | Any time. | A declared weed risk in some northern areas; keep in pots. |
+snake-plant | Grows outdoors or indoors. | Any time. | Can spread into bushland; keep it potted. |
+zz-plant | Grows outdoors in shade. | Any time. | Very tough in the heat. |
+fiddle-leaf-fig | Grows outdoors in shade. | Any time. | Becomes a large tree outdoors. |
+spider-plant | Grows outdoors in shade. | Any time. | Useful shady groundcover. |
+rubber-plant | Grows outdoors. | Any time. | Becomes a huge tree with invasive roots; keep potted. |
+heartleaf-philodendron | Grows outdoors in shade. | Any time. | Climbs trees in the humidity. |
+aloe-vera | Grows outdoors in the dry. | Any time. | Keep out of wet-season rain. |
+boston-fern | Grows outdoors in shade. | Any time. | Loves the wet season. |
+moth-orchid | Grows outdoors on trees in shade. | Any time. | Mount on a tree trunk in dappled shade. |

@@ -1,0 +1,120 @@
+# Tasmania, Canberra & cold tablelands. Per-plant advice.
+# Format: slug | suitability | planting time | local tip | reminder shift in months (blank = plant type default)
+tomato | Grows in the short summer. | Mid-November to early December. | Choose early varieties such as 'Siberian' or 'Stupice'; start seed indoors in September. |
+cherry-tomato | Grows well. | Mid-November to December. | The most reliable tomato in cold areas. |
+capsicum | Hard: needs a long, warm season. | Late November. | Grow in a greenhouse or against a sunny wall. |
+eggplant | Hard. | Late November. | Choose small, early varieties and a greenhouse if possible. |
+zucchini | Grows well. | Late November to December. | Fast enough to crop in a short summer. |
+cucumber | Grows in warm spots. | Late November to December. | A cold frame or cloche helps early growth. |
+pumpkin | Grows in warm summers. | Late November. | Choose quick varieties to ripen before frost. |
+bush-beans | Grows well. | Late November to December. | Wait for soil to warm; cold soil rots seed. |
+climbing-beans | Grows well. | Late November to December. | Runner beans are a cold-climate favourite. |
+sweet-corn | Grows in warm summers. | Late November. | Choose early varieties. |
+sweet-potato | Not suited outdoors. | Not recommended. | Needs a long hot season. |
+chilli-bell-lantern | Grows in pots or a greenhouse. | Late November. | Overwinter indoors; frost kills it. |
+chilli-long-red | Grows in pots or a greenhouse. | Late November. | Start seed indoors in August. |
+basil | Grows in the warmest summer weeks. | December. | Grow in pots so you can move them to shelter. |
+thai-basil | Grows in pots. | December. | Annual; cold nights stop growth. |
+sunflower | Grows well. | November to December. | Plant after the last frost. |
+marigold | Grows well. | November to December. | Frost kills it; plant late. |
+toothache-plant | Grows as a summer annual. | December. | Start seed indoors in October. |
+broccoli | Grows very well. | January to February, or August to September. | Autumn plantings crop before hard frosts. |
+cabbage | Grows very well. | January to March, or August to September. | Frost sweetens cabbages. |
+cauliflower | Grows very well. | December to February. | Cold climates grow the best cauliflowers. |
+kale | Grows very well. | January to March, or August. | Survives hard frosts; sweeter after cold. |
+english-spinach | Grows very well. | February to April, and August to October. | Thrives in cool weather. |
+peas | Grows very well. | August to October, and March. | Spring sowings are most reliable. | 4
+snow-peas | Grows very well. | August to October. | Spring is the main season here. | 4
+bok-choy | Grows well. | February to March, and September. | Quick between frosts. |
+coriander | Grows very well. | September to November, and February to March. | Grows for longer before bolting than in warm areas. |
+dill | Grows well. | October to December. | Spring and early summer crop. |
+sweet-pea | Grows very well. | August to September. | Spring sowings flower in summer. | 5
+onion | Grows very well. | June to August. | Long-day varieties suit Tasmania. |
+garlic | Grows very well. | March to May. | Cold areas grow the best garlic, including hardneck types. |
+leek | Grows very well. | November to February. | Very frost-hardy. |
+potato | Grows very well. | October to November. | Tasmania is a major potato-growing region. | 2
+calendula | Grows well. | September to November. | Flowers spring to autumn. |
+lettuce | Grows well. | September to March. | Easy in mild summers. |
+rocket | Grows well. | September to April. | Bolts slower in cool summers. |
+carrot | Grows well. | September to February. | Sweet after cold nights. |
+beetroot | Grows well. | September to January. | Easy and reliable. |
+radish | Grows well. | September to April. | Very quick. |
+silverbeet | Grows well. | September to February. | Survives light frost. |
+celery | Grows well. | October to December. | Start seedlings under cover. |
+spring-onion | Grows well. | September to March. | Very easy. |
+parsley | Grows well. | September to March. | Survives frost. |
+nasturtium | Grows in summer. | November. | Frost kills it. |
+apple | Grows superbly. | Winter. | Tasmania is the Apple Isle; almost every variety suits. |
+peach | Grows well. | Winter. | Late frosts can kill blossom; plant on a slope. |
+raspberry | Grows superbly. | Winter. | A cold-climate classic. |
+rhubarb | Grows superbly. | Winter crowns. | Deep red stems in the cold. |
+asparagus | Grows very well. | Winter crowns. | Long-lived and productive. |
+hops | Grows very well. | Winter rhizomes. | Tasmania grows commercial hops. |
+rosemary | Grows well with shelter. | Spring. | Protect from wet, frosty winters. |
+thyme | Grows well. | Spring. | Hardy to frost. |
+oregano | Grows well. | Spring. | Dies back in winter. |
+sage | Grows well. | Spring. | Hardy to frost with good drainage. |
+marjoram | Grows in summer. | Spring. | Often dies in hard frosts. |
+tarragon | Grows very well. | Spring. | French tarragon loves the cold. |
+bay-tree | Grows with shelter. | Spring. | Protect from hard frost when young. |
+french-lavender | Hard: frost-tender. | Spring. | English lavender is much hardier here. |
+yarrow-white | Grows very well. | Spring. | Very hardy. |
+mint | Grows very well. | Spring. | Dies back in winter. |
+chives | Grows very well. | Spring. | Hardy perennial. |
+garlic-chives | Grows well. | Spring. | Dies back in winter. |
+lemon-balm | Grows very well. | Spring. | Hardy perennial. |
+self-heal | Grows very well. | Spring. | Hardy groundcover. |
+valerian | Grows very well. | Spring. | Suits cold climates. |
+comfrey | Grows very well. | Spring. | Very hardy. |
+echinacea-purpurea | Grows very well. | Spring. | Loves cold winters. |
+avocado | Not suited. | Not recommended. | Frost kills it. |
+banana | Not suited. | Not recommended. | Frost kills it. |
+passionfruit | Hard. | Spring. | Banana passionfruit is hardier but can be weedy; check local rules. |
+frangipani | Not suited outdoors. | Not recommended. | Grow indoors in a sunny room. |
+bougainvillea | Not suited outdoors. | Not recommended. | Frost kills it. |
+ginger | Grows in pots indoors. | October. | Keep indoors over winter. |
+turmeric | Grows in pots indoors. | October. | Keep indoors over winter. |
+lemongrass | Grows in pots. | November. | Bring indoors before frost. |
+curry-leaf | Grows in pots indoors. | Spring. | Frost kills it. |
+vietnamese-mint | Grows in pots. | November. | Bring indoors in winter. |
+lemon | Grows with shelter. | Spring. | Meyer lemon in a pot against a north-facing wall is the best bet. |
+lime | Hard. | Spring. | Keep in a pot and bring under cover in winter. |
+orange | Hard. | Spring. | Fruit rarely sweetens; needs a very warm spot. |
+mandarin | Hard. | Spring. | Early varieties in a sheltered spot may ripen. |
+finger-lime | Hard. | Spring. | Grow in a pot under cover in winter. |
+strawberry | Grows very well. | April to May, or September. | Crops in summer; net against birds from November. |
+fig | Grows against a warm wall. | Winter. | Choose cold-hardy 'Brown Turkey'. |
+feijoa | Grows with shelter. | Spring. | Hardy to moderate frost once established. |
+olive | Grows in sheltered spots. | Spring. | Canberra and southern Tasmania grow olives in warm spots. |
+grape | Grows well. | Winter. | Tasmania grows cool-climate grapes; choose early table varieties. |
+mulberry | Grows very well. | Winter. | Very hardy. |
+camellia | Grows very well. | Autumn. | Flowers can be frost-burnt; plant in a sheltered spot. |
+azalea | Grows very well. | Autumn. | Loves cool, moist conditions. |
+gardenia | Hard. | Spring. | Grow indoors or in a very sheltered spot. |
+hydrangea | Grows very well. | Winter. | Classic cool-climate shrub. |
+blueberry | Grows very well. | Winter. | Northern highbush types crop heavily here. |
+rose | Grows very well. | Winter. | Cold climates grow superb roses. |
+pelargonium | Grows in summer. | Spring. | Bring pots indoors before frost. |
+salvia | Grows with shelter. | Spring. | Choose frost-hardy species. |
+agapanthus | Grows well. | Autumn. | Hardy to moderate frost. |
+grevillea | Grows; choose hardy species. | Spring. | Alpine and Tasmanian species cope with frost. |
+bottlebrush | Grows; choose hardy species. | Spring. | Alpine bottlebrush is very frost-hardy. |
+kangaroo-paw | Hard. | Spring. | Frost and wet winters kill it; grow in pots under cover. |
+lilly-pilly | Hard. | Spring. | Frost damages young growth. |
+westringia | Grows with shelter. | Spring. | Protect from hard frost. |
+lomandra | Grows very well. | Spring. | Very hardy. |
+banksia | Grows; choose hardy species. | Spring. | Silver banksia (Banksia marginata) is native to Tasmania. |
+correa | Grows very well. | Spring. | Several correas are native to Tasmania. |
+warrigal-greens | Grows in summer. | November. | Frost kills it. |
+monstera | Easy indoors. | Any time. | Keep warm and away from cold windows. |
+peace-lily | Easy indoors. | Any time. | Keep above 15°C. |
+pothos | Easy indoors. | Any time. | Keep away from draughts. |
+snake-plant | Easy indoors. | Any time. | Keep dry in winter. |
+zz-plant | Easy indoors. | Any time. | Very tolerant. |
+fiddle-leaf-fig | Grows indoors with bright light. | Any time. | Keep warm in winter. |
+spider-plant | Easy indoors. | Any time. | Easy care. |
+rubber-plant | Easy indoors. | Any time. | Easy care. |
+heartleaf-philodendron | Easy indoors. | Any time. | Easy care. |
+aloe-vera | Easy indoors. | Any time. | Keep indoors; frost kills it. |
+boston-fern | Easy indoors. | Any time. | Keep away from heaters. |
+moth-orchid | Easy indoors. | Any time. | Keep warm at night. |

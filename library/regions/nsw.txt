@@ -1,0 +1,120 @@
+# Coastal NSW (Sydney, Central Coast, Newcastle, Illawarra). Per-plant advice.
+# Format: slug | suitability | planting time | local tip | reminder shift in months (blank = plant type default)
+tomato | Grows well. | September to December; again in January for autumn. | Fruit fly is the main battle from December; early plantings crop before it peaks. |
+cherry-tomato | Grows very well; handles humidity better than big tomatoes. | September to January. | Often self-seeds here and pops up again each spring. |
+capsicum | Grows well. | October to November. | Needs a warm, sheltered spot to set fruit; north-facing walls help. |
+eggplant | Grows well in a hot spot. | October to November. | Slow to start in cool springs; wait until soil feels warm to the touch. |
+zucchini | Grows very well. | September to January. | Powdery mildew arrives with late-summer humidity; sow a second crop in January. |
+cucumber | Grows well. | September to January. | Lebanese types cope best with coastal humidity. |
+pumpkin | Grows well. | September to December. | Plant early so pumpkins ripen before autumn rain causes rot. |
+bush-beans | Grows very well. | September to February. | Sow every 4 weeks; bean fly can hit summer sowings. |
+climbing-beans | Grows very well. | September to January. | Scarlet runners can come back for a second year in frost-free spots. |
+sweet-corn | Grows well. | September to January. | Possums love ripening cobs; cover them with bags. |
+sweet-potato | Grows well in sandy soil. | October to December. | Coastal sands grow smooth tubers; dig before winter rains. |
+chilli-bell-lantern | Grows very well; perennial here. | October to November. | Overwinters on the coast and crops earlier in its second year. |
+chilli-long-red | Grows very well. | October to November. | Often crops into June in frost-free gardens. |
+basil | Grows very well over summer. | October to January. | Dies with the first cool nights in May; take cuttings indoors. |
+thai-basil | Grows very well. | October to January. | Tougher than sweet basil in humid February weather. |
+sunflower | Grows well. | September to January. | Stake tall types against summer storms. |
+marigold | Grows well. | September to January. | Plant among tomatoes to draw beneficial insects. |
+toothache-plant | Grows well. | October to December. | Can carry on through mild coastal winters in a sheltered spot. |
+broccoli | Grows well. | February to May. | Plant by April for heads before the coldest weeks. |
+cabbage | Grows well. | February to June. | Net early; cabbage whites are active until May. |
+cauliflower | Grows, but needs steady growth. | February to April. | Warm autumns can cause small, loose heads; plant on time. |
+kale | Grows very well. | February to May. | Keeps cropping into November before aphids take over. |
+english-spinach | Grows well in winter. | March to August. | Bolts by October; switch to silverbeet for summer. |
+peas | Grows well. | March to July. | Sow after the soil cools in March; mildew ends crops in spring. |
+snow-peas | Grows very well. | March to July. | One of the most reliable winter crops on the coast. |
+bok-choy | Grows very well in winter. | February to September. | Ready in 6 weeks; sow small batches. |
+coriander | Grows well in the cool months. | March to August. | Bolts within weeks in summer; grow Vietnamese mint instead. |
+dill | Grows well. | March to May and August to September. | Dislikes summer humidity; best as a spring and autumn crop. |
+sweet-pea | Grows well. | March to April (St Patrick's Day is traditional). | Flowers August to November; add lime to sandy soil. |
+onion | Grows well; choose short-day types. | April to June. | Long-day varieties won't bulb this far north; check the label. |
+garlic | Grows; choose warm-climate types. | March to May. | Use Australian-grown softneck garlic; supermarket bulbs often fail. |
+leek | Grows well. | February to May. | Hill up soil in winter for long white stems. |
+potato | Grows well. | August to September and February. | Avoid harvesting in wet weather to stop rot. |
+calendula | Grows very well. | February to June. | Flowers through winter and self-seeds for next year. |
+lettuce | Grows year-round. | All year; heat-tolerant types in summer. | Grow summer lettuce under afternoon shade. |
+rocket | Grows year-round. | All year. | Sharper and quicker to bolt in summer. |
+carrot | Grows year-round. | All year; best February to October. | Sandy coastal soils grow long, straight roots. |
+beetroot | Grows well. | August to April. | Slow in midwinter; sow from late winter. |
+radish | Grows year-round. | All year. | Ready in 4 weeks; sow little and often. |
+silverbeet | Grows year-round. | All year. | One of the most reliable greens in coastal heat. |
+celery | Grows with steady water. | August to March. | Needs constant moisture through summer. |
+spring-onion | Grows year-round. | All year. | Regrows from the root ends after cutting. |
+parsley | Grows year-round. | All year; easiest in spring and autumn. | Usually lasts about 18 months before going to seed. |
+nasturtium | Grows year-round; self-seeds. | All year. | Pull extra seedlings before they smother small plants. |
+apple | Possible with low-chill varieties. | Bare-rooted in winter. | Choose 'Anna', 'Dorsett Golden' or 'Tropic Sweet'; plant two for pollination. |
+peach | Grows with low-chill varieties. | Bare-rooted in winter. | 'Tropic Snow' and 'Florida Prince' fruit before fruit fly peaks. |
+raspberry | Possible with autumn-fruiting types. | Winter. | 'Heritage' crops on new canes and suits mild winters. |
+rhubarb | Grows, with green-stemmed crops. | Winter crowns. | Stems stay greener in warm winters; flavour is still good. |
+asparagus | Possible; lighter crops. | Winter crowns. | Spears come in August to October in mild winters. |
+hops | Hard: light crops. | Winter rhizomes. | Grows as a summer screen but rarely gives big cone crops this far north. |
+rosemary | Grows very well. | Spring or autumn. | Handles salt wind; perfect for sandy coastal soil. |
+thyme | Grows well with good drainage. | Spring or autumn. | Plant in gritty soil or pots; summer humidity rots it in heavy soil. |
+oregano | Grows well. | Spring or autumn. | Flavour is strongest in dry, sunny spots. |
+sage | Grows; dislikes humid summers. | Spring or autumn. | Often dies in a wet February; keep cuttings as backup. |
+marjoram | Grows well. | Spring or autumn. | Short-lived; replant every 2–3 years. |
+tarragon | Grows; French tarragon struggles in humidity. | Spring. | Russian tarragon grows more easily but has less flavour. |
+bay-tree | Grows very well. | Autumn or spring. | Scale is common; wipe or spray with horticultural oil. |
+french-lavender | Grows very well. | Spring or autumn. | Handles coastal humidity better than English lavender. |
+yarrow-white | Grows very well. | Spring or autumn. | Thrives in sandy coastal soil. |
+mint | Grows very well. | Spring or autumn. | Keep in a pot; it spreads fast in moist soil. |
+chives | Grows well. | Spring or autumn. | May die back in summer heat and return in autumn. |
+garlic-chives | Grows very well. | Spring or autumn. | Deadhead to stop seedlings everywhere. |
+lemon-balm | Grows very well. | Spring or autumn. | Give afternoon shade in summer. |
+self-heal | Grows well. | Spring or autumn. | Good groundcover in moist part shade. |
+valerian | Grows; prefers cooler climates. | Spring or autumn. | Afternoon shade helps it through summer. |
+comfrey | Grows very well. | Spring or autumn. | Choose its spot carefully; it's almost impossible to remove. |
+echinacea-purpurea | Grows; can rot in wet humid summers. | Spring. | Plant in free-draining soil or a raised bed. |
+avocado | Grows in warm, well-drained spots. | Spring. | Root rot is the main killer; plant on a mound. |
+banana | Grows in warm, sheltered spots. | Spring. | Fruit is slow to ripen in cooler winters; dwarf Cavendish is easiest. |
+passionfruit | Grows very well. | Spring. | Grafted vines throw suckers; remove them promptly. |
+frangipani | Grows well in warm spots. | Spring. | Keep dry in winter to avoid rot. |
+bougainvillea | Grows well in hot, sunny spots. | Spring. | Flowers most in sun with little water. |
+ginger | Grows in warm, sheltered part shade. | September to October. | Dies back in winter; keep the soil dry then. |
+turmeric | Grows in warm, sheltered part shade. | September to October. | Harvest after leaves die back in late autumn. |
+lemongrass | Grows very well. | Spring to summer. | Cut back hard in late winter. |
+curry-leaf | Grows in warm, sheltered spots. | Spring. | Suckers freely; keep it in check. |
+vietnamese-mint | Grows very well. | Spring to summer. | Loves wet spots; dies back in cold snaps. |
+lemon | Grows very well. | Spring or early autumn. | Meyer and Eureka fruit almost year-round here. |
+lime | Grows well. | Spring. | Tahitian lime crops best in a warm, sheltered spot. |
+orange | Grows well. | Spring. | Navels ripen in winter; Valencias in spring and summer. |
+mandarin | Grows well. | Spring. | Fruit fly attacks ripening fruit; pick promptly. |
+finger-lime | Grows well. | Spring. | Native to northern NSW rainforests; likes part shade. |
+strawberry | Grows well. | March to May. | Crops August to December; birds are the main pest. |
+fig | Grows well. | Winter. | Net fruit in late summer against birds and fruit fly. |
+feijoa | Grows very well. | Autumn or spring. | Handles salt wind; good coastal hedge. |
+olive | Grows; humidity reduces fruiting. | Autumn or spring. | Fruits better in drier inland areas; still a good screen. |
+grape | Grows; mildew is the challenge. | Winter. | Choose mildew-resistant table grapes such as 'Isabella'. |
+mulberry | Grows very well. | Winter. | Fruits September to November. |
+camellia | Grows very well. | Autumn. | Sasanquas flower in autumn; japonicas in winter. |
+azalea | Grows very well. | Autumn. | Petal blight is common in humid springs. |
+gardenia | Grows very well. | Spring or autumn. | Yellow leaves in winter usually recover in spring. |
+hydrangea | Grows very well in part shade. | Winter or autumn. | Acidic Sydney soils give blue flowers. |
+blueberry | Grows with low-chill varieties. | Winter. | Choose southern highbush or rabbiteye; use acidic potting mix in pots. |
+rose | Grows well. | Winter (bare-rooted) or autumn. | Black spot is common in humid summers; choose resistant varieties. |
+pelargonium | Grows very well. | Spring or autumn. | Flowers nearly year-round on the coast. |
+salvia | Grows very well. | Spring or autumn. | Loved by wattlebirds and honeyeaters. |
+agapanthus | Grows very well. | Autumn. | Deadhead; it can spread into bushland. |
+grevillea | Grows well. | Autumn. | Choose humidity-tolerant east coast hybrids. |
+bottlebrush | Grows very well. | Autumn. | Tolerates wet, heavy soils. |
+kangaroo-paw | Grows; humidity brings ink disease. | Autumn or spring. | Choose hybrid types bred for the east coast. |
+lilly-pilly | Grows very well. | Autumn or spring. | Choose psyllid-resistant varieties. |
+westringia | Grows very well. | Autumn or spring. | Excellent front-line coastal hedge. |
+lomandra | Grows very well. | Autumn or spring. | Tough in sand, clay, sun or shade. |
+banksia | Grows well. | Autumn. | Coast banksia and old man banksia are local natives. |
+correa | Grows well. | Autumn. | Winter flowers feed eastern spinebills. |
+warrigal-greens | Grows very well. | Spring to autumn. | Native to NSW beaches; self-seeds in sand. |
+monstera | Easy indoors; grows outdoors in shade. | Any time. | Can climb trees outdoors in frost-free gardens. |
+peace-lily | Easy indoors. | Any time. | Can grow outdoors in deep shade on the coast. |
+pothos | Easy indoors. | Any time. | Keep indoors; it can escape into bushland outdoors. |
+snake-plant | Easy indoors. | Any time. | Water very little in winter. |
+zz-plant | Easy indoors. | Any time. | Copes with dim apartments. |
+fiddle-leaf-fig | Grows indoors with bright light. | Any time. | Keep away from air-conditioner vents. |
+spider-plant | Easy indoors. | Any time. | Also makes a good shady groundcover outdoors. |
+rubber-plant | Easy indoors. | Any time. | Grows into a large tree if planted outdoors; keep it potted. |
+heartleaf-philodendron | Easy indoors. | Any time. | Trails well on shelves. |
+aloe-vera | Grows indoors or outdoors in sun. | Any time. | Grows outdoors year-round on the coast. |
+boston-fern | Grows indoors or on shady verandahs. | Any time. | Loves humid bathrooms. |
+moth-orchid | Easy indoors. | Any time. | Flowers mainly in late winter and spring. |

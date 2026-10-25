@@ -3,7 +3,7 @@
 
 export const NA = "N/A";
 export const OTHER = "Other plants";
-const GROWING_ORDER = ["Position", "Planting time", "Soil", "Drainage", "Water", "Mulch", "Feeding", "Support", "Training", "Pruning", "Deadheading", "Care", "Tip", "Spreading", "Propagation", "Indoors", "Pests", "Problems", "Pets", "Caution", "Winter", "Climate", "Next year"];
+const GROWING_ORDER = ["Position", "Planting time", "Local tip", "Soil", "Drainage", "Water", "Mulch", "Feeding", "Support", "Training", "Pruning", "Deadheading", "Care", "Tip", "Spreading", "Propagation", "Indoors", "Pests", "Problems", "Pets", "Caution", "Winter", "Climate", "Next year"];
 const USES_ORDER = ["Kitchen", "Home", "Traditional", "Garden", "Caution"];
 const GLANCE_KEYS = ["sun", "water", "spacing", "pot", "indoors"];
 const TEXT_KEYS = ["botanical", "summary", "harvest", "reminders"];
