@@ -5,10 +5,10 @@
 //   ACTION=group  PLANT="basil"  GROUP="Kitchen herbs"
 //   ACTION=calendar                                        (rebuild calendar.ics only)
 import { readFileSync, writeFileSync } from "node:fs";
-import { buildCalendar } from "../assets/calendar.js";
+import { buildCalendar } from "./calendar.js";
 
-const PLANTS = new URL("../data/plants.json", import.meta.url);
-const CAL = new URL("../calendar.ics", import.meta.url);
+const PLANTS = new URL("./plants.json", import.meta.url);
+const CAL = new URL("./calendar.ics", import.meta.url);
 const LOCATION = process.env.GARDEN_LOCATION || "the Woy Woy peninsula, Central Coast NSW, Australia (frost-free, sandy soil, salt wind, humid summers)";
 const MODEL = process.env.CLAUDE_MODEL || "claude-sonnet-5-5";
 

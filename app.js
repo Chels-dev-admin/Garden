@@ -43,18 +43,18 @@ async function gh(path, opts = {}) {
 async function fetchPlants() {
   if (canSync()) {
     try {
-      const res = await gh(`/contents/data/plants.json?ref=${encodeURIComponent(state.settings.branch)}`, { headers: { Accept: "application/vnd.github.raw+json" } });
+      const res = await gh(`/contents/plants.json?ref=${encodeURIComponent(state.settings.branch)}`, { headers: { Accept: "application/vnd.github.raw+json" } });
       return await res.json();
     } catch (e) { console.warn("Falling back to site copy:", e.message); }
   }
-  const res = await fetch(`data/plants.json?t=${Date.now()}`, { cache: "no-store" });
+  const res = await fetch(`plants.json?t=${Date.now()}`, { cache: "no-store" });
   return res.json();
 }
 
 async function init() {
   const [plants, overview] = await Promise.all([
     fetchPlants(),
-    fetch(`data/overview.md?t=${Date.now()}`).then((r) => (r.ok ? r.text() : "")).catch(() => ""),
+    fetch(`overview.md?t=${Date.now()}`).then((r) => (r.ok ? r.text() : "")).catch(() => ""),
   ]);
   state.plants = plants;
   state.overview = overview;
