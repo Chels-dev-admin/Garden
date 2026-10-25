@@ -292,3 +292,12 @@ select { font: inherit; padding: 10px 12px; border-radius: 10px; border: 1px sol
 .pick-all { justify-self: start; margin: 0 0 4px; }
 #pickSearch { margin: 10px 0 6px; }
 .ready-hint { color: var(--leaf-2); font-weight: 500; }
+
+.regions { border: 0; padding: 0; margin: 4px 0 0; display: grid; gap: 6px; }
+.regions legend { font-weight: 500; font-size: .92rem; margin-bottom: 6px; padding: 0; }
+.region-opt { display: flex; gap: 10px; align-items: flex-start; padding: 9px 10px; border: 1px solid var(--line); border-radius: 10px; font-weight: 400; cursor: pointer; background: var(--bg); }
+.region-opt input { margin-top: 3px; accent-color: var(--leaf-2); width: 18px; height: 18px; flex: none; }
+.region-opt span { display: grid; gap: 1px; }
+.region-opt .muted { font-size: .82rem; }
+.region-opt:has(input:checked) { border-color: var(--leaf-2); background: var(--leaf-soft); }
+#locRegions { display: grid; gap: 6px; max-height: 260px; overflow-y: auto; }

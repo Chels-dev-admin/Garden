@@ -1,6 +1,7 @@
 import { buildCalendar } from "./calendar.js";
 import { createApi } from "./api.js";
 import { fieldSets, localToday, normalise, slugify } from "./supabase/functions/garden/guide.js";
+import { REGIONS, applyRegion, guessRegion, regionById } from "./library/regions.js";
 
 const $ = (sel, root = document) => root.querySelector(sel);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
@@ -62,6 +63,7 @@ function fromReady(t, group) {
   const today = localToday(state.garden?.timezone);
   const now = new Date(`${today}T12:00:00`);
   const iso = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+  t = applyRegion(t, state.garden?.region);
   const tasks = (t.tasks || []).map((task) => {
     if (!task.md) return task; // already dated
     const [m, d] = task.md.split("-").map(Number);
@@ -77,7 +79,7 @@ function fromReady(t, group) {
     return { title: task.title, notes: task.notes || "", start: iso(start), rrule };
   });
   const { aka, starter, md, ...rest } = t;
-  return { ...rest, group: group || t.group || OTHER, tasks, library: Boolean(t.library) };
+  return { ...rest, group: group || t.group || OTHER, tasks, library: Boolean(t.library), ready: true, region: t.region || "" };
 }
 
 async function reverseGeocode(btn, input) {
@@ -277,6 +279,8 @@ function startSetup() {
   state.setup = {
     step: 1,
     location: state.garden?.location || "",
+    region: state.garden?.region || guessRegion(state.garden?.location || "")?.id || "",
+    regionPicked: Boolean(state.garden?.region),
     picks: new Set(),
     custom: [],
     search: "",
@@ -297,6 +301,11 @@ function setupView() {
   return `<div class="narrow setup">${steps}${[stepLocation, stepPlants, stepBuild, stepCalendar][s.step - 1]()}</div>`;
 }
 
+function regionOptions(current, name) {
+  return [...REGIONS.map((r) => [r.id, r.label, r.places]), ["", "Somewhere else", "Outside these regions, or overseas"]]
+    .map(([id, label, places]) => `<label class="region-opt"><input type="radio" name="${name}" value="${id}" ${id === current ? "checked" : ""}><span><b>${esc(label)}</b><span class="muted">${esc(places)}</span></span></label>`).join("");
+}
+
 function stepLocation() {
   const s = state.setup;
   return `<h1>Where is your garden?</h1>
@@ -306,6 +315,10 @@ function stepLocation() {
         <input name="location" required maxlength="120" autocomplete="off" value="${esc(s.location)}" placeholder="e.g. Umina Beach, NSW, Australia">
       </label>
       <button type="button" class="btn btn-sm" id="geoBtn">${icon.pin}Use my current location</button>
+      <fieldset class="regions">
+        <legend>Growing region <span class="muted">(picks the right advice for ready-made guides)</span></legend>
+        ${regionOptions(s.region, "setupRegion")}
+      </fieldset>
       <div class="wizard-nav"><span></span><button class="btn btn-primary" type="submit">Next</button></div>
     </form>
     <p class="hint">Signed in as ${esc(state.api.user?.email || "")}. <button type="button" class="link-btn inline" id="setupSignOut">Not you? Sign out</button></p>`;
@@ -361,7 +374,7 @@ function stepPlants() {
       <input id="pickSearch" type="search" placeholder="Search, e.g. tomato, lemon, basil" value="${esc(s.search)}" aria-label="Search ready-made guides" autocomplete="off">
       <div id="pickList">${loaded ? pickListHtml() : '<p class="muted">Loading…</p>'}</div>
       ${state.ai ? `<label class="check asis"><input type="checkbox" id="asIs" ${s.asIs ? "checked" : ""}><span>Use ready-made guides as they are <span class="muted">(instant, no cost)</span>. Untick to have Claude rewrite them for ${esc(labelFor(s.location))}.</span></label>`
-        : `<p class="hint">Ready-made guides are written for temperate and subtropical coastal Australia (the starter set for the ${STARTER_LABEL}). Use Edit guide on any plant to adjust it.</p>`}
+        : `<p class="hint">${regionById(state.garden?.region) ? `Ready-made guides will include advice for ${esc(regionById(state.garden.region).label)}.` : "Ready-made guides are written for temperate and subtropical coastal Australia. Choose a growing region in step 1 to get regional advice."} Use Edit guide on any plant to adjust it.</p>`}
     </div>
     <div class="card">
       <h3>Add your own</h3>
@@ -409,6 +422,13 @@ function bindSetup() {
     const f = $("#locForm");
     $("#geoBtn").onclick = () => reverseGeocode($("#geoBtn"), f.location);
     $("#setupSignOut").onclick = () => state.api.signOut();
+    f.location.oninput = () => {
+      if (s.regionPicked) return;
+      const g = guessRegion(f.location.value);
+      s.region = g ? g.id : "";
+      f.querySelectorAll('[name="setupRegion"]').forEach((r) => (r.checked = r.value === s.region));
+    };
+    f.querySelectorAll('[name="setupRegion"]').forEach((r) => (r.onchange = () => { s.region = r.value; s.regionPicked = true; }));
     f.onsubmit = async (e) => {
       e.preventDefault();
       const loc = f.location.value.trim();
@@ -416,7 +436,7 @@ function bindSetup() {
       const btn = f.querySelector('[type="submit"]');
       btn.disabled = true;
       try {
-        state.garden = await state.api.saveGarden({ location: loc, label: labelFor(loc), timezone: timezone() });
+        state.garden = await state.api.saveGarden({ location: loc, label: labelFor(loc), timezone: timezone(), region: s.region });
         s.location = loc;
         s.step = 2;
         render();
@@ -497,7 +517,7 @@ async function buildGarden(retryOnly = false) {
   const picked = state.starter.plants.filter((p) => s.picks.has(p.slug));
   if (!retryOnly) {
     const asIs = !state.ai || s.asIs;
-    const tips = near ? "overview-copy" : state.ai ? "overview" : null;
+    const tips = near ? "overview-copy" : regionById(state.garden?.region) ? "overview-region" : state.ai ? "overview" : null;
     const ready = picked.filter((p) => !existing.has(p.slug)).map((p) => fromReady(p));
     const chunks = [];
     for (let i = 0; i < ready.length; i += 40) chunks.push(ready.slice(i, i + 40));
@@ -520,6 +540,7 @@ async function buildGarden(retryOnly = false) {
     render();
     try {
       if (j.kind === "overview-copy") state.garden = await state.api.saveGarden({ overview: state.starter.overview });
+      else if (j.kind === "overview-region") state.garden = await state.api.saveGarden({ overview: regionById(state.garden.region).overview });
       else if (j.kind === "overview") await state.api.fn("overview");
       else if (j.kind === "import") await state.api.fn("import", { plants: j.plants });
       else if (j.kind === "blank") await state.api.insertPlant(blankPlant(j.name, j.group));
@@ -651,7 +672,7 @@ function plantView(p) {
       ${state.ai ? `<button class="btn" id="rewriteBtn" ${state.busy ? "disabled" : ""}>Rewrite guide</button>` : ""}
       <button class="btn btn-danger" id="removeBtn">Remove plant</button>
     </div>
-    ${p.library && !p.updated ? `<p class="hint">Ready-made guide for temperate and subtropical coastal Australia. ${state.ai ? "Tap Rewrite guide to tailor it to " + esc(state.garden?.label || "your location") + ", or " : ""}Use Edit guide to adjust it.</p>`
+    ${p.ready && !p.updated ? `<p class="hint">Ready-made guide${regionById(p.region) ? ` with advice for ${esc(regionById(p.region).label)}` : " for temperate and subtropical coastal Australia"}. ${state.ai ? "Tap Rewrite guide to tailor it to " + esc(state.garden?.label || "your location") + ", or " : ""}Use Edit guide to adjust it.</p>`
       : p.manual && !p.updated ? "" : p.updated || p.added ? `<p class="hint">Written for ${esc(state.garden?.label || "your location")}${p.updated ? `, updated ${esc(fmtDate(p.updated))}` : ""}.</p>` : ""}`;
 }
 
@@ -844,7 +865,7 @@ function overviewView() {
     <p class="lead">${all.length} plant${all.length === 1 ? "" : "s"} in ${groupCount} group${groupCount === 1 ? "" : "s"}, with guides written for your conditions.</p>
 
     <div class="card location-row">
-      <p>Guides are written for <b>${esc(state.garden.location)}</b>.</p>
+      <p>Guides are written for <b>${esc(state.garden.location)}</b>${regionById(state.garden.region) ? `<br><span class="muted">Growing region: ${esc(regionById(state.garden.region).label)}</span>` : ""}.</p>
       <button class="btn btn-sm" id="locationBtn" ${state.busy ? "disabled" : ""}>${icon.pin}Change location</button>
     </div>
 
@@ -922,8 +943,17 @@ function openAdd() {
 function openLocation() {
   const f = $("#locationForm");
   f.location.value = state.garden.location;
-  f.regenerate.checked = true;
+  f.regenerate.checked = false;
   $("#plantCount").textContent = state.plants.length;
+  $("#locRegions").innerHTML = regionOptions(state.garden.region || "", "locRegion");
+  const readyCount = state.plants.filter((p) => p.ready && !p.updated).length;
+  f.reapply.checked = readyCount > 0;
+  $("#reapplyRow").hidden = !readyCount;
+  $("#readyCount").textContent = readyCount;
+  f.location.oninput = () => {
+    const g = guessRegion(f.location.value);
+    if (g) f.querySelectorAll('[name="locRegion"]').forEach((r) => (r.checked = r.value === g.id));
+  };
   $("#aiOptions").hidden = !state.ai;
   $("#noAiNote").hidden = state.ai;
   $("#locationDialog").showModal();
@@ -1023,32 +1053,43 @@ $("#removeForm").onsubmit = async (e) => {
 $("#locationForm").onsubmit = async (e) => {
   const f = e.target;
   const loc = f.location.value.trim();
-  if (!loc || loc === state.garden.location) return;
-  const regenerate = state.ai && f.regenerate.checked;
-  if (!state.ai) {
-    try {
-      state.garden = await state.api.saveGarden({ location: loc, label: labelFor(loc), timezone: timezone() });
-      render();
-      toast(`Your garden is set to ${esc(state.garden.location)}. Guides stay as they are; use Edit guide to adjust them.`, { sticky: true });
-    } catch (ex) { toast(esc(ex.message), { sticky: true }); }
-    return;
-  }
-  await runBusy({ label: `Updating tips for ${labelFor(loc)}` }, async (progress) => {
-    state.garden = await state.api.saveGarden({ location: loc, label: labelFor(loc), timezone: timezone() });
-    await state.api.fn("overview");
+  const region = f.querySelector('[name="locRegion"]:checked')?.value || "";
+  if (!loc) return;
+  const changed = loc !== state.garden.location || region !== (state.garden.region || "");
+  if (!changed) return;
+  const rewrite = state.ai && f.regenerate.checked;
+  const reapply = !rewrite && f.reapply.checked;
+  await runBusy({ label: `Updating your garden for ${labelFor(loc)}` }, async (progress) => {
+    const near = STARTER_PLACE.test(loc);
+    const preset = regionById(region);
+    await loadStarter();
+    state.garden = await state.api.saveGarden({
+      location: loc, label: labelFor(loc), timezone: timezone(), region,
+      ...(near ? { overview: state.starter.overview } : preset ? { overview: preset.overview } : {}),
+    });
+    if (!near && !preset && state.ai) await state.api.fn("overview");
     const failed = [];
-    if (regenerate) {
+    let updated = 0;
+    if (reapply) {
+      for (const p of state.plants.filter((x) => x.ready && !x.updated)) {
+        const t = state.starter.plants.find((x) => x.slug === p.slug);
+        if (!t) continue;
+        progress(`Updating ${p.name}`);
+        try { await state.api.updatePlant({ ...fromReady(t, p.group), added: p.added }); updated++; } catch { failed.push(p.name); }
+      }
+    }
+    if (rewrite) {
       const list = state.plants.slice();
       for (const [i, p] of list.entries()) {
         progress(`Rewriting ${p.name} (${i + 1} of ${list.length})`);
-        try { await state.api.fn("rewrite", { slug: p.slug }); } catch (ex) {
+        try { await state.api.fn("rewrite", { slug: p.slug }); updated++; } catch (ex) {
           failed.push(p.name);
           if (ex.status === 429) { failed.push(...list.slice(i + 1).map((x) => x.name)); break; }
         }
       }
     }
     await reloadGarden();
-    toast(`Your garden is set to ${esc(state.garden.location)}.${failed.length ? ` Not rewritten: ${esc(failed.join(", "))}. Open a plant and tap Rewrite guide to try again.` : regenerate ? " Every guide has been rewritten." : ""}`, { sticky: true });
+    toast(`Your garden is set to ${esc(state.garden.location)}${preset ? ` (${esc(preset.label)})` : ""}.${updated ? ` ${updated} guide${updated === 1 ? "" : "s"} updated.` : ""}${failed.length ? ` Not updated: ${esc(failed.join(", "))}.` : ""}`, { sticky: true });
   });
 };
 

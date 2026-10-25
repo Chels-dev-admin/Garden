@@ -100,11 +100,13 @@
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
         Use my current location
       </button>
+      <fieldset class="regions"><legend>Growing region</legend><div id="locRegions"></div></fieldset>
+      <label class="check" id="reapplyRow"><input type="checkbox" name="reapply" checked> <span>Update my <b id="readyCount">0</b> ready-made guides with advice for the new region <span class="muted">(instant, no cost; guides you've edited stay as they are)</span></span></label>
       <div id="aiOptions" class="stack">
-        <label class="check"><input type="checkbox" name="regenerate" checked> <span>Rewrite all <b id="plantCount">your</b> plant guides and reminders for this location</span></label>
-        <p class="hint">Rewriting takes about half a minute per plant; keep this page open. Rewritten reminders go into your calendar feed, so delete any old ones you added to your phone by hand. Unticked, only the local tips and new plants use the new location.</p>
+        <label class="check"><input type="checkbox" name="regenerate"> <span>Instead, have Claude rewrite all <b id="plantCount">your</b> plant guides for this exact location</span></label>
+        <p class="hint">Rewriting takes about half a minute per plant; keep this page open.</p>
       </div>
-      <p class="hint" id="noAiNote" hidden>Your guides stay as they are. Use Edit guide on any plant to adjust it for the new location.</p>
+      <p class="hint" id="noAiNote" hidden>Guides you've written or edited yourself stay as they are; use Edit guide to adjust them.</p>
       <div class="dialog-actions">
         <button type="button" class="btn" data-close>Cancel</button>
         <button type="submit" class="btn btn-primary" value="save">Save location</button>

@@ -6,7 +6,8 @@ A website for growing guides tailored to where you live. Anyone can create an ac
 - **Plant guides.** Growing steps, harvest, uses, pet and people safety notes, all with the same fields (N/A where something doesn't apply).
 - **Ready-made guides.** 118 free guides for common vegetables, herbs, fruit, flowers, natives and indoor plants, plus the Woy Woy starter set. Pick them in setup or type a name in Add plant; seasonal reminders are dated from the day you add them. They're written for temperate and subtropical coastal Australia.
 - **Add, remove, group and edit plants** at any time. With a Claude key, Claude writes each new guide in about half a minute. Without one, new plants start as blank guides you fill in or paste into with **Edit guide**, including their calendar reminders.
-- **Change location** and every guide, tip and reminder date can be rewritten for the new climate.
+- **Growing regions.** Eight Australian presets (coastal NSW, SE Queensland, tropical north, Perth & south-west WA, Adelaide, Melbourne, cold areas, inland). Ready-made guides get that region's planting times, soil, water, climate and pest advice, local tips, and reminders moved to the right season. The region is guessed from the location typed in setup and can be changed.
+- **Change location** and ready-made guides update for the new region instantly and free; with a Claude key, every guide can instead be rewritten for the exact place.
 - **Calendar feed.** Each account gets its own feed of care reminders at 6pm local time. Subscribe once; it updates as plants change.
 - **Accounts.** Email and password, with "Forgot password" emails. Sign out, change password or delete the account from the account button.
 
@@ -57,6 +58,7 @@ Then open the site and **Create account**. It redeploys by itself whenever backe
 | `api.js` | Talks to Supabase: accounts, your garden, the backend |
 | `calendar.js` | Builds calendar files (shared with the backend) |
 | `starter/` | The ready-made starter plants and Woy Woy peninsula tips |
+| `library/regions.js` | Growing regions: advice for each plant type in each region, and which type each ready-made plant is |
 | `library/` | Ready-made guides: edit the `.txt` files, then run `node library/build.mjs` to rebuild `library/plants.json` |
 | `supabase/schema.sql` | Database tables and per-account security rules |
 | `supabase/functions/garden/` | Backend: writes guides with Claude, imports starters, serves calendar feeds, deletes accounts |

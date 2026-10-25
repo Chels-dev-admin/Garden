@@ -32,6 +32,9 @@ create table if not exists public.usage_global (
   count int  not null default 0
 );
 
+-- Added later: growing region preset (see library/regions.js).
+alter table public.gardens add column if not exists region text not null default '';
+
 alter table public.gardens      enable row level security;
 alter table public.plants       enable row level security;
 alter table public.usage        enable row level security;
