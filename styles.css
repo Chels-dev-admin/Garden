@@ -264,3 +264,20 @@ body:not([data-screen="app"]) .layout { grid-template-columns: 1fr; }
 
 a.btn { text-decoration: none; }
 .dialog-body form { padding: 0; }
+
+/* edit guide form */
+.edit { display: grid; gap: 12px; max-width: 760px; }
+.edit h2 { margin: 18px 0 0; }
+textarea { font: inherit; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); width: 100%; resize: vertical; }
+textarea:focus, select:focus { outline: 2px solid var(--leaf-2); outline-offset: 1px; }
+select { font: inherit; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); width: 100%; }
+.glance-edit { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+.task-edit { border: 1px solid var(--line); border-radius: 12px; padding: 12px; margin: 0 0 10px; display: grid; gap: 10px; background: var(--surface); }
+.task-edit-head { display: flex; gap: 8px; align-items: center; }
+.task-edit-head input { flex: 1; min-width: 0; font-weight: 600; }
+.task-edit-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+@media (max-width: 520px) { .task-edit-grid { grid-template-columns: 1fr 1fr; } }
+.icon-btn.small { width: 34px; height: 34px; color: var(--muted); }
+.icon-btn.small:hover { background: var(--surface-2); }
+.edit-actions { position: sticky; bottom: 0; display: flex; justify-content: flex-end; gap: 8px; padding: 12px 0; background: linear-gradient(transparent, var(--bg) 30%); }
+[hidden] { display: none !important; }

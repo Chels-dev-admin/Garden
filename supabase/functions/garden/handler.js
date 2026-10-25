@@ -5,6 +5,7 @@
 //   POST {action: "overview"}          write local tips for the garden's location
 //   POST {action: "import", plants}    copy ready-made guides (no Claude)
 //   POST {action: "delete_account"}    delete the signed-in account and its garden
+//   POST {action: "status"}            whether Claude guide-writing is switched on
 // POSTs need the user's access token: "Authorization: Bearer <token>".
 import { buildCalendar } from "./calendar.js";
 import { cleanImported, fieldSets, guideFields, localToday, normalise, OTHER, overviewPrompt, parseJson, plantPrompt, slugify, str } from "./guide.js";
@@ -58,7 +59,7 @@ export function makeDb(env, fetchImpl) {
 }
 
 async function callClaude(env, fetchImpl, content, maxTokens = 5000) {
-  if (!env.ANTHROPIC_API_KEY) throw new HttpError(500, "The backend's ANTHROPIC_API_KEY secret is not set.");
+  if (!env.ANTHROPIC_API_KEY) throw new HttpError(503, "Automatic guide writing isn't switched on for this site. You can still fill in guides yourself with Edit guide.");
   const url = env.CLAUDE_API_URL || "https://api.anthropic.com/v1/messages";
   for (let attempt = 1; ; attempt++) {
     const res = await fetchImpl(url, {
@@ -183,6 +184,7 @@ export async function handle(req, env, fetchImpl = fetch) {
       case "rewrite": return json(await rewritePlant(db, env, fetchImpl, user.id, body));
       case "overview": return json(await writeOverview(db, env, fetchImpl, user.id));
       case "import": return json(await importPlants(db, user.id, body));
+      case "status": return json({ ai: Boolean(env.ANTHROPIC_API_KEY), dailyLimit: Number(env.DAILY_LIMIT) || 30 });
       case "delete_account":
         await db.deleteUser(user.id);
         return json({ deleted: true });

@@ -127,6 +127,8 @@ export function createApi({ supabaseUrl, supabaseKey, functionsUrl }) {
       const rows = await rest(`plants?user_id=eq.${uid()}&select=slug,data`);
       return rows.map((r) => ({ ...r.data, slug: r.slug }));
     },
+    insertPlant: (p) =>
+      rest("plants", { method: "POST", body: { user_id: uid(), slug: p.slug, data: p }, headers: { Prefer: "return=minimal" } }),
     updatePlant: (p) =>
       rest(`plants?user_id=eq.${uid()}&slug=eq.${encodeURIComponent(p.slug)}`, { method: "PATCH", body: { data: p, updated_at: new Date().toISOString() }, headers: { Prefer: "return=minimal" } }),
     deletePlant: (slug) =>

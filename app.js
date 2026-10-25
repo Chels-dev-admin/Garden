@@ -1,6 +1,6 @@
 import { buildCalendar } from "./calendar.js";
 import { createApi } from "./api.js";
-import { normalise, slugify } from "./supabase/functions/garden/guide.js";
+import { fieldSets, localToday, normalise, slugify } from "./supabase/functions/garden/guide.js";
 
 const $ = (sel, root = document) => root.querySelector(sel);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
@@ -14,6 +14,7 @@ const state = {
   garden: null,
   plants: [],
   busy: null, // { label } while a long job runs
+  ai: true, // whether the backend can write guides with Claude
   starter: null, // { plants, overview }
   setup: null,
 };
@@ -102,7 +103,8 @@ async function boot() {
 }
 
 async function enterGarden() {
-  const [garden, plants] = await Promise.all([state.api.garden(), state.api.plants()]);
+  const [garden, plants, status] = await Promise.all([state.api.garden(), state.api.plants(), state.api.fn("status").catch(() => null)]);
+  state.ai = status ? status.ai : true;
   state.garden = garden;
   state.plants = normalise(plants);
   if (garden?.setup_done) setScreen("app");
@@ -118,8 +120,8 @@ async function reloadGarden() {
 
 /* ---------- rendering ---------- */
 function route() {
-  const m = location.hash.match(/^#\/plant\/([\w-]+)/);
-  return m ? { view: "plant", slug: m[1] } : { view: "overview" };
+  const m = location.hash.match(/^#\/plant\/([\w-]+)(\/edit)?/);
+  return m ? { view: m[2] ? "edit" : "plant", slug: m[1] } : { view: "overview" };
 }
 
 function render() {
@@ -132,7 +134,12 @@ function render() {
   if (state.screen === "setup") { main.innerHTML = setupView(); bindSetup(); return; }
   const r = route();
   renderSidebar(r);
-  if (r.view === "plant") {
+  if (r.view === "edit") {
+    const p = state.plants.find((x) => x.slug === r.slug);
+    main.innerHTML = p ? editView(p) : `<h1>Not found</h1><p><a href="#/">Back to overview</a></p>`;
+    if (p) bindEdit(p);
+    document.title = p ? `Edit ${p.name} · Garden Guide` : "Garden Guide";
+  } else if (r.view === "plant") {
     const p = state.plants.find((x) => x.slug === r.slug);
     main.innerHTML = p ? plantView(p) : `<h1>Not found</h1><p class="muted">That plant isn't in your garden. It may have been removed.</p><p><a href="#/">Back to overview</a></p>`;
     if (p) bindPlant(p);
@@ -277,7 +284,7 @@ function stepPlants() {
   const groups = [...new Set(starter.map((p) => p.group || OTHER))];
   const near = STARTER_PLACE.test(s.location);
   const picked = starter.filter((p) => s.picks.has(p.slug));
-  const toWrite = (s.asIs && near ? 0 : picked.length) + s.custom.length;
+  const toWrite = state.ai ? (s.asIs && near ? 0 : picked.length) + s.custom.length : 0;
   return `<h1>What are you growing?</h1>
     <p class="lead">Tick plants from the starter list and add any others by name. You can add, remove and group plants any time later.</p>
     <div class="card">
@@ -287,18 +294,20 @@ function stepPlants() {
           ${starter.filter((p) => (p.group || OTHER) === g).map((p) => `
             <label class="check pick"><input type="checkbox" value="${esc(p.slug)}" ${s.picks.has(p.slug) ? "checked" : ""}><span>${esc(p.name)}</span></label>`).join("")}
         </fieldset>`).join("") : '<p class="muted">Loading…</p>'}
-      ${picked.length && near ? `<label class="check asis"><input type="checkbox" id="asIs" ${s.asIs ? "checked" : ""}><span>Use the ready-made ${STARTER_LABEL} guides as they are <span class="muted">(instant, no cost)</span></span></label>` : ""}
-      ${picked.length && !near ? `<p class="hint">Starter guides were written for the ${STARTER_LABEL}, so these will be rewritten for ${esc(labelFor(s.location))}.</p>` : ""}
+      ${!state.ai && picked.length ? `<p class="hint">${near ? "These ready-made guides were written for your area." : `These ready-made guides were written for the ${STARTER_LABEL}. Open a plant and tap Edit guide to adjust it for ${esc(labelFor(s.location))}.`}</p>` : ""}
+      ${state.ai && picked.length && near ? `<label class="check asis"><input type="checkbox" id="asIs" ${s.asIs ? "checked" : ""}><span>Use the ready-made ${STARTER_LABEL} guides as they are <span class="muted">(instant, no cost)</span></span></label>` : ""}
+      ${state.ai && picked.length && !near ? `<p class="hint">Starter guides were written for the ${STARTER_LABEL}, so these will be rewritten for ${esc(labelFor(s.location))}.</p>` : ""}
     </div>
     <div class="card">
       <h3>Add your own</h3>
+      ${state.ai ? "" : '<p class="hint">Each one starts as a blank guide that you can fill in or paste into with Edit guide.</p>'}
       <form id="customForm" class="add-row">
         <input name="name" maxlength="80" autocomplete="off" placeholder="e.g. Cherry tomato" aria-label="Plant name">
         <button class="btn" type="submit">Add</button>
       </form>
       <ul class="chips">${s.custom.map((n, i) => `<li class="chip-item">${esc(n)}<button type="button" data-rm="${i}" aria-label="Remove ${esc(n)}">${icon.x}</button></li>`).join("")}</ul>
     </div>
-    <p class="summary">${picked.length + s.custom.length} plant${picked.length + s.custom.length === 1 ? "" : "s"} selected${toWrite ? ` · ${toWrite} guide${toWrite === 1 ? "" : "s"} for Claude to write, about ${Math.max(1, Math.round(toWrite * 0.5))} min` : ""}</p>
+    <p class="summary">${picked.length + s.custom.length} plant${picked.length + s.custom.length === 1 ? "" : "s"} selected${toWrite ? ` · ${toWrite} guide${toWrite === 1 ? "" : "s"} for Claude to write, about ${Math.max(1, Math.round(toWrite * 0.5))} min` : !state.ai && s.custom.length ? ` · ${s.custom.length} blank guide${s.custom.length === 1 ? "" : "s"} for you to fill in` : ""}</p>
     <div class="wizard-nav"><button class="btn" id="back">Back</button><button class="btn btn-primary" id="next">${picked.length + s.custom.length ? "Build my garden" : "Skip for now"}</button></div>`;
 }
 
@@ -398,13 +407,14 @@ async function buildGarden(retryOnly = false) {
   const picked = state.starter.plants.filter((p) => s.picks.has(p.slug));
   const existing = new Set(state.plants.map((p) => p.slug));
   if (!retryOnly) {
-    const asIs = near && s.asIs;
+    const asIs = !state.ai || (near && s.asIs);
+    const tips = near ? "overview-copy" : state.ai ? "overview" : null;
     s.jobs = [
-      { kind: asIs ? "overview-copy" : "overview", label: `Local tips for ${labelFor(s.location)}` },
+      ...(tips ? [{ kind: tips, label: `Local tips for ${labelFor(s.location)}` }] : []),
       ...(asIs && picked.length ? [{ kind: "import", label: `${picked.length} ready-made guide${picked.length === 1 ? "" : "s"}`, plants: picked }] : []),
       ...(asIs ? [] : picked.map((p) => ({ kind: "add", label: p.name, name: p.name, group: p.group }))),
-      ...s.custom.map((n) => ({ kind: "add", label: n, name: n, group: OTHER })),
-    ].filter((j) => j.kind !== "add" || !existing.has(slugify(j.name)));
+      ...s.custom.map((n) => ({ kind: state.ai ? "add" : "blank", label: n, name: n, group: OTHER })),
+    ].filter((j) => !["add", "blank"].includes(j.kind) || !existing.has(slugify(j.name)));
     s.jobs.forEach((j) => (j.status = "waiting"));
   }
   s.running = true;
@@ -420,6 +430,7 @@ async function buildGarden(retryOnly = false) {
       if (j.kind === "overview-copy") state.garden = await state.api.saveGarden({ overview: state.starter.overview });
       else if (j.kind === "overview") await state.api.fn("overview");
       else if (j.kind === "import") await state.api.fn("import", { plants: j.plants });
+      else if (j.kind === "blank") await state.api.insertPlant(blankPlant(j.name, j.group));
       else await state.api.fn("add", { name: j.name, group: j.group });
       j.status = "done";
     } catch (ex) {
@@ -539,15 +550,148 @@ function plantView(p) {
           <li><span class="task-date">${esc(fmtDate(t.start, { day: "numeric", month: "short" }))}</span>
           <span><b>${esc(t.title)}</b>${t.rrule ? `<div class="task-repeat">${esc(describeRrule(t.rrule))}</div>` : ""}${t.notes ? `<div class="muted">${esc(t.notes)}</div>` : ""}</span></li>`).join("")}
         </ul>
-      </div>` : `<p class="muted">N/A${p.calendar === false ? ". This plant's reminders were added straight to your phone calendar; see Care schedule below." : ". Tap Rewrite guide to get reminders for this plant."}</p>`}
+      </div>` : `<p class="muted">N/A${p.calendar === false ? ". This plant's reminders were added straight to your phone calendar; see Care schedule below." : (state.ai ? ". Tap Rewrite guide, or add reminders with Edit guide." : ". Add reminders with Edit guide.")}</p>`}
     <h2>Care schedule</h2><p>${esc(p.reminders || "N/A")}</p>
     <div class="page-actions">
       ${tasks.length ? `<button class="btn" id="icsBtn">${icon.cal}Download reminders</button>` : ""}
       <button class="btn" id="regroupBtn">Change group</button>
-      <button class="btn" id="rewriteBtn" ${state.busy ? "disabled" : ""}>Rewrite guide</button>
+      <a class="btn" href="#/plant/${p.slug}/edit">Edit guide</a>
+      ${state.ai ? `<button class="btn" id="rewriteBtn" ${state.busy ? "disabled" : ""}>Rewrite guide</button>` : ""}
       <button class="btn btn-danger" id="removeBtn">Remove plant</button>
     </div>
     ${p.updated || p.added ? `<p class="hint">Written for ${esc(state.garden?.label || "your location")}${p.updated ? `, updated ${esc(fmtDate(p.updated))}` : ""}.</p>` : ""}`;
+}
+
+/* ---------- blank guides and the edit form ---------- */
+function blankPlant(name, group = OTHER) {
+  return {
+    slug: slugify(name), name: name.slice(0, 60), group: group || OTHER, botanical: "", summary: "", cautions: [],
+    glance: {}, growing: [], harvest: "", uses: [], reminders: "", calendar: true, tasks: [],
+    added: localToday(state.garden?.timezone), manual: true,
+  };
+}
+
+const isNA = (v) => /^\s*(n\/?a)?\s*$/i.test(String(v ?? ""));
+const val = (v) => (isNA(v) ? "" : String(v));
+const REPEATS = [["", "Once"], ["FREQ=WEEKLY", "Every week"], ["FREQ=WEEKLY;INTERVAL=2", "Every 2 weeks"], ["FREQ=MONTHLY", "Every month"], ["FREQ=YEARLY", "Every year"]];
+
+function repeatOf(rrule) {
+  if (!rrule) return { base: "", until: "", custom: "" };
+  const o = Object.fromEntries(rrule.split(";").map((x) => x.split("=")));
+  const base = o.FREQ === "WEEKLY" ? (Number(o.INTERVAL) === 2 ? "FREQ=WEEKLY;INTERVAL=2" : "FREQ=WEEKLY") : `FREQ=${o.FREQ}`;
+  const known = REPEATS.some(([v]) => v === base) && !o.COUNT && (!o.INTERVAL || base.includes("INTERVAL")) && Object.keys(o).every((k) => ["FREQ", "INTERVAL", "BYDAY", "UNTIL"].includes(k));
+  const u = o.UNTIL || "";
+  return known ? { base, until: u ? `${u.slice(0, 4)}-${u.slice(4, 6)}-${u.slice(6, 8)}` : "", custom: "" } : { base: "custom", until: "", custom: rrule };
+}
+
+function taskRow(t = {}, i) {
+  const r = repeatOf(t.rrule);
+  return `<fieldset class="task-edit" data-i="${i}">
+    <div class="task-edit-head"><input name="t-title" maxlength="80" placeholder="e.g. Feed with tomato food" value="${esc(t.title || "")}" aria-label="Reminder"><button type="button" class="icon-btn small" data-rm-task aria-label="Remove reminder">${icon.x}</button></div>
+    <div class="task-edit-grid">
+      <label>Date<input type="date" name="t-start" value="${esc(t.start || "")}"></label>
+      <label>Repeat<select name="t-repeat">${REPEATS.map(([v, l]) => `<option value="${v}" ${r.base === v ? "selected" : ""}>${l}</option>`).join("")}${r.custom ? `<option value="custom" selected>As written by Claude</option>` : ""}</select></label>
+      <label>Until<input type="date" name="t-until" value="${esc(r.until)}"></label>
+    </div>
+    <input type="hidden" name="t-custom" value="${esc(r.custom)}">
+    <label>Notes<input name="t-notes" maxlength="500" value="${esc(t.notes || "")}" placeholder="What to do"></label>
+  </fieldset>`;
+}
+
+function editView(p) {
+  const sets = fieldSets(state.plants);
+  const g = p.glance || {};
+  const pet = (p.cautions || []).find((c) => c.who === "Pets")?.text || "";
+  const ppl = (p.cautions || []).filter((c) => c.who !== "Pets").map((c) => c.text).join(" ");
+  const map = (list) => new Map((list || []).map(([k, v]) => [k.toLowerCase(), v]));
+  const gm = map(p.growing);
+  const um = map(p.uses);
+  const area = (name, label, v, rows = 2) => `<label>${esc(label)}<textarea name="${name}" rows="${rows}" placeholder="N/A">${esc(val(v))}</textarea></label>`;
+  return `<form id="editForm" class="edit">
+    <h1>Edit ${esc(p.name)}</h1>
+    <p class="hint">Fill in what you know or paste text into any section. Anything left blank shows N/A.</p>
+    <label>Plant name<input name="name" required maxlength="60" value="${esc(p.name)}"></label>
+    <label>Botanical name<input name="botanical" maxlength="80" value="${esc(val(p.botanical))}" placeholder="N/A"></label>
+    ${area("summary", "Summary", p.summary, 3)}
+    <h2>Safety</h2>
+    ${area("pets", "Pets", pet)}
+    ${area("people", "People", ppl)}
+    <h2>At a glance</h2>
+    <div class="glance-edit">${[["sun", "Sun"], ["water", "Water"], ["spacing", "Spacing"], ["pot", "Pot size"], ["indoors", "Indoors"]].map(([k, l]) => `<label>${l}<input name="glance-${k}" maxlength="80" value="${esc(val(g[k]))}" placeholder="N/A"></label>`).join("")}</div>
+    <h2>Growing</h2>
+    ${sets.growing.map((h) => area(`growing-${h}`, h, gm.get(h.toLowerCase()))).join("")}
+    <h2>Harvest</h2>
+    ${area("harvest", "Harvest", p.harvest, 3)}
+    <h2>Uses</h2>
+    ${sets.uses.map((h) => area(`uses-${h}`, h, um.get(h.toLowerCase()))).join("")}
+    <h2>Care schedule</h2>
+    ${area("reminders", "Summary of care", p.reminders)}
+    <h2>Calendar reminders</h2>
+    <p class="hint">Reminders appear in your calendar feed at 6pm on the day.</p>
+    <div id="taskList">${(p.tasks || []).map(taskRow).join("")}</div>
+    <button type="button" class="btn btn-sm" id="addTask">+ Add reminder</button>
+    <div class="edit-actions"><a class="btn" href="#/plant/${p.slug}">Cancel</a><button class="btn btn-primary" type="submit">Save guide</button></div>
+  </form>`;
+}
+
+function bindEdit(p) {
+  const f = $("#editForm");
+  let dirty = false;
+  f.oninput = () => (dirty = true);
+  const bindRows = () => document.querySelectorAll("[data-rm-task]").forEach((b) => (b.onclick = () => { b.closest(".task-edit").remove(); dirty = true; }));
+  bindRows();
+  $("#addTask").onclick = () => {
+    $("#taskList").insertAdjacentHTML("beforeend", taskRow({ start: localToday(state.garden?.timezone) }, Date.now()));
+    bindRows();
+    $("#taskList").lastElementChild.querySelector("input").focus();
+  };
+  f.querySelectorAll('a[href^="#/plant/"]').forEach((a) => (a.onclick = (e) => { if (dirty && !confirm("Leave without saving your changes?")) e.preventDefault(); }));
+  f.onsubmit = async (e) => {
+    e.preventDefault();
+    const fd = new FormData(f);
+    const get = (k) => String(fd.get(k) ?? "").trim();
+    const sets = fieldSets(state.plants);
+    const tasks = [...f.querySelectorAll(".task-edit")].map((row) => {
+      const q = (n) => row.querySelector(`[name="${n}"]`).value.trim();
+      const start = q("t-start");
+      const rep = q("t-repeat");
+      let rrule = rep === "custom" ? q("t-custom") : rep;
+      if (rrule && rep !== "custom") {
+        if (rrule.startsWith("FREQ=WEEKLY") && start) rrule += `;BYDAY=${["SU", "MO", "TU", "WE", "TH", "FR", "SA"][new Date(`${start}T12:00:00`).getDay()]}`;
+        if (q("t-until")) rrule += `;UNTIL=${q("t-until").replace(/-/g, "")}`;
+      }
+      return { title: q("t-title"), notes: q("t-notes"), start, rrule };
+    }).filter((t) => t.title && /^\d{4}-\d{2}-\d{2}$/.test(t.start));
+    const cautions = [["Pets", get("pets")], ["People", get("people")]].filter(([, t]) => t && !isNA(t)).map(([who, text]) => ({ who, text }));
+    const updated = {
+      ...p,
+      name: get("name") || p.name,
+      botanical: get("botanical"),
+      summary: get("summary"),
+      cautions,
+      glance: Object.fromEntries(["sun", "water", "spacing", "pot", "indoors"].map((k) => [k, get(`glance-${k}`)])),
+      growing: sets.growing.map((h) => [h, get(`growing-${h}`)]),
+      harvest: get("harvest"),
+      uses: sets.uses.map((h) => [h, get(`uses-${h}`)]),
+      reminders: get("reminders"),
+      tasks,
+      calendar: tasks.length ? true : p.calendar,
+      updated: localToday(state.garden?.timezone),
+    };
+    const btn = f.querySelector('[type="submit"]');
+    btn.disabled = true;
+    try {
+      await state.api.updatePlant(updated);
+      await reloadGarden();
+      dirty = false;
+      location.hash = `#/plant/${p.slug}`;
+      toast(`${esc(updated.name)} saved.`);
+    } catch (ex) {
+      toast(esc(ex.message), { sticky: true });
+    } finally {
+      btn.disabled = false;
+    }
+  };
 }
 
 function bindPlant(p) {
@@ -559,7 +703,8 @@ function bindPlant(p) {
   };
   $("#groupChip").onclick = openGroup;
   $("#regroupBtn").onclick = openGroup;
-  $("#rewriteBtn").onclick = () => runBusy({ slug: p.slug, label: `Rewriting ${p.name} for ${state.garden.label}` }, async () => {
+  const rw = $("#rewriteBtn");
+  if (rw) rw.onclick = () => runBusy({ slug: p.slug, label: `Rewriting ${p.name} for ${state.garden.label}` }, async () => {
     await state.api.fn("rewrite", { slug: p.slug });
     await reloadGarden();
     toast(`${esc(p.name)} rewritten.`);
@@ -671,6 +816,9 @@ async function runBusy(busy, fn) {
 /* ---------- dialogs ---------- */
 function openAdd() {
   $("#addForm").reset();
+  $("#addIntro").textContent = state.ai
+    ? "Type a plant's name. Claude writes a guide for your location, adds it to your garden, and puts its care reminders in your calendar feed. Takes about half a minute."
+    : "Type a plant's name. It's added as a blank guide that you can fill in, or paste a guide into, section by section.";
   $("#addDialog").showModal();
 }
 
@@ -679,6 +827,8 @@ function openLocation() {
   f.location.value = state.garden.location;
   f.regenerate.checked = true;
   $("#plantCount").textContent = state.plants.length;
+  $("#aiOptions").hidden = !state.ai;
+  $("#noAiNote").hidden = state.ai;
   $("#locationDialog").showModal();
 }
 
@@ -702,6 +852,16 @@ $("#addForm").onsubmit = async (e) => {
   if (state.plants.some((p) => p.name.toLowerCase() === name.toLowerCase() || p.slug === slugify(name))) {
     e.preventDefault();
     return toast(`${esc(name)} is already in your garden.`);
+  }
+  if (!state.ai) {
+    try {
+      const p = blankPlant(name, group);
+      await state.api.insertPlant(p);
+      await reloadGarden();
+      location.hash = `#/plant/${p.slug}/edit`;
+      toast(`${esc(name)} added. Fill in what you know; anything left blank shows N/A.`);
+    } catch (ex) { toast(esc(ex.status === 409 ? `${name} is already in your garden.` : ex.message), { sticky: true }); }
+    return;
   }
   await runBusy({ adding: name, group, label: `Writing a guide for ${name}` }, async () => {
     const { plant } = await state.api.fn("add", { name, group });
@@ -747,7 +907,15 @@ $("#locationForm").onsubmit = async (e) => {
   const f = e.target;
   const loc = f.location.value.trim();
   if (!loc || loc === state.garden.location) return;
-  const regenerate = f.regenerate.checked;
+  const regenerate = state.ai && f.regenerate.checked;
+  if (!state.ai) {
+    try {
+      state.garden = await state.api.saveGarden({ location: loc, label: labelFor(loc), timezone: timezone() });
+      render();
+      toast(`Your garden is set to ${esc(state.garden.location)}. Guides stay as they are; use Edit guide to adjust them.`, { sticky: true });
+    } catch (ex) { toast(esc(ex.message), { sticky: true }); }
+    return;
+  }
   await runBusy({ label: `Updating tips for ${labelFor(loc)}` }, async (progress) => {
     state.garden = await state.api.saveGarden({ location: loc, label: labelFor(loc), timezone: timezone() });
     await state.api.fn("overview");

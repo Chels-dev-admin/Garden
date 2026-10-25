@@ -35,10 +35,12 @@ jobs:
           missing=""
           [ -n "$SUPABASE_ACCESS_TOKEN" ] || missing="$missing SUPABASE_ACCESS_TOKEN"
           [ -n "$REF" ] || missing="$missing SUPABASE_PROJECT_REF"
-          [ -n "$ANTHROPIC_API_KEY" ] || missing="$missing ANTHROPIC_API_KEY"
           if [ -n "$missing" ]; then
             echo "::error::Add these repository secrets (Settings → Secrets and variables → Actions):$missing"
             exit 1
+          fi
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "::notice::No ANTHROPIC_API_KEY secret, so automatic guide writing is off. People can still fill in guides themselves."
           fi
 
       - uses: supabase/setup-cli@v1
@@ -72,13 +74,16 @@ jobs:
           CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL }}
         run: |
           {
-            echo "ANTHROPIC_API_KEY=$ANTHROPIC_API_KEY"
+            [ -z "$ANTHROPIC_API_KEY" ] || echo "ANTHROPIC_API_KEY=$ANTHROPIC_API_KEY"
             echo "DAILY_LIMIT=${DAILY_LIMIT:-30}"
             echo "GLOBAL_DAILY_LIMIT=${GLOBAL_DAILY_LIMIT:-300}"
             [ -z "$CLAUDE_MODEL" ] || echo "CLAUDE_MODEL=$CLAUDE_MODEL"
           } > /tmp/backend.env
           supabase secrets set --project-ref "$REF" --env-file /tmp/backend.env
           rm /tmp/backend.env
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            supabase secrets unset --project-ref "$REF" ANTHROPIC_API_KEY >/dev/null 2>&1 || true
+          fi
 
       - name: Deploy backend function
         run: |

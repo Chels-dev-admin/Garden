@@ -4,7 +4,7 @@ A website for growing guides tailored to where you live. Anyone can create an ac
 
 - **Setup walkthrough.** After creating an account, a 4-step guide asks for your location (or uses your phone's), lets you tick plants from a starter list or type your own, builds every guide, and connects your calendar.
 - **Plant guides.** Growing steps, harvest, uses, pet and people safety notes, all with the same fields (N/A where something doesn't apply).
-- **Add, remove, group and rewrite plants** at any time. Claude writes each new guide in about half a minute.
+- **Add, remove, group and edit plants** at any time. With a Claude key, Claude writes each new guide in about half a minute. Without one, new plants start as blank guides you fill in or paste into with **Edit guide**, including their calendar reminders.
 - **Change location** and every guide, tip and reminder date can be rewritten for the new climate.
 - **Calendar feed.** Each account gets its own feed of care reminders at 6pm local time. Subscribe once; it updates as plants change.
 - **Accounts.** Email and password, with "Forgot password" emails. Sign out, change password or delete the account from the account button.
@@ -19,7 +19,7 @@ The site runs on GitHub Pages. Accounts, gardens and guide-writing run on [Supab
 2. When it's ready, open **Project Settings → General** and copy the **Project ID** (20 letters, e.g. `abcdefghijklmnopqrst`).
 3. Open your account menu → **Account preferences → Access tokens → Generate new token**. Name it `github` and copy it (starts with `sbp_`).
 
-### 2. Add three secrets to this GitHub repo
+### 2. Add secrets to this GitHub repo
 
 **Settings → Secrets and variables → Actions → New repository secret**, once for each:
 
@@ -27,7 +27,7 @@ The site runs on GitHub Pages. Accounts, gardens and guide-writing run on [Supab
 | --- | --- |
 | `SUPABASE_PROJECT_REF` | the Project ID from step 1.2 |
 | `SUPABASE_ACCESS_TOKEN` | the `sbp_…` token from step 1.3 |
-| `ANTHROPIC_API_KEY` | a Claude API key from [console.anthropic.com](https://console.anthropic.com) (billed per use; a guide costs a few cents) |
+| `ANTHROPIC_API_KEY` | *Optional.* A Claude API key from [console.anthropic.com](https://console.anthropic.com), for automatic guide writing. Billed per use, separately from a Claude subscription; a guide costs a few cents. Add it any time and rerun Deploy backend. |
 
 Also check **Settings → Actions → General → Workflow permissions** is set to **Read and write**.
 
@@ -45,7 +45,7 @@ Then open the site and **Create account**. It redeploys by itself whenever backe
 ## Costs and limits
 
 - **Supabase free plan.** Free projects pause after about a week with no activity. Data is kept; open the Supabase dashboard and tap **Resume project**. Normal use (opening the app, calendar refreshes) usually keeps it awake.
-- **Claude.** Because anyone can sign up, each account can have **30** guides written per day and the whole site **300** per day. Change these with repository **variables** (same settings page, Variables tab) named `DAILY_LIMIT` and `GLOBAL_DAILY_LIMIT`, then rerun **Deploy backend**. `CLAUDE_MODEL` changes the model (default `claude-sonnet-5-5`).
+- **Claude (optional).** Without `ANTHROPIC_API_KEY` everything works except automatic guide writing, rewriting and local tips for new places. With it, because anyone can sign up, each account can have **30** guides written per day and the whole site **300** per day. Change these with repository **variables** (same settings page, Variables tab) named `DAILY_LIMIT` and `GLOBAL_DAILY_LIMIT`, then rerun **Deploy backend**. `CLAUDE_MODEL` changes the model (default `claude-sonnet-5-5`).
 - **Emails.** New accounts are confirmed straight away, so no email is needed to sign up. Password-reset emails use Supabase's built-in sender, which only sends a few per hour; for more, add your own email service under **Authentication → Emails** in Supabase.
 
 ## How it works
