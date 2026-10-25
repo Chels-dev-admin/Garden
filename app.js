@@ -1102,6 +1102,10 @@ window.addEventListener("beforeunload", (e) => {
   if (state.busy || state.setup?.running) { e.preventDefault(); e.returnValue = ""; }
 });
 
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+}
+
 document.body.dataset.screen = "loading";
 boot().catch((e) => {
   $("#main").innerHTML = `<h1>Couldn't load the garden</h1><p class="muted">${esc(e.message)}</p>`;
