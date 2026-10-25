@@ -148,6 +148,26 @@ function fmtDate(iso, opts = { day: "numeric", month: "short", year: "numeric" }
   return isNaN(d) ? iso : d.toLocaleDateString("en-AU", opts);
 }
 
+// Pet and people safety notes for the top of a plant page. Uses the plant's
+// "cautions" list, or falls back to any Caution/Pets items in its guide.
+function cautionsFor(p) {
+  if (Array.isArray(p.cautions)) return p.cautions.filter((c) => c && c.text);
+  return [...(p.growing || []), ...(p.uses || [])]
+    .filter(([k]) => /^(caution|pets?|warning|safety)$/i.test(k))
+    .map(([k, v]) => ({ who: /pet/i.test(k) ? "Pets" : "Caution", text: v }));
+}
+
+function cautionBox(list) {
+  if (!list.length) return "";
+  const icon = (who) => /pet/i.test(who)
+    ? '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5.5" cy="10" r="2"/><circle cx="9.5" cy="5.5" r="2"/><circle cx="14.5" cy="5.5" r="2"/><circle cx="18.5" cy="10" r="2"/><path d="M12 12c-3 0-5.5 3.5-5.5 6 0 1.5 1.2 2 2.5 2 1.2 0 2-.6 3-.6s1.8.6 3 .6c1.3 0 2.5-.5 2.5-2 0-2.5-2.5-6-5.5-6z"/></svg>'
+    : '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20h20L12 3z"/><path d="M12 10v4M12 17h.01"/></svg>';
+  return `<aside class="cautions" aria-label="Safety">
+    <h2>Safety</h2>
+    <ul>${list.map((c) => `<li>${icon(c.who)}<span><b>${esc(c.who || "Caution")}:</b> ${esc(c.text)}</span></li>`).join("")}</ul>
+  </aside>`;
+}
+
 function plantView(p) {
   const g = p.glance || {};
   const glance = [["Sun", g.sun], ["Water", g.water], ["Spacing", g.spacing], ["Pot size", g.pot], ["Indoors", g.indoors]]
@@ -164,6 +184,7 @@ function plantView(p) {
     </div>
     <h1>${esc(p.name)}</h1>
     ${p.botanical ? `<p class="botanical">${esc(p.botanical)}</p>` : ""}
+    ${cautionBox(cautionsFor(p))}
     <p class="lead">${esc(p.summary)}</p>
     ${glance ? `<dl class="glance">${glance}</dl>` : ""}
     <h2>Growing</h2>${kv(p.growing || [])}

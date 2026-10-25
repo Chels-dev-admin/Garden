@@ -184,3 +184,10 @@ input:focus { outline: 2px solid var(--leaf-2); outline-offset: 1px; }
 .check input { width: 18px; height: 18px; margin-top: 3px; flex: none; accent-color: var(--leaf-2); }
 .location-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; }
 .location-row p { margin: 0; }
+
+.cautions { background: var(--clay-soft); border: 1px solid color-mix(in srgb, var(--clay) 35%, transparent); border-radius: 12px; padding: 12px 14px; margin: 4px 0 16px; }
+.cautions h2 { font-size: .74rem; font-family: var(--sans); text-transform: uppercase; letter-spacing: .08em; color: var(--clay); margin: 0 0 6px; }
+.cautions ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.cautions li { display: grid; grid-template-columns: 20px 1fr; gap: 10px; align-items: start; font-size: .95rem; }
+.cautions svg { color: var(--clay); margin-top: 2px; }
+.cautions b { color: var(--clay); }

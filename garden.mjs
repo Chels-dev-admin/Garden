@@ -58,6 +58,7 @@ Reply with ONLY a JSON object, no prose, matching exactly:
   "name": "common name, title case",
   "botanical": "botanical name",
   "summary": "1-2 sentences: what it is, size, life cycle in this climate",
+  "cautions": [{"who": "Pets", "text": "..."}, {"who": "People", "text": "..."}],
   "glance": {"sun": "", "water": "", "spacing": "e.g. 45 cm", "pot": "min pot size or 'Not suited'", "indoors": "Good / Possible / Poor / No, plus a few words"},
   "growing": [["Position", "..."], ["Soil", "..."], ["Water", "..."], ["Feeding", "..."], ["Care", "..."], ["Pests", "..."], ["Winter", "..."]],
   "harvest": "when and how to harvest, or how to enjoy it if not harvested",
@@ -70,6 +71,7 @@ Reply with ONLY a JSON object, no prose, matching exactly:
 
 Rules:
 - Tailor every point to that location's climate, soil, frost risk, pests and the correct hemisphere's seasons. Use the local units and names gardeners there would use.
+- "cautions": every safety concern for pets (dogs, cats, birds, livestock) and people (toxicity, skin irritation, allergies, pregnancy, medication interactions, thorns or sharp leaves). One item per audience, under 30 words each. Use [] if there are none; don't invent risks.
 - "growing" has 5-8 items; keep each under 30 words.
 - "tasks": 4-10 important care reminders for the next 12 months (planting out, watering, feeding, pruning, pollinating, pest checks, frost protection, harvest, seed saving), timed for that location. Start dates must be on or after ${today}. Use RRULE only for repeating jobs and always bound them with UNTIL or COUNT. No general watering task more often than weekly.
 - If "${name}" is not a real plant, reply {"error": "reason"}.`;
@@ -137,6 +139,9 @@ function guideFields(g, today) {
   return {
     botanical: str(g.botanical, 80),
     summary: str(g.summary),
+    cautions: Array.isArray(g.cautions)
+      ? g.cautions.map((c) => ({ who: /pet|dog|cat|animal|livestock/i.test(c?.who) ? "Pets" : "People", text: str(c?.text, 300) })).filter((c) => c.text).slice(0, 4)
+      : [],
     glance: Object.fromEntries(["sun", "water", "spacing", "pot", "indoors"].map((k) => [k, str(glance[k], 80)])),
     growing: pairs(g.growing),
     harvest: str(g.harvest),

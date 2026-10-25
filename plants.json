@@ -5,6 +5,12 @@
     "group": "Chillies",
     "botanical": "Capsicum baccatum",
     "summary": "Mild-to-medium heat, bell-shaped fruit, 1–1.5 m tall. A long-lived perennial in frost-free peninsula gardens.",
+    "cautions": [
+      {
+        "who": "People",
+        "text": "Wear gloves when handling or cutting hot fruit, and keep hands away from eyes."
+      }
+    ],
     "glance": {
       "sun": "Full sun",
       "water": "Regular, even",
@@ -72,6 +78,12 @@
     "group": "Chillies",
     "botanical": "Capsicum annuum",
     "summary": "Cayenne-type chilli, medium-hot, 60–90 cm tall. Crops heavily through summer and autumn.",
+    "cautions": [
+      {
+        "who": "People",
+        "text": "Wear gloves when handling or cutting hot fruit, and keep hands away from eyes."
+      }
+    ],
     "glance": {
       "sun": "Full sun",
       "water": "Regular, even",
@@ -143,6 +155,7 @@
     "group": "Medicinal herbs",
     "botanical": "Prunella vulgaris",
     "summary": "Low spreading groundcover, 10–30 cm, with purple flower spikes from late spring to autumn. Very easy.",
+    "cautions": [],
     "glance": {
       "sun": "Part shade to sun",
       "water": "Keep moist",
@@ -202,6 +215,12 @@
     "group": "Kitchen herbs",
     "botanical": "Calendula officinalis",
     "summary": "Pot marigold. Annual, 40–60 cm, with orange or yellow edible flowers. Flowers best in cooler months but carries on into early summer.",
+    "cautions": [
+      {
+        "who": "People",
+        "text": "Avoid if allergic to daisy-family plants."
+      }
+    ],
     "glance": {
       "sun": "Full sun",
       "water": "Moderate",
@@ -265,6 +284,16 @@
     "group": "Kitchen herbs",
     "botanical": "Melissa officinalis",
     "summary": "Lemon-scented mint relative forming a bushy clump 50–80 cm tall. Hardy and fast-growing.",
+    "cautions": [
+      {
+        "who": "Pets",
+        "text": "Can upset cats' and dogs' stomachs if eaten."
+      },
+      {
+        "who": "People",
+        "text": "Check with a GP before medicinal use if pregnant or on thyroid or sedative medication."
+      }
+    ],
     "glance": {
       "sun": "Morning sun, afternoon shade",
       "water": "Moderate",
@@ -332,6 +361,12 @@
     "group": "Garden workhorses",
     "botanical": "Lavandula dentata",
     "summary": "Toothed grey-green leaves and flowers almost year-round; grows to about 1 m. Handles humidity and salty coastal air better than English lavender.",
+    "cautions": [
+      {
+        "who": "Pets",
+        "text": "Can upset cats' and dogs' stomachs if eaten. Keep lavender oil away from pets."
+      }
+    ],
     "glance": {
       "sun": "Full sun",
       "water": "Low once established",
@@ -395,6 +430,16 @@
     "group": "Garden workhorses",
     "botanical": "Humulus lupulus",
     "summary": "Vigorous climbing vine growing 4–6 m a season; dies back in winter and reshoots in spring. Peninsula winters are mild, so expect a lighter cone crop than cooler areas.",
+    "cautions": [
+      {
+        "who": "Pets",
+        "text": "Toxic to dogs, even dried or spent hops from brewing. Fence it off and keep dogs away from fallen cones."
+      },
+      {
+        "who": "People",
+        "text": "Adds to the effect of sedatives and alcohol; check with a GP before medicinal use."
+      }
+    ],
     "glance": {
       "sun": "Full sun",
       "water": "Heavy in summer",
@@ -462,6 +507,12 @@
     "group": "Kitchen herbs",
     "botanical": "Acmella oleracea",
     "summary": "Paracress or buzz buttons. Sprawling plant 30–40 cm tall with gold-and-red button flowers that make your mouth tingle and go numb.",
+    "cautions": [
+      {
+        "who": "People",
+        "text": "Strong numbing effect. Avoid in pregnancy and with daisy-family allergies; supervise children."
+      }
+    ],
     "glance": {
       "sun": "Sun to part shade",
       "water": "Keep moist",
@@ -525,6 +576,12 @@
     "group": "Medicinal herbs",
     "botanical": "Echinacea purpurea",
     "summary": "Purple coneflower. Clumping perennial 60–100 cm tall with pink-purple daisies in summer. May flower lightly in its first season while it establishes.",
+    "cautions": [
+      {
+        "who": "People",
+        "text": "Avoid with daisy-family allergies or autoimmune conditions; check with a GP before medicinal use."
+      }
+    ],
     "glance": {
       "sun": "Full sun",
       "water": "Low to moderate",
@@ -592,6 +649,12 @@
     "group": "Medicinal herbs",
     "botanical": "Valeriana officinalis",
     "summary": "Leafy clump that sends up flower stalks to 1–1.5 m with fragrant white-pink flowers in summer.",
+    "cautions": [
+      {
+        "who": "People",
+        "text": "Adds to the effect of sedatives and alcohol. Check with a GP before use, especially if pregnant."
+      }
+    ],
     "glance": {
       "sun": "Sun to part shade",
       "water": "Moist",
@@ -655,6 +718,16 @@
     "group": "Garden workhorses",
     "botanical": "Symphytum",
     "summary": "Big deep-rooted perennial up to 1 m with large hairy leaves and bell flowers. The gardener's fertiliser plant.",
+    "cautions": [
+      {
+        "who": "People",
+        "text": "Not for eating or tea: it contains liver-toxic alkaloids. Leaf hairs irritate skin, so wear gloves."
+      },
+      {
+        "who": "Pets",
+        "text": "Toxic to pets and livestock if eaten; keep away from grazing animals."
+      }
+    ],
     "glance": {
       "sun": "Sun to part shade",
       "water": "Moderate",
@@ -710,6 +783,16 @@
     "group": "Medicinal herbs",
     "botanical": "Achillea millefolium",
     "summary": "Feathery leaves and flat white flower heads on 50–90 cm stems from late spring to autumn. Tough and low-maintenance.",
+    "cautions": [
+      {
+        "who": "Pets",
+        "text": "Can upset cats' and dogs' stomachs and skin if eaten."
+      },
+      {
+        "who": "People",
+        "text": "Avoid in pregnancy and with daisy-family allergies."
+      }
+    ],
     "glance": {
       "sun": "Full sun",
       "water": "Low",
@@ -773,6 +856,16 @@
     "group": "Kitchen herbs",
     "botanical": "Cymbopogon citratus",
     "summary": "Dense grassy clump up to 1–1.5 m tall and wide. Thrives in warm, frost-free peninsula summers.",
+    "cautions": [
+      {
+        "who": "People",
+        "text": "Leaf edges are sharp; wear gloves when cutting."
+      },
+      {
+        "who": "Pets",
+        "text": "Can upset cats' and dogs' stomachs if eaten in quantity."
+      }
+    ],
     "glance": {
       "sun": "Full sun",
       "water": "Regular",
